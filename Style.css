@@ -1,0 +1,21 @@
+﻿div
+{
+    width:200px;
+    height:100px;
+    margin:10px;
+    background-color:blueviolet; 
+}
+#test
+{
+    background-color:yellow;
+}
+#first
+{
+    background-color:green;
+}
+.second
+{
+    background-color:red;
+}
+
+
