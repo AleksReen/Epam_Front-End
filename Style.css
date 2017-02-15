@@ -3,19 +3,25 @@
     width:200px;
     height:100px;
     margin:10px;
-    background-color:blueviolet; 
+    background-color:blueviolet;
+    float:left; 
+    border-radius:10px;
+    text-align:center
 }
-#test
+
+.second
 {
-    background-color:yellow;
+    background-color:red;
 }
+
 #first
 {
     background-color:green;
 }
-.second
+
+div+div
 {
-    background-color:red;
+    background-color:burlywood;
 }
 
 
