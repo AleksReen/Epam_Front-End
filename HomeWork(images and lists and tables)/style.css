@@ -1,0 +1,66 @@
+﻿table
+{
+    width:350px;
+    font-size: 12px; 
+    font-family: Arial; 
+}
+.event
+{
+    color: #bebebe; 
+    padding-left: 20px; 
+    padding-top: 5px
+}
+
+.content
+{
+    font-size: 18px; 
+    padding-left: 20px; 
+    padding-top: 5px; 
+    padding-right: 20px;
+}
+
+.lineGrey
+{
+    border: none; 
+    background-color: #bebebe; 
+    height: 1px;
+}
+.lineRed
+{
+    border: none; 
+    background-color: red; 
+    height: 2px;
+}
+.warning
+{
+    
+    color: red; 
+    padding-left: 20px; 
+    padding-top: 0px;
+}
+.Good
+{
+    
+    color: #39b649; 
+    font-size: 14px; 
+    text-align: right; 
+    padding-top: 10px; 
+    padding-right: 28px; 
+    font-weight: bolder
+}
+.bt
+{
+    width: 50px; 
+    height: 50px; 
+    padding-top: 10px; 
+    padding-right: 20px;
+}
+div
+{
+    text-align: center
+}
+iframe
+{
+    height: 464px; 
+    width: 604px;
+}
