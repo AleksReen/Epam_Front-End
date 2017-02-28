@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="forma">
+        <form action="/" method="post" id="AddForm">
+            <div class="forma__container">
+                <div>
+                    <span class="container__formName">Form Action</span>
+                    <span class="container__numberAction">_mc4wp_action</span>
+                </div>
+                <div class="container__annotation">
+                    This field will allow your visitors to choose whether 
+                    they would like to subscribe or unsubscribe
+                </div>
+                <div class="container__lable">
+                    Field Lable
+                </div>
+                <input class="container__inputFormAction" type="text" name="name" value="Form Action" />
+                <div class="container__lable">Choice Type</div>
+                <select class="container__selectType">
+                    <option value="value">Radio Buttons</option>
+                </select>
+                <div class="container__lable">Choices</div>
+
+                <div class="container__blockChoice">
+                    <div class="blockChoice__areaChoices">
+                        <input class="areaChoices__radio" type="radio" checked="checked" name="name" value="" />
+                        <input class="areaChoices__textbox" type="search" name="name" value="Subscribe" />
+                    </div>
+                    <div class="blockChoice__areaChoices">
+                        <input class="areaChoices__radio" type="radio" name="name" value="" />
+                        <input class="areaChoices__textbox" type="search" name="name" value="Unsubscribe" />
+                    </div>
+                </div>
+
+                <div class="container_wrap">
+                    <input class="container__wrapCheckbox" type="checkbox" checked="checked" name="name" value="" />
+                    <span>Wrap in paragraph tags?</span>
+                </div>
+                <input class="container_buttonAdd" type="submit" name="name" value="Add to form" />
+            </div>
+        </form>
+    </div>
+    <span class="result" id="result"></span>
+    <script>
+        window.onload = function () {
+            var form = document.getElementById("AddForm");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "handler.ashx");
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                xhr.onreadystatechange = function () {
+                    document.getElementById("result").innerHTML = xhr.responseText;
+                    }
+                xhr.send();
+            })
+        }
+      </script>
+</body>
+</html>
