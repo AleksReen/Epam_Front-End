@@ -1,0 +1,152 @@
+﻿html,body {
+    margin:0;
+}
+.main
+{
+    width:90%;
+    margin:0 auto;
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:stretch;
+    background-color:cadetblue;
+    text-align:center;
+    
+    
+}
+.sigma
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;
+    flex-wrap:wrap;
+}
+.sigma__logo {
+    width:200px;
+    height:170px;
+    border:1px solid white;
+    flex-wrap:wrap;
+    flex-grow:1;
+}
+.sigma__nav {
+    width:500px;
+    height:170px;
+    flex-grow:1;
+    border:1px solid white;
+}
+.header{
+    height:600px;
+    border:1px solid white;
+}
+.line1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    
+}
+.line1__block {
+    min-width:250px;
+    height: 430px;
+    border: 1px solid white;
+    flex-grow: 1;
+    
+}
+.line2{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:wrap;
+    flex-grow:1;
+    
+}
+.line2__block{
+     
+    height:320px;
+    border:1px solid white;
+    flex-grow:1;
+    
+}
+
+
+.line3{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.line3__block{
+    height:630px;
+    border:1px solid white;
+    flex-grow:1;
+}
+.line3__blockGroup
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:stretch;
+    flex-wrap:wrap;
+    border:1px solid white;
+    flex-grow:1;
+}
+
+.line3__innerBlock{
+    height:315px;
+    flex-grow:1;
+}
+.line3__innerBlock-w
+{
+    border-bottom:1px solid white;
+    height:314px;
+    flex-grow:1;
+}
+
+
+
+
+.line4{
+    
+    height:430px;
+    background-color:coral;
+}
+.line5{
+    
+    height:230px;
+    background-color:chartreuse;
+}
+.line6{
+    height:330px;
+    background-color:blue;
+}
+.line7{
+    height:300px;
+    background-color:darkslateblue;
+}
+.line8{
+    height:320px;
+    background-color:darkcyan;
+}
+.line9{
+    height:300px;
+    background-color:darkgoldenrod;
+}
+.footer
+{
+    height:320px;
+    background-color:darksalmon;
+}
+.form
+{
+    height:450px;
+    background-color:dodgerblue;
+}
