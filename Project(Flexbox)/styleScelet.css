@@ -60,18 +60,20 @@
     
     display:flex;
     flex-direction:row;
-    justify-content:flex-start;
+    justify-content:;
     align-items:stretch;
     flex-wrap:wrap;
     flex-grow:1;
     
 }
-.line2__block{
-     
-    height:320px;
-    border:1px solid white;
-    flex-grow:1;
-    
+.line2__block{ 
+    height:280px;
+    width:400px;
+    border:1px solid white; 
+}
+.line2__image
+{
+    width:400px; height:280px;
 }
 
 
