@@ -1,154 +1,354 @@
-﻿html,body {
-    margin:0;
+﻿html, body {
+    margin: 0;
 }
-.main
-{
-    width:90%;
-    margin:0 auto;
-    height:100%;
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:stretch;
-    background-color:cadetblue;
-    text-align:center;
-    
-    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: cadetblue;
+    text-align: center;
 }
-.sigma
-{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:stretch;
-    flex-wrap:wrap;
+
+.sigma {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
+
 .sigma__logo {
-    width:200px;
-    height:170px;
-    border:1px solid white;
-    flex-wrap:wrap;
-    flex-grow:1;
-}
-.sigma__nav {
-    width:500px;
-    height:170px;
-    flex-grow:1;
-    border:1px solid white;
-}
-.header{
-    height:600px;
-    border:1px solid white;
-}
-.line1{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:stretch;
-    flex-wrap:wrap;
+    width: 200px;
+    height: 170px;
+    border: 1px solid white;
+    flex-wrap: wrap;
     flex-grow: 1;
-    
 }
+
+.sigma__nav {
+    width: 500px;
+    height: 170px;
+    flex-grow: 1;
+    border: 1px solid white;
+}
+
+.header {
+    height: 600px;
+    border: 1px solid white;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
 .line1__block {
-    min-width:250px;
+    min-width: 250px;
     height: 430px;
     border: 1px solid white;
     flex-grow: 1;
-    
 }
-.line2{
-    
-    display:flex;
-    flex-direction:row;
-    justify-content:;
-    align-items:stretch;
-    flex-wrap:wrap;
-    flex-grow:1;
-    
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
-.line2__block{ 
-    height:280px;
-    width:400px;
-    border:1px solid white; 
+
+.line2__block1 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-01.jpg');
+    background-size: cover;
+    flex-grow: 1;
 }
-.line2__image
-{
-    width:400px; height:280px;
+
+.line2__block2 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-02.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line2__block3 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-03.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.line3__block {
+    width: 475px;
+    height: 630px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-04.jpg');
+    background-size: cover;
+    flex-grow: 1.001;
+}
+
+.line3__blockGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line3__innerBlock {
+    height: 315px;
+    border: 1px solid white;
+    flex-grow: 1;
+    background-image: url('image/tm-sigma-05.jpg');
+    background-size: cover;
+}
+
+.line3__innerBlock-w {
+    height: 314px;
+    border: 1px solid white;
+    flex-grow: 1;
+    background-image: url('image/tm-sigma-06.jpg');
+    background-size: cover;
+}
+
+.line4 {
+    height: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.line4__block1 {
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-07.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line4__block2 {
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-08.jpg');
+    background-size: cover;
+    flex-grow: 2;
+}
+
+.line5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line5__block1 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-01.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line5__block2 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-02.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line5__block3 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-03.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line5__block4 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-04.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line6 {
+    height: 330px;
+}
+
+.line7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line7__block1 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #e4e8e8;
+    flex-grow: 1;
+}
+
+.line7__block2 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #999999;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line7__block3 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #666666;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line8 {
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.line8__block1 {
+    width: 400px;
+    border: 1px solid white;
+    background-color: #eebbee;
+    flex-grow: 1;
+}
+
+.line8__block2 {
+    width: 400px;
+    border: 1px solid white;
+    background-color: #92c4f8;
+    flex-grow: 1;
+}
+
+.line9 {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.line9__block1 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#aa5522;
+    flex-grow: 1;
+}
+
+.line9__block2 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#2288bb;
+    flex-grow: 1;
+}
+
+.line9__block3 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#449966;
+    flex-grow: 1;
+}
+
+.line9__block4 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#a4a430;
+    flex-grow: 1;
 }
 
 
-.line3{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:stretch;
-    flex-wrap:wrap;
-    text-align:center;
-}
-
-.line3__block{
-    height:630px;
-    border:1px solid white;
-    flex-grow:1;
-}
-.line3__blockGroup
-{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:stretch;
-    flex-wrap:wrap;
-    border:1px solid white;
-    flex-grow:1;
-}
-
-.line3__innerBlock{
-    height:315px;
-    flex-grow:1;
-}
-.line3__innerBlock-w
-{
-    border-bottom:1px solid white;
-    height:314px;
-    flex-grow:1;
-}
 
 
+.footer {
+    height: 320px;
+    background-color: darksalmon;
+}
 
+.forma {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
 
-.line4{
-    
-    height:430px;
-    background-color:coral;
+.forma__PersonInfo {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #e4e8e8;
+    flex-grow: 1;
 }
-.line5{
-    
-    height:230px;
-    background-color:chartreuse;
+
+.froma__Subject {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #999999;
+    background-size: cover;
+    flex-grow: 1;
 }
-.line6{
-    height:330px;
-    background-color:blue;
-}
-.line7{
-    height:300px;
-    background-color:darkslateblue;
-}
-.line8{
-    height:320px;
-    background-color:darkcyan;
-}
-.line9{
-    height:300px;
-    background-color:darkgoldenrod;
-}
-.footer
-{
-    height:320px;
-    background-color:darksalmon;
-}
-.form
-{
-    height:450px;
-    background-color:dodgerblue;
+
+.froma__OurAddress {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #666666;
+    background-size: cover;
+    flex-grow: 1;
 }
