@@ -207,6 +207,7 @@
     flex-grow: 1;
 }
 
+
 .line6 {
     height: 330px;
 }
@@ -310,12 +311,8 @@
     flex-grow: 1;
 }
 
-
-
-
 .footer {
     height: 320px;
-    background-color: darksalmon;
 }
 
 .forma {
@@ -352,3 +349,18 @@
     background-size: cover;
     flex-grow: 1;
 }
+/*@media (max-width:1330px)
+{
+	
+}*/
+/*@media (max-width:1330px)
+{
+	
+}*/
+/*@media (max-width:990px) {
+	
+}*/
+
+/*@media (max-width:600px) {
+    
+}*/
