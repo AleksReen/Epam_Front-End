@@ -1,7 +1,5 @@
-﻿
-html, body {
+﻿html, body {
     margin: 0;
-    
 }
 
 .main {
@@ -12,118 +10,37 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    background-color: cadetblue; 
-    font-family: 'Open Sans', sans-serif;
+    background-color: cadetblue;
+    text-align: center;
 }
 
-.header {
+.sigma {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-    background-color:white;
 }
 
-.header__logo {
+.sigma__logo {
     width: 200px;
-    height:143px;
+    height: 170px;
+    border: 1px solid white;
     flex-wrap: wrap;
     flex-grow: 1;
-    padding-top:8px;
 }
 
-.logo_maintext{
-    
-    font-size:34px;
-    font-weight:500; 
-}
-
-.logo_sidetext{
-    font-size:18px;
-    font-weight:500;
-    color: #888;
-}
-
-.header__menu {
-    width: 400px;
-    height:143px;
+.sigma__nav {
+    width: 500px;
+    height: 170px;
     flex-grow: 1;
-    flex-wrap: wrap;
-}
-.menu
-{
-    margin-top:75px;
-    padding-right:30px;
-    text-align:right;
-}
-.menu_items
-{
-    display:inline;
-    margin-left:47px;
-    font-size:18px;
-    color: rgba(0,0,0,0.3);
-    font-size:18px;
-    font-weight: 500;
-}
-
-  .menu_items:hover {
-   text-decoration: none; 
-   color: #676767 ;
-   cursor:pointer;
-   }
-
- .separator{
-     background-color:white;
- }
- .separator__line{
-    
-    border:none;
-    background-color: rgba(0,0,0,0.3);
-    height:1px;
- }
-
-.lineInfo {
-    height: 600px;
     border: 1px solid white;
 }
 
-.lineWhithBack {
-    background-attachment:fixed;
-    background-image: url(image/tm-sigma-00.jpg);
-    background-size:cover;
-}
-
-.lineWhithBack--large
-{
+.header {
     height: 600px;
+    border: 1px solid white;
 }
-
-.lineWhithBack--medium
-{
-    height: 330px;
-}
-
-.lineWhithBack--small
-{
-    height: 320px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .line1 {
     display: flex;
@@ -291,7 +208,7 @@ html, body {
 }
 
 
-.lineAboutUs {
+.line6 {
     height: 330px;
 }
 
@@ -394,7 +311,7 @@ html, body {
     flex-grow: 1;
 }
 
-.lineContact {
+.footer {
     height: 320px;
 }
 
@@ -440,20 +357,10 @@ html, body {
 {
 	
 }*/
-@media (max-width:990px) {
-	.menu{
-        
-	}
-}
+/*@media (max-width:990px) {
+	
+}*/
 
-@media (max-width:683px) {
-    .menu{
-        margin-top:0px;
-        text-align:center;
-	}
-    .header__menu
-    {
-        line-height:2;
-        height:auto;
-    }
-}
+/*@media (max-width:600px) {
+    
+}*/
