@@ -5,15 +5,17 @@ html, body {
 }
 
 .main {
-    width: 90%;
-    margin: 0 auto;
+    /*width: 90%;
+    margin: 0 auto;*/
+    margin-left:67px;
+    margin-right:67px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     background-color: cadetblue; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, sans-serif;
 }
 
 .header {
@@ -29,20 +31,21 @@ html, body {
     width: 200px;
     height:143px;
     flex-wrap: wrap;
-    flex-grow: 1;
-    padding-top:8px;
+    flex-grow: 1;    
 }
 
 .logo_maintext{
     
-    font-size:34px;
-    font-weight:500; 
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:0px; 
 }
 
 .logo_sidetext{
-    font-size:18px;
+    font-size:20px;
     font-weight:500;
     color: #888;
+
 }
 
 .header__menu {
@@ -61,9 +64,8 @@ html, body {
 {
     display:inline;
     margin-left:47px;
-    font-size:18px;
     color: rgba(0,0,0,0.3);
-    font-size:18px;
+    font-size:20px;
     font-weight: 500;
 }
 
@@ -77,9 +79,10 @@ html, body {
      background-color:white;
  }
  .separator__line{
-    
+    margin-top: 13px;
+    margin-bottom: 13px;
     border:none;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
     height:1px;
  }
 
