@@ -7,8 +7,8 @@ html, body {
 .main {
     /*width: 90%;
     margin: 0 auto;*/
-    margin-left:67px;
-    margin-right:67px;
+    margin-left:5%;
+    margin-right:5%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@ html, body {
  }
 
 .lineInfo {
-    height: 600px;
+    height: 615px;
     border: 1px solid white;
 }
 
@@ -99,20 +99,61 @@ html, body {
 
 .lineWhithBack--large
 {
-    height: 600px;
+    display:flex;
+    align-items:center;
+    height: 615px;
 }
 
 .lineWhithBack--medium
 {
+    display:flex;
+    align-items:center;
     height: 330px;
 }
 
 .lineWhithBack--small
 {
+    display:flex;
+    align-items:center;
     height: 320px;
 }
-
-
+.lineInfo__conteiner {
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.conteiner_maintext{
+    
+    font-size:52px;
+    font-weight:500;
+    margin:0px; 
+}
+.conteiner_discription
+{
+    font-size: 26px; 
+    text-align: center; 
+    color:#676767; 
+    line-height:1.5
+}
+.conteiner__button{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.button{
+    background-color:#D9534F;
+    text-align:center;
+    line-height:67px;
+    height:67px;
+    width:200px;
+    margin:12px;
+    border-radius:3px;
+}
 
 
 
