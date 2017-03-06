@@ -1,0 +1,77 @@
+﻿.line8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.line8__block1 {
+    width: 400px;
+    height: 320px;
+    border: 1px solid white;
+    background-color: #eebbee;
+    flex-grow: 1;
+}
+
+.line8__block2 {
+    width: 400px;
+    height: 320px;
+    border: 1px solid white;
+    background-color: #92c4f8;
+    flex-grow: 1;
+}
+.blockText__container {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 10%;
+    color: white;
+}
+.conteiner_textHead {
+    font-size: 36px;
+}
+.textHead--colorFontBlack {
+    color: black;
+}
+.conteiner_textUnderhead {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.textUnderhead--colorFontBlack {
+    color: black;
+}
+.conteiner_colButton {
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    margin: 12px;
+    border-radius: 5px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0px;
+    color: white;
+}
+.colButton--colorBlue {
+    background-color: #0275D8;
+}
+.colButton--colorBlue:hover {
+        background-color: #025aa5;
+    }
+
+    .colButton--colorBlue:active {
+        background-color: #02447d;
+    }
+.colButton--colorRed {
+    background-color: #d9534f;
+}
+
+    .colButton--colorRed:hover {
+        background-color: #c9302c;
+    }
+
+    .colButton--colorRed:active {
+        background-color: #a12926;
+    }

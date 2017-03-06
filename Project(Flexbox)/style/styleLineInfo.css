@@ -2,13 +2,13 @@
     height: 615px;
     border: 1px solid white;
 }
-.lineWhithBack {
+.lineInfo__lineWhithBack {
     background-attachment: fixed;
-    background-image: url(image/tm-sigma-00.jpg);
+    background-image: url('../image/tm-sigma-00.jpg');
     background-size: cover;
 }
 
-.lineWhithBack--large {
+.lineInfo__lineWhithBack--large {
     display: flex;
     align-items: center;
     height: 615px;
@@ -25,7 +25,7 @@
     align-items: center;
     height: 360px;
 }
-.lineText__conteiner {
+.lineInfo__lineText__conteiner {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -33,29 +33,29 @@
     align-items: center;
     width: 50%;
 }
-.conteiner_maintext {
+.lineInfo__conteiner_maintext {
     color: #373a3c;
     font-size: 52px;
     font-weight: 500;
     margin: 0px;
 }
-.conteiner_discription {
+.lineInfo__conteiner_discription {
     font-size: 26px;
     text-align: center;
     color: #676767;
     line-height: 1.5;
 }
-.conteiner_discription--small {
+.lineInfo__conteiner_discription--small {
     font-size: 21px;
 }
-.conteiner__button {
+.lineInfo__conteiner__button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.button {
+.lineInfo__button {
     text-align: center;
     line-height: 67px;
     height: 67px;
@@ -69,26 +69,48 @@
     cursor: pointer;
 }
 
-.button--colorRed {
+.lineInfo__button--colorRed {
     background-color: #d9534f;
 }
 
-    .button--colorRed:hover {
+    .lineInfo__button--colorRed:hover {
         background-color: #c9302c;
     }
 
-    .button--colorRed:active {
+    .lineInfo__button--colorRed:active {
         background-color: #a12926;
     }
 
-.button--colorGreen {
+.lineInfo__button--colorGreen {
     background-color: #5cb85c;
 }
 
-    .button--colorGreen:hover {
+    .lineInfo__button--colorGreen:hover {
         background-color: #449d44;
     }
 
-    .button--colorGreen:active {
+    .lineInfo__button--colorGreen:active {
         background-color: #3b8a3b;
     }
+    
+    
+    
+    
+@media (max-width:1003px) {
+    .lineInfo__conteiner_maintext {
+        font-size: 32px;
+    }
+    .lineInfo__conteiner_discription {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .lineInfo__conteiner_maintext {
+        font-size: 28px;
+    }
+    .lineInfo__conteiner_discription {
+        font-size: 18px;
+    }
+}

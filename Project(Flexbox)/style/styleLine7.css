@@ -1,0 +1,34 @@
+﻿.line7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line7__block1 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #e4e8e8;
+    flex-grow: 1;
+}
+
+.line7__block2 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #999999;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line7__block3 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #666666;
+    background-size: cover;
+    flex-grow: 1;
+}

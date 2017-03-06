@@ -1,0 +1,34 @@
+﻿.forma {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.forma__PersonInfo {
+    height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #e4e8e8;
+    flex-grow: 1;
+}
+
+.froma__Subject {
+    height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #999999;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.froma__OurAddress {
+    height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #666666;
+    background-size: cover;
+    flex-grow: 1;
+}

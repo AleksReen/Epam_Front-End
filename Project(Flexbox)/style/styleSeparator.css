@@ -1,4 +1,7 @@
-﻿.separator__line {
+﻿.separator {
+    background-color: white;
+}
+.separator__line {
     margin-top: 13px;
     margin-bottom: 13px;
     border: none;
