@@ -1,0 +1,271 @@
+﻿.header__logo {
+    width: 200px;
+    height: 143px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.logo_maintext {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.logo_sidetext {
+    font-size: 20px;
+    font-weight: 500;
+    color: #888;
+}
+
+.header__menu {
+    width: 400px;
+    height: 143px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.menu {
+    margin-top: 75px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.menu_items {
+    display: inline;
+    margin-left: 47px;
+    color: rgba(0,0,0,0.3);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+    .menu_items:hover {
+        text-decoration: none;
+        color: #676767;
+        cursor: pointer;
+    }
+
+.separator__line {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+    height: 1px;
+}
+
+.lineWhithBack {
+    background-attachment: fixed;
+    background-image: url(image/tm-sigma-00.jpg);
+    background-size: cover;
+}
+
+.lineWhithBack--large {
+    display: flex;
+    align-items: center;
+    height: 615px;
+}
+
+.lineWhithBack--small {
+    display: flex;
+    align-items: center;
+    height: 330px;
+}
+
+.lineWhithBack--medium {
+    display: flex;
+    align-items: center;
+    height: 360px;
+}
+
+.lineText__conteiner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.blockText__container {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 10%;
+    color: white;
+}
+.blockText__containerLine1 {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 10%;
+    text-align:center;
+    color: white;
+}
+.blockText__container--CenterColorBlack {
+    color:black;
+}
+
+
+.conteiner_textHead {
+    font-size: 36px;
+}
+
+.textHead--colorFontBlack {
+    color: black;
+}
+
+.conteiner_textUnderhead {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.textUnderhead--colorFontBlack {
+    color: black;
+}
+
+.conteiner_maintext {
+    color: #373a3c;
+    font-size: 52px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.conteiner_maintext--small {
+    font-size: 38px;
+}
+
+.conteiner_discription {
+    font-size: 26px;
+    text-align: center;
+    color: #676767;
+    line-height: 1.5;
+}
+
+.conteiner_discription--small {
+    font-size: 21px;
+}
+
+.conteiner__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    text-align: center;
+    line-height: 67px;
+    height: 67px;
+    width: 200px;
+    margin: 12px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button--colorRed {
+    background-color: #d9534f;
+}
+
+    .button--colorRed:hover {
+        background-color: #c9302c;
+    }
+
+    .button--colorRed:active {
+        background-color: #a12926;
+    }
+
+.button--colorGreen {
+    background-color: #5cb85c;
+}
+
+    .button--colorGreen:hover {
+        background-color: #449d44;
+    }
+
+    .button--colorGreen:active {
+        background-color: #3b8a3b;
+    }
+
+.conteiner_colButton {
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    margin: 12px;
+    border-radius: 5px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0px;
+    color: white;
+}
+
+.colButton--colorBlue {
+    background-color: #0275D8;
+}
+
+    .colButton--colorBlue:hover {
+        background-color: #025aa5;
+    }
+
+    .colButton--colorBlue:active {
+        background-color: #02447d;
+    }
+
+.colButton--colorRed {
+    background-color: #d9534f;
+}
+
+    .colButton--colorRed:hover {
+        background-color: #c9302c;
+    }
+
+    .colButton--colorRed:active {
+        background-color: #a12926;
+    }
+
+.hrefContact {
+    color: #2288bb;
+    text-decoration: none;
+}
+
+.hrefContact:hover {
+        color: #176992;
+        text-decoration: underline;
+    }
+.boxSimbol {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    font-size:70px;
+    
+
+}
+.power-off:before {
+    content: "\f011";
+}
+.flash:before {
+    content: "\f0e7";
+}
+.thumbs-up:before {
+    content: "\f164";
+}
+.chart:before {
+    content: "\f080";
+}
+.line1__block--color1{
+    background-color:#e4e8e8;
+}
+.line1__block--color2{
+    background-color:#999999;
+}
+.line1__block--color3{
+    background-color:#666666;
+}
+.line1__block--color4{
+    background-color:#444444;
+}
