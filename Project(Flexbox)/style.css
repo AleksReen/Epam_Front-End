@@ -1,118 +1,605 @@
-﻿html, body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
+﻿
+html, body {
+    margin: 0;
+    
+}
+
+.main {
+    margin-left:5%;
+    margin-right:5%;
     height: 100%;
-    
-}
-.main
-{
     display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:stretch;
-    margin-left:4%;
-    margin-right:4%;
-    margin-top:3%;
-}
-.my-flex-container {
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:stretch;
-    flex-wrap:wrap;
-    
-}
-.left 
-{
-    display: flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items:stretch;
-}
-.sigma {
-    font-size:34px;
-    font-weight: 500;
-    margin-bottom:8px;
-}
-.image
-{
-    font-size:16px;
-    color: #888;
-    font-weight: 500;
-    line-height: 1.1;
-    margin-top:10px;
-}
-.right {
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    flex-grow:0.2;
-    flex-wrap:wrap;
-    padding-right:20px;
-    padding-top:35px;
-    float:left;
-    color: #888;
-    font-size:18px;
-    font-weight: 500;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: cadetblue; 
+    font-family: Calibri, sans-serif;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color:white;
+}
 
- a {
+.header__logo {
+    width: 200px;
+    height:143px;
+    flex-wrap: wrap;
+    flex-grow: 1;    
+}
+
+.logo_maintext{
+    
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:0px; 
+}
+
+.logo_sidetext{
+    font-size:20px;
+    font-weight:500;
+    color: #888;
+
+}
+
+.header__menu {
+    width: 400px;
+    height:143px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.menu
+{
+    margin-top:75px;
+    padding-right:30px;
+    text-align:right;
+}
+.menu_items
+{
+    display:inline;
+    margin-left:47px;
     color: rgba(0,0,0,0.3);
-    
-    text-decoration:none;
-   }
-   
-   a:hover {
+    font-size:20px;
+    font-weight: 500;
+}
+
+  .menu_items:hover {
    text-decoration: none; 
    color: #676767 ;
-    
-   }
-   .item{
-       margin-left:5%;
+   cursor:pointer;
    }
 
-   .line-cont
-   {
-       margin-top:2%;
-       
-   }
-.firstline {
+ .separator{
+     background-color:white;
+ }
+ .separator__line{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border:none;
+    background-color: rgba(0,0,0,0.1);
+    height:1px;
+ }
+
+.lineInfo {
+    height: 615px;
+    border: 1px solid white;
+}
+
+.lineWhithBack {
+    background-attachment:fixed;
+    background-image: url(image/tm-sigma-00.jpg);
+    background-size:cover;
+}
+
+.lineWhithBack--large
+{
+    display:flex;
+    align-items:center;
+    height: 615px;
+}
+
+.lineWhithBack--medium
+{
+    display:flex;
+    align-items:center;
+    height: 330px;
+}
+
+.lineWhithBack--small
+{
+    display:flex;
+    align-items:center;
+    height: 320px;
+}
+.lineText__conteiner {
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('image/tm-sigma-00.jpg');
-    background-size:cover;
-    min-height:600px;
+    width: 50%;
 }
-.content
+.blockText__container{
+
+  margin-top:15%;
+  margin-left:10%;
+  margin-right:10%;  
+}
+.blockText__container--Finish{
+
+  margin-top:15%;
+  margin-left:10%;
+  margin-right:10%;  
+}
+.conteiner_textHead{
+    font-size:36px;
+    color:white;
+}
+.conteiner_textUnderhead{
+     margin-top:10%;
+     font-size: 20px;
+     color:white;
+     line-height:1.5;
+      
+}
+.conteiner_textUnderhead--Finish{
+     margin-top:10%;
+     font-size: 20px;
+     color:white;
+     line-height:1.5;
+      
+}
+.conteiner_maintext{
+    color:#373a3c;
+    font-size:52px;
+    font-weight:500;
+    margin:0px; 
+}
+.conteiner_maintext--small
 {
+    font-size:38px;
+}
+.conteiner_discription
+{
+    font-size: 26px; 
+    text-align: center; 
+    color:#676767; 
+    line-height:1.5
+}
+.conteiner_discription--small{
+    font-size:21px;
+    
+}
+.conteiner__button{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.button{
+    text-align:center;
+    line-height:67px;
+    height:67px;
+    width:200px;
+    margin:12px;
+    border-radius:5px;
+    font-size:24px;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+.button--colorRed
+{
+    background-color:#d9534f;
+}
+.button--colorRed:hover
+{
+    background-color: #c9302c;
+}
+.button--colorRed:active
+{
+    background-color: #a12926;
+}
+
+.button--colorGreen{
+    background-color:#5cb85c;
+}
+.button--colorGreen:hover
+{
+    background-color: #449d44;
+}
+.button--colorGreen:active
+{
+    background-color: #3b8a3b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.line1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line1__block {
+    min-width: 250px;
+    height: 430px;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line2__block1 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-01.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line2__block2 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-02.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line2__block3 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-03.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.line3__block {
+    width: 475px;
+    height: 630px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-04.jpg');
+    background-size: cover;
+    flex-grow: 1.001;
+}
+
+.line3__blockGroup {
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    width:50%;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
-.sigma-home
-{
-    font-size: 50px; 
-    font-weight: 500;
+.line3__innerBlock {
+    height: 315px;
+    border: 1px solid white;
+    flex-grow: 1;
+    background-image: url('image/tm-sigma-05.jpg');
+    background-size: cover;
 }
 
-@media only screen and (max-width: 1330px)
-{
-    .sigma-home
-    {
-        font-size: 40px;
+.line3__innerBlock-w {
+    height: 314px;
+    border: 1px solid white;
+    flex-grow: 1;
+    background-image: url('image/tm-sigma-06.jpg');
+    background-size: cover;
+}
+
+.line4 {
+    height: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.line4__block1 {
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-07.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line4__block2 {
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-08.jpg');
+    background-size: cover;
+    flex-grow: 2;
+}
+
+.line5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line5__block1 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-01.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line5__block2 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-02.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line5__block3 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-03.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line5__block4 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('image/tm-sigma-04.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+
+.lineAboutUs {
+    height: 330px;
+}
+
+
+.line7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.line7__block1 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #e4e8e8;
+    flex-grow: 1;
+}
+
+.line7__block2 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #999999;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line7__block3 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #666666;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.line8 {
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.line8__block1 {
+    width: 400px;
+    border: 1px solid white;
+    background-color: #eebbee;
+    flex-grow: 1;
+}
+
+.line8__block2 {
+    width: 400px;
+    border: 1px solid white;
+    background-color: #92c4f8;
+    flex-grow: 1;
+}
+
+.line9 {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.line9__block1 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#aa5522;
+    flex-grow: 1;
+}
+
+.line9__block2 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#2288bb;
+    flex-grow: 1;
+}
+
+.line9__block3 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#449966;
+    flex-grow: 1;
+}
+
+.line9__block4 {
+    height: 300px;
+    width: 350px;
+    border: 1px solid white;
+    background-color:#a4a430;
+    flex-grow: 1;
+}
+
+.lineContact {
+    height: 320px;
+}
+.hrefContact{
+    color:#2288bb;
+    text-decoration:none;
+}
+.hrefContact:hover{
+    color:#176992;
+    text-decoration:underline;
+}
+.forma {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.forma__PersonInfo {
+    height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #e4e8e8;
+    flex-grow: 1;
+}
+
+.froma__Subject {
+    height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #999999;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.froma__OurAddress {
+    height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: #666666;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+@media (max-width:1600px) {
+    .blockText__containerFinish {
+        margin-top: 15%;
+        
     }
 }
-@media only screen and (max-width: 800px)
-{
-    .sigma-home
+
+ @media (max-width:1581px) {
+    .blockText__containerFinish {
+        margin-top: 5%;
+    }
+    .conteiner_textUnderheadFinish
     {
-        font-size: 24px;
+        margin-top:5%;
     }
 }
+@media (max-width:1190px)
+{
+	.blockText__containerFinish
+    {
+        margin-top:15%;
+    }
+    .conteiner_textUnderheadFinish
+    {
+        margin-top:10%;
+    }
+}
+@media (max-width:1003px) {
+
+    .blockText__containerFinish {
+        margin-top: 15%;
+        
+    }
+    .conteiner_maintext {
+        font-size: 32px;
+    }
+
+    .conteiner_discription {
+        font-size: 20px;
+    }   
+} 
+@media (max-width:683px) {
+        .menu {
+            margin-top: 0px;
+            text-align: center;
+        }
+        .header__menu {
+            line-height: 2;
+            height: auto;
+        }
+        .lineInfo__conteiner {
+            width: 90%;
+        }
+    }
