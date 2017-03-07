@@ -11,7 +11,6 @@
     height: 460px;
     width: 400px;
     border: 1px solid white;
-    background-color: #e4e8e8;
     flex-grow: 1;
 }
 
@@ -19,7 +18,6 @@
     height: 460px;
     width: 400px;
     border: 1px solid white;
-    background-color: #999999;
     background-size: cover;
     flex-grow: 1;
 }
@@ -27,8 +25,7 @@
 .froma__OurAddress {
     height: 460px;
     width: 400px;
-    border: 1px solid black;
-    background-color:white;
+    border: 1px solid white;
     background-size: cover;
     flex-grow: 1;
 }
@@ -36,10 +33,41 @@
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 10%;
-    color:black;
+    color:#373a3c;
     
 }
+
+.froma__containerTexBox {
+    margin-left: 30px;
+    margin-right: 5%;
+    color: #373a3c;
+    font-size: 21px;
+    
+}
+.froma__containerTexBox_lable
+{
+    margin-top:20px;
+}
+.froma__conteinerTexBox_input{
+    margin-top:15px;
+    border-radius:5px;
+    width:100%;
+    height:35px;
+    font-size:18px;
+}
+.froma__conteinerTexBox_textArea{
+    margin-top:15px;
+    border-radius:5px;
+    resize:vertical;
+    min-height:140px;
+    width:100%;
+    height:35px;
+    font-family:Calibri;
+    font-size:21px;
+}
+
 .froma__conteiner_textHead {
+    color: #373a3c;
     font-size: 36px;
 }
 .froma__conteiner_textUnderhead {
@@ -47,3 +75,56 @@
     font-size: 21px;
     line-height: 1.5;
 }
+.forma__conteiner_mail{
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.forma__conteiner_phone{
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.form__boxSimbol {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    font-size:30px;
+    width:55px;
+}
+
+.mail:before {
+    content: "\f003";
+    margin-right:25px;
+    color: #373a3c;
+}
+.phone:before {
+    content: "\f095";
+    margin-right:25px;
+    color: #373a3c; 
+}
+.froma__containerTexBox_containercheckbox
+{
+    margin-top:20px;
+}
+.froma__containerTexBox_button{
+    height:55px;
+    line-height: 55px;
+    width:110px;
+    margin-top:15px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #5cb85c;
+    font-size:22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+    .froma__containerTexBox_button:hover {
+        background-color: #449d44;
+    }
+
+    .froma__containerTexBox_button:active {
+        background-color: #3b8a3b;
+    }
