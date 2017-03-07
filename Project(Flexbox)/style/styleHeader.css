@@ -8,7 +8,7 @@
 }
 .header__logo {
     width: 200px;
-    height: 143px;
+    min-height: 143px;
     flex-wrap: wrap;
     flex-grow: 1;
 }
@@ -26,7 +26,7 @@
 }
 .header__menu {
     width: 400px;
-    height: 143px;
+    min-height: 143px;
     flex-grow: 1;
     flex-wrap: wrap;
 }
@@ -37,14 +37,16 @@
     text-align: right;
 }
 
-.menu_items {
+.menu__items {
     display: inline;
     margin-left: 47px;
+}
+.items_nav{
     color: rgba(0,0,0,0.3);
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none;
 }
-
     .menu_items:hover {
         text-decoration: none;
         color: #676767;

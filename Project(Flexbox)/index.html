@@ -2,10 +2,9 @@
 <html>
 <head>
     <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <!--<link href="styleMain.css" rel="stylesheet" />
-    <link href="styleMedia.css" rel="stylesheet" />
-    <link href="styleBlockElements.css" rel="stylesheet" />-->
     <link href="style/styleMain.css" rel="stylesheet" />
     <link href="style/styleHeader.css" rel="stylesheet" />
     <link href="style/styleSeparator.css" rel="stylesheet" />
@@ -21,25 +20,37 @@
     <link href="style/styleLine9.css" rel="stylesheet" />
     <link href="style/styleLineContact.css" rel="stylesheet" />
     <link href="style/styleForma.css" rel="stylesheet" />
-    <meta charset="utf-8" />
+    <link href="style/styleUnderLine.css" rel="stylesheet" />
+    <script src="jQuery/jquery.min.js"></script>
+
 </head>
 <body>
 
     <div class="main">
 
 
-        <div class="header">
+        <div id="Header" class="header">
             <div class="header__logo">
                 <h1 class="logo_maintext">Sigma</h1>
                 <h2 class="logo_sidetext">Image Gallery built on Bootstrap 4.0</h2>
             </div>
             <div class="header__menu">
-                <div class="menu">
-                    <div class="menu_items">Home</div>
-                    <div class="menu_items">Gallery</div>
-                    <div class="menu_items">About</div>
-                    <div class="menu_items">Contact</div>
-                    <div class="menu_items">External</div>
+                <div id="menu" class="menu">
+                    <div class="menu__items">
+                        <a class="items_nav" href="#lineInfo">Home</a>   
+                    </div>
+                    <div class="menu__items">
+                         <a class="items_nav" href="#Gallery">Gallery</a>
+                       </div>
+                    <div class="menu__items">
+                         <a class="items_nav" href="#AboutUs">About</a>
+                        </div>
+                    <div class="menu__items">
+                         <a class="items_nav" href="#Contact">Contact</a>
+                        </div>
+                    <div class="menu__items">
+                        <a class="items_nav" href="#lineInfo">External</a>   
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +61,7 @@
         </div>
 
 
-        <div class="lineInfo">
+        <div id="lineInfo" class="lineInfo">
             <div class="lineInfo__lineWhithBack">
                 <div class="lineInfo__lineWhithBack--large">
                     <div class="lineInfo__lineText__conteiner">
@@ -124,7 +135,7 @@
         </div>
 
 
-        <div class="line2">
+        <div  id="Gallery"  class="line2">
             <div class="line2__block1">
             </div>
             <div class="line2__block2">
@@ -158,7 +169,7 @@
         </div>
 
 
-        <div class="lineAboutUs">
+        <div id="AboutUs" class="lineAboutUs">
             <div class="lineAboutUs__lineWhithBack">
                 <div class="lineAboutUs__conteiner">
                     <h1 class="lineAboutUs__conteiner_maintext">About Us</h1>
@@ -285,7 +296,7 @@
         </div>
 
 
-        <div class="lineContact">
+        <div id="Contact" class="lineContact">
             <div class="lineContact__lineWhithBack">
                     <div class="lineContact__conteiner">
                         <h1 class="lineContact__conteiner_maintext">Contact</h1>
@@ -308,10 +319,14 @@
                     <div class="froma__containerTexBox_lable">Your Email</div>
                     <input class="froma__conteinerTexBox_input" type="text" name="name" placeholder="  Enter your email" value="" />
                     <div class="froma__containerTexBox_lable">Your Budget</div>
-                    <input class="froma__conteinerTexBox_input" type="text" name="name" value="" />
+                     <select class="froma__conteinerTexBox_input">
+                         <option value="$500">$500</option>
+                         <option value="value">$1000</option>
+                         <option value="value">$1500</option>
+                         <option value="value">$2000</option>
+                     </select>
                  </div>
             </div>
-            
             
             <div class="froma__Subject">
                 <div class="froma__containerTexBox">
@@ -323,9 +338,7 @@
                         <input type="checkbox"  name="name" value="" />
                         <span>I am not a robot.</span>
                     </div>
-
-                    <button class="froma__containerTexBox_button">Submit</button>
-                    
+                    <button class="froma__containerTexBox_button">Submit</button>           
                 </div>
             </div>
             
@@ -349,12 +362,27 @@
             </div>
         </div>
 
-         <div class="separator">
+        <div class="separator">
             <hr class="separator__line" />
         </div>
 
+        <div id="UnderLine" class="UnderLine">
+            <div class="UnderLine_License">Copyright © 2016 Sigma HTML CSS Template</div>
+            <div class="UnderLine_GoToTop">
+                <a class="UnderLine_GoToTop_Href" href="#Header">Go to top</a></div>
+        </div>
       
     </div>
 </body>
+    <script>
+        $(document).ready(function () {
+            $("#menu, #UnderLine").on("click", "a", function (event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({ scrollTop: top }, 500);
+            });
+        });
+    </script>
 </html>
 

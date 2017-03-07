@@ -7,7 +7,7 @@
 }
 .line8__block1 {
     width: 400px;
-    height: 320px;
+    min-height: 320px;
     border: 1px solid white;
     background-color: #eebbee;
     flex-grow: 1;
@@ -15,7 +15,7 @@
 
 .line8__block2 {
     width: 400px;
-    height: 320px;
+    min-height: 320px;
     border: 1px solid white;
     background-color: #92c4f8;
     flex-grow: 1;

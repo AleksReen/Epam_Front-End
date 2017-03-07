@@ -8,14 +8,14 @@
 }
 
 .forma__PersonInfo {
-    height: 460px;
+    min-height: 460px;
     width: 400px;
     border: 1px solid white;
     flex-grow: 1;
 }
 
 .froma__Subject {
-    height: 460px;
+    min-height: 460px;
     width: 400px;
     border: 1px solid white;
     background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .froma__OurAddress {
-    height: 460px;
+    min-height: 460px;
     width: 400px;
     border: 1px solid white;
     background-size: cover;
@@ -51,15 +51,24 @@
 .froma__conteinerTexBox_input{
     margin-top:15px;
     border-radius:5px;
+    border:1px solid #ccc; 
     width:100%;
     height:35px;
     font-size:18px;
+    outline:none;   
 }
+
+.froma__conteinerTexBox_input:focus{
+    border:1px solid #66afe9;
+}
+
 .froma__conteinerTexBox_textArea{
     margin-top:15px;
     border-radius:5px;
+    border:1px solid #ccc;
+    line-height:1.5;
     resize:vertical;
-    min-height:140px;
+    min-height:137px;
     width:100%;
     height:35px;
     font-family:Calibri;

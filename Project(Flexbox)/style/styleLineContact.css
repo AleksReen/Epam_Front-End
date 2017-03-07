@@ -1,10 +1,10 @@
 ﻿.lineContact {
-    height: 360px;
+    min-height: 360px;
 }
 .lineContact__lineWhithBack {
     display: flex;
     align-items: center;
-    height: 360px;
+    min-height: 360px;
     background-attachment: fixed;
     background-image: url('../image/tm-sigma-00.jpg');
     background-size: cover;

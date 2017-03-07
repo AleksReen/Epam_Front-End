@@ -8,7 +8,7 @@
 }
 
 .line7__block1 {
-    height: 300px;
+    min-height: 300px;
     width: 400px;
     border: 1px solid white;
     background-color: #e4e8e8;
@@ -16,7 +16,7 @@
 }
 
 .line7__block2 {
-    height: 300px;
+    min-height: 300px;
     width: 400px;
     border: 1px solid white;
     background-color: #999999;
@@ -25,7 +25,7 @@
 }
 
 .line7__block3 {
-    height: 300px;
+    min-height: 300px;
     width: 400px;
     border: 1px solid white;
     background-color: #666666;
