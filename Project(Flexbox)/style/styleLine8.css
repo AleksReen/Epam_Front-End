@@ -20,27 +20,25 @@
     background-color: #92c4f8;
     flex-grow: 1;
 }
-.blockText__container {
+.line8__container {
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 10%;
     color: white;
 }
-.conteiner_textHead {
+.line8__textHead {
     font-size: 36px;
-}
-.textHead--colorFontBlack {
     color: black;
 }
-.conteiner_textUnderhead {
+
+.line8__textUnderhead {
     margin-top: 30px;
     font-size: 21px;
     line-height: 1.5;
-}
-.textUnderhead--colorFontBlack {
     color: black;
 }
-.conteiner_colButton {
+
+.line8__colButton {
     height: 50px;
     width: 150px;
     text-align: center;
@@ -54,24 +52,24 @@
     margin-left: 0px;
     color: white;
 }
-.colButton--colorBlue {
+.line8__colButton--colorBlue {
     background-color: #0275D8;
 }
-.colButton--colorBlue:hover {
+.line8__colButton--colorBlue:hover {
         background-color: #025aa5;
     }
 
-    .colButton--colorBlue:active {
+    .line8__colButton--colorBlue:active {
         background-color: #02447d;
     }
-.colButton--colorRed {
+.line8__colButton--colorRed {
     background-color: #d9534f;
 }
 
-    .colButton--colorRed:hover {
+    .line8__colButton--colorRed:hover {
         background-color: #c9302c;
     }
 
-    .colButton--colorRed:active {
+    .line8__colButton--colorRed:active {
         background-color: #a12926;
     }

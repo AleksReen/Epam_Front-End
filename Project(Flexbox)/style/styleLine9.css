@@ -38,16 +38,16 @@
     background-color: #a4a430;
     flex-grow: 1;
 }
-.blockText__container {
+.line9__container {
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 10%;
     color: white;
 }
-.conteiner_textHead {
+.line9__conteiner_textHead {
     font-size: 36px;
 }
-.conteiner_textUnderhead {
+.line9__conteiner_textUnderhead {
     margin-top: 30px;
     font-size: 21px;
     line-height: 1.5;

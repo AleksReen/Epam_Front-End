@@ -32,3 +32,30 @@
     background-size: cover;
     flex-grow: 1;
 }
+.line7__container {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 10%;
+}
+.line7__textHead {
+    font-size: 36px;
+    color: white;
+}
+.line7__textHead--colorBlack
+{
+    font-size: 36px;
+    color:black;
+}
+
+.line7__textUnderhead {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+    color: white;
+}
+.line7__textUnderhead--colorBlack {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+    color:black;
+}
