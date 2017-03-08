@@ -1,31 +1,17 @@
-﻿.lineInfo {
+﻿.Home {
     height: 615px;
     border: 1px solid white;
 }
-.lineInfo__lineWhithBack {
+.Home__Background {
+    display: flex;
+    align-items: center;
+    min-height: 615px;
     background-attachment: fixed;
     background-image: url('../image/tm-sigma-00.jpg');
     background-size: cover;
 }
 
-.lineInfo__lineWhithBack--large {
-    display: flex;
-    align-items: center;
-    height: 615px;
-}
-
-.lineWhithBack--small {
-    display: flex;
-    align-items: center;
-    height: 330px;
-}
-
-.lineWhithBack--medium {
-    display: flex;
-    align-items: center;
-    height: 360px;
-}
-.lineInfo__lineText__conteiner {
+.Home__conteiner {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -33,29 +19,26 @@
     align-items: center;
     width: 50%;
 }
-.lineInfo__conteiner_maintext {
+.Home__conteiner_maintext {
     color: #373a3c;
     font-size: 52px;
     font-weight: 500;
     margin: 0px;
 }
-.lineInfo__conteiner_discription {
+.Home__conteiner_discription {
     font-size: 26px;
     text-align: center;
     color: #676767;
     line-height: 1.5;
 }
-.lineInfo__conteiner_discription--small {
-    font-size: 21px;
-}
-.lineInfo__conteiner__button {
+.Home__conteiner__HomeButton {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.lineInfo__button {
+.HomeButton_button {
     text-align: center;
     line-height: 67px;
     height: 67px;
@@ -69,27 +52,27 @@
     cursor: pointer;
 }
 
-.lineInfo__button--colorRed {
+.HomeButton_button--backgroundRed {
     background-color: #d9534f;
 }
 
-    .lineInfo__button--colorRed:hover {
+    .HomeButton_button--backgroundRed:hover {
         background-color: #c9302c;
     }
 
-    .lineInfo__button--colorRed:active {
+    .HomeButton_button--backgroundRed:active {
         background-color: #a12926;
     }
 
-.lineInfo__button--colorGreen {
+.HomeButton_button--backgroundGreen {
     background-color: #5cb85c;
 }
 
-    .lineInfo__button--colorGreen:hover {
+    .HomeButton_button--backgroundGreen:hover {
         background-color: #449d44;
     }
 
-    .lineInfo__button--colorGreen:active {
+    .HomeButton_button--backgroundGreen:active {
         background-color: #3b8a3b;
     }
     
@@ -97,20 +80,20 @@
     
     
 @media (max-width:1003px) {
-    .lineInfo__conteiner_maintext {
+    .Home__conteiner_maintext {
         font-size: 32px;
     }
-    .lineInfo__conteiner_discription {
+    .Home__conteiner_discription {
         font-size: 20px;
     }
 }
 
 @media (max-width:500px) {
 
-    .lineInfo__conteiner_maintext {
+    .Home__conteiner_maintext {
         font-size: 28px;
     }
-    .lineInfo__conteiner_discription {
+    .Home__conteiner_discription {
         font-size: 18px;
     }
 }

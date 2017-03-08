@@ -1,0 +1,151 @@
+﻿
+.Galleryline1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.Galleryline1__block1 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-01.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline1__block2 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-02.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline1__block3 {
+    height: 280px;
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-03.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.Galleryline2__bigBlock {
+    width: 475px;
+    height: 630px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-04.jpg');
+    background-size: cover;
+    flex-grow: 1.001;
+}
+
+.Galleryline2__blockGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.Galleryline2__blockGroup_innerBlock {
+    min-width:200px;
+    height: 315px;
+    border: 1px solid white;
+    flex-grow: 1;
+    background-image: url('../image/tm-sigma-05.jpg');
+    background-size: cover;
+}
+
+.Galleryline2__blockGroup_innerBlockTop {
+    min-width:200px;
+    height: 314px;
+    border: 1px solid white;
+    flex-grow: 1;
+    background-image: url('../image/tm-sigma-06.jpg');
+    background-size: cover;
+}
+
+.Galleryline3 {
+    height: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.Galleryline3__block1 {
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-07.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline3__block2 {
+    width: 400px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-08.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.Galleryline4__block1 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-01.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline4__block2 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-02.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline4__block3 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-03.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Galleryline4__block4 {
+    height: 230px;
+    width: 350px;
+    border: 1px solid white;
+    background-image: url('../image/tm-sigma-04.jpg');
+    background-size: cover;
+    flex-grow: 1;
+}
