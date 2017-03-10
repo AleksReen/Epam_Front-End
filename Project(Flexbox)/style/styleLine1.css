@@ -1,4 +1,4 @@
-﻿.Row {
+﻿.Line1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,36 +6,36 @@
     flex-wrap: wrap;
     flex-grow: 1;
 }
-.Row__block {
+.Line1__block {
     width: 250px;
     height: 430px;
     border: 1px solid white;
     flex-wrap:wrap;
     flex-grow: 1;
 }
-.Row__block--color1{
+.Line1__block--color1{
     background-color:#e4e8e8;
 }
-.Row__block--color2{
+.Line1__block--color2{
     background-color:#999999;
 }
-.Row__block--color3{
+.Line1__block--color3{
     background-color:#666666;
 }
-.Row__block--color4{
+.Line1__block--color4{
     background-color:#444444;
 }
-.Row__container {
+.Line1__container {
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 10%;
     text-align:center;
     color: white;
 }
-.Row__container--CenterColorBlack {
+.Line1__container--CenterColorBlack {
     color:black;
 }
-.Row__conteiner_boxSimbol {
+.Line1__conteiner_boxSimbol {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
@@ -44,10 +44,10 @@
 .power-off:before {
     content: "\f011";
 }
-.Row__conteiner_textHead {
+.Line1__conteiner_textHead {
     font-size: 36px;
 }
-.Row__conteiner_textUnderhead {
+.Line1__conteiner_textUnderhead {
     margin-top: 30px;
     font-size: 21px;
     line-height: 1.5;

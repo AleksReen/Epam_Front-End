@@ -9,7 +9,7 @@
     <link href="style/styleHeader.css" rel="stylesheet" />
     <link href="style/styleSeparator.css" rel="stylesheet" />
     <link href="style/styleHome.css" rel="stylesheet" />
-    <link href="style/styleRow.css" rel="stylesheet" />
+    <link href="style/styleLine1.css" rel="stylesheet" />
     <link href="style/styleGallery.css" rel="stylesheet" />
     <link href="style/styleLineAboutUs.css" rel="stylesheet" />
     <link href="style/styleRowsWhithBlocks.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
 <body>
     <div class="main">
 
-        <header id="Header" class="header">
+        <div id="Header" class="header">
             <div class="header__logo">
                 <h1 class="logo_maintext">Sigma</h1>
                 <h2 class="logo_sidetext">Image Gallery built on Bootstrap 4.0</h2>
@@ -30,7 +30,7 @@
             <div class="header__menu">
                 <div id="menu" class="menu">
                     <div class="menu__items">
-                        <a class="items_nav" href="#Home">Home</a>
+                        <a class="items_nav" href="#lineInfo">Home</a>
                     </div>
                     <div class="menu__items">
                         <a class="items_nav" href="#Gallery">Gallery</a>
@@ -46,8 +46,7 @@
                     </div>
                 </div>
             </div>
-        </header>
-
+        </div>
 
         <div class="separator">
             <hr class="separator__line" />
@@ -64,7 +63,6 @@
                         for a metro-style image grid gallery.
                         Download, modify and use this layout
                         for your websites.
-                   
                     </p>
                     <div class="Home__conteiner__HomeButton">
                         <button class="HomeButton_button  HomeButton_button--backgroundRed">Our Gallery</button>
@@ -74,56 +72,59 @@
             </div>
         </div>
 
-
-        <div class="Row">
-            <div class="Row__block Row__block--color1">
-                <div class="Row__container Row__container--CenterColorBlack">
-                    <div class="Row__conteiner_boxSimbol">
+        <div class="Line1">
+            <div class="Line1__block Line1__block--color1">
+                <div class="Line1__container Line1__container--CenterColorBlack">
+                    <div class="Line1__conteiner_boxSimbol">
                         <span class="power-off"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Design</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="Line1__conteiner_textHead">Design</div>
+                    <div class="Line1__conteiner_textUnderhead">
                         Praesent lorem dui, suscipit eu
                         volutpat id, sollicitudin ut mi.
                         Praesent ornare massa vehicula.
+
                     </div>
                 </div>
             </div>
-            <div class="Row__block Row__block--color2">
-                <div class="Row__container">
-                    <div class="Row__conteiner_boxSimbol">
+            <div class="Line1__block Line1__block--color2">
+                <div class="Line1__container">
+                    <div class="Line1__conteiner_boxSimbol">
                         <span class="flash"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Implement</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="Line1__conteiner_textHead">Implement</div>
+                    <div class="Line1__conteiner_textUnderhead">
                         Praesent lorem dui, suscipit eu
                         volutpat id, sollicitudin ut mi.
                         Praesent ornare massa vehicula.
+
                     </div>
                 </div>
             </div>
-            <div class="Row__block Row__block--color3">
-                <div class="Row__container">
-                    <div class="Row__conteiner_boxSimbol">
+            <div class="Line1__block Line1__block--color3">
+                <div class="Line1__container">
+                    <div class="Line1__conteiner_boxSimbol">
                         <span class="thumbs-up"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Enhance</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="Line1__conteiner_textHead">Enhance</div>
+                    <div class="Line1__conteiner_textUnderhead">
                         Praesent loremuiftudin ut mi.
                         Praesent ornare massa vehicula.
+
                     </div>
                 </div>
             </div>
-            <div class="Row__block Row__block--color4">
-                <div class="Row__container">
-                    <div class="Row__conteiner_boxSimbol">
+            <div class="Line1__block Line1__block--color4">
+                <div class="Line1__container">
+                    <div class="Line1__conteiner_boxSimbol">
                         <span class="chart"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Monitor</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="Line1__conteiner_textHead">Monitor</div>
+                    <div class="Line1__conteiner_textUnderhead">
                         Praesent lorem dui, suscipit eu
                         volutpat id, sollicitudin ut mi.
                         Praesent ornare massa vehicula.
+
                     </div>
                 </div>
             </div>
@@ -131,7 +132,8 @@
 
 
         <div id="Gallery">
-            <div class="Galleryline1">
+
+            <div  class="Galleryline1">
                 <div class="Galleryline1__block1">
                 </div>
                 <div class="Galleryline1__block2">
@@ -162,7 +164,6 @@
             </div>
         </div>
 
-
         <div id="AboutUs" class="lineAboutUs">
             <div class="lineAboutUs__lineWhithBack">
                 <div class="lineAboutUs__conteiner">
@@ -173,14 +174,12 @@
                         Phasellus ultrices, nunc et tempus porta,
                         tellus purus elementum ex, volutpat lobortis
                         orci dolor in tortor.
-                   
                     </p>
                 </div>
             </div>
         </div>
 
-
-        <div class="RowsWhithBlocks">
+        <RowsWhithBlocks>
             <div class="Row1">
                 <div class="Row1__block1">
                     <div class="Row1__container">
@@ -190,7 +189,6 @@
                             suscipit eu volutpat id,
                             sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                     </div>
                 </div>
@@ -202,7 +200,6 @@
                             suscipit eu volutpat id,
                             sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                     </div>
                 </div>
@@ -214,7 +211,6 @@
                             suscipit eu volutpat id,
                             sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                     </div>
                 </div>
@@ -228,7 +224,6 @@
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                         <div></div>
                         <button class="Row2__container_colButton Row2__container_colButton--colorBlue">Our Gallery</button>
@@ -241,7 +236,6 @@
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                         <button class="Row2__container_colButton Row2__container_colButton--colorRed">Learn More</button>
                     </div>
@@ -256,7 +250,6 @@
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                     </div>
                 </div>
@@ -266,7 +259,6 @@
                         <div class="Row3__conteiner_textUnderhead">
                             Praesent lorem dui, suscipit eu volutpat id,
                             sollicitudin ut mi. Praesent ornare massa vehicula.
-                       
                         </div>
                     </div>
                 </div>
@@ -278,7 +270,6 @@
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
 
-                       
                         </div>
                     </div>
                 </div>
@@ -289,13 +280,11 @@
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
-                       
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </RowsWhithBlocks>
 
         <div id="Contact" class="lineContact">
             <div class="lineContact__lineWhithBack">
@@ -307,9 +296,9 @@
                         consectetur vel ante. Integer a pulvinar orci.
                     </p>
                 </div>
+
             </div>
         </div>
-
 
         <div class="forma">
             <div class="forma__PersonInfo">
@@ -351,27 +340,22 @@
                         consectetur vel ante.
                         Integer a pulvinar orci,
                         eget sagittis enim.
-                   
                     </div>
                     <div class="forma__conteiner_mail">
                         <span class="form__boxSimbol mail"></span>
                         Email: info@company.com
-                   
                     </div>
                     <div class="forma__conteiner_phone">
                         <span class="form__boxSimbol phone"></span>
                         Phone: 070-070-0880
-                   
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="separator">
             <hr class="separator__line" />
         </div>
-
 
         <div id="UnderLine" class="UnderLine">
             <div class="UnderLine_License">Copyright © 2016 Sigma HTML CSS Template</div>
@@ -379,7 +363,6 @@
                 <a class="UnderLine_GoToTop_Href" href="#Header">Go to top</a>
             </div>
         </div>
-
     </div>
 
     <script>
@@ -392,7 +375,6 @@
             });
         });
     </script>
-
 </body>
 </html>
 
