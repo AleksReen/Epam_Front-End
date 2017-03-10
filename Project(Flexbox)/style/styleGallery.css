@@ -1,4 +1,8 @@
-﻿
+﻿.Gallery
+{
+    display:block;
+}
+
 .Galleryline1 {
     display: flex;
     flex-direction: row;
@@ -9,7 +13,7 @@
 }
 
 .Galleryline1__block1 {
-    height: 280px;
+    min-height: 280px;
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-01.jpg');
@@ -18,7 +22,7 @@
 }
 
 .Galleryline1__block2 {
-    height: 280px;
+    min-height: 280px;
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-02.jpg');
@@ -27,7 +31,7 @@
 }
 
 .Galleryline1__block3 {
-    height: 280px;
+    min-height: 280px;
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-03.jpg');
