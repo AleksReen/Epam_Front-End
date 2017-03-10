@@ -52,3 +52,19 @@
         color: #676767;
         cursor: pointer;
     }
+    
+
+@media (max-width:500px) {
+   .logo_maintext {
+    text-align:center;
+}
+   .logo_sidetext {
+    text-align:center;
+}
+   .menu {
+    margin-top: 75px;
+    padding-right: 30px;
+    text-align: center;
+}
+    
+}

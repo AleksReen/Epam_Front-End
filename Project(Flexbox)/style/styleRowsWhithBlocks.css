@@ -1,21 +1,24 @@
-﻿.Row1 {
+﻿.RowsWhithBlocks{
+
+}
+
+
+.Row1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
     flex-wrap: wrap;
-    flex-grow: 1;
 }
 
-.Row1__block1 {
+.Row1_hole1 {
     min-height: 300px;
     width: 400px;
     border: 1px solid white;
     background-color: #e4e8e8;
     flex-grow: 1;
 }
-
-.Row1__block2 {
+.Row1_hole2 {
     min-height: 300px;
     width: 400px;
     border: 1px solid white;
@@ -23,8 +26,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-
-.Row1__block3 {
+.Row1_hole3 {
     min-height: 300px;
     width: 400px;
     border: 1px solid white;
@@ -32,33 +34,64 @@
     background-size: cover;
     flex-grow: 1;
 }
-.Row1__container {
-    margin-top: 13%;
-    margin-left: 40px;
-    margin-right: 10%;
+
+.block1Row1 {
+    
 }
-.Row1__container_textHead {
-    font-size: 36px;
-    color: white;
+.block2Row1 {
+    
 }
-.Row1__container_textHead--colorBlack
-{
-    font-size: 36px;
-    color:black;
+.block3Row1 {
+    
 }
 
-.Row1__container_textUnderhead {
-    margin-top: 30px;
-    font-size: 21px;
-    line-height: 1.5;
-    color: white;
+.block1Row1_textHead
+{
+    margin-top:60px;
+    margin-left: 40px;
+    font-size: 36px;
+    color:black;
 }
-.Row1__container_textUnderhead--colorBlack {
+.block2Row1_textHead
+{
+   margin-top:60px;
+    margin-left: 40px;
+    font-size: 36px;
+    color:white;
+}
+.block3Row1_textHead
+{
+    margin-top:60px;
+    margin-left: 40px;
+    font-size: 36px;
+    color:white;
+}
+
+.block1Row1_textUnderhead {
     margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 10%;
     font-size: 21px;
     line-height: 1.5;
     color:black;
 }
+.block2Row1_textUnderhead {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 10%;
+    font-size: 21px;
+    line-height: 1.5;
+    color:white;
+}
+.block3Row1_textUnderhead {
+   margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 10%;
+    font-size: 21px;
+    line-height: 1.5;
+    color:white;
+}
+
 
 .Row2 {
     display: flex;
@@ -67,74 +100,104 @@
     align-items: stretch;
     flex-wrap: wrap;
 }
-.Row2__block1 {
+
+.Row2_hole1 {
     width: 400px;
     min-height: 320px;
     border: 1px solid white;
     background-color: #eebbee;
     flex-grow: 1;
 }
-
-.Row2__block2 {
+.Row2_hole2 {
     width: 400px;
     min-height: 320px;
     border: 1px solid white;
     background-color: #92c4f8;
     flex-grow: 1;
 }
-.Row2__container {
+
+.LeftColumnRow2 {
+
+}
+.RightColumnRow2 {
+
+}
+
+.LeftColumnRow2_textHead {
     margin-top: 60px;
     margin-left: 40px;
-    margin-right: 10%;
-    color: white;
+    font-size: 36px;
+    color: black;
 }
-.Row2__container_textHead {
+.RightColumnRow2_textHead {
+    margin-top: 60px;
+    margin-left: 40px;
     font-size: 36px;
     color: black;
 }
 
-.Row2__container_textUnderhead {
+.LeftColumnRow2_textUnderhead {
     margin-top: 30px;
+    margin-left: 40px;
+    font-size: 21px;
+    line-height: 1.5;
+    color: black;
+}
+.RightColumnRow2_textUnderhead {
+    margin-top: 30px;
+    margin-left: 40px;
     font-size: 21px;
     line-height: 1.5;
     color: black;
 }
 
-.Row2__container_colButton {
+.LeftColumnRow2_colButton {
+    margin-top: 16px;
+    margin-left: 40px;
+    margin-bottom:20px;
     height: 50px;
     width: 150px;
     text-align: center;
     line-height: 50px;
-    margin: 12px;
     border-radius: 5px;
     font-size: 22px;
     border: none;
     outline: none;
     cursor: pointer;
-    margin-left: 0px;
     color: white;
-}
-.Row2__container_colButton--colorBlue {
     background-color: #0275D8;
 }
-.Row2__container_colButton--colorBlue:hover {
+.LeftColumnRow2_colButton:hover {
         background-color: #025aa5;
     }
-
-    .Row2__container_colButton--colorBlue:active {
+    .LeftColumnRow2_colButton:active {
         background-color: #02447d;
     }
-.Row2__container_colButton--colorRed {
+
+.RightColumnRow2_colButton {
+    margin-top: 16px;
+    margin-left: 40px;
+    margin-bottom:20px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
     background-color: #d9534f;
 }
-
-    .Row2__container_colButton--colorRed:hover {
+.RightColumnRow2_colButton:hover {
         background-color: #c9302c;
     }
-
-    .Row2__container_colButton--colorRed:active {
+    .RightColumnRow2_colButton:active {
         background-color: #a12926;
     }
+
+
 .Row3 {
     display: flex;
     flex-direction: row;
@@ -144,48 +207,98 @@
     flex-grow: 1;
 }
 
-.Row3__block1 {
+.Row3_hole1 {
     height: 330px;
     width: 300px;
     border: 1px solid white;
     background-color: #aa5522;
     flex-grow: 1;
 }
-
-.Row3__block2 {
+.Row3_hole2 {
     height: 330px;
     width: 300px;
     border: 1px solid white;
     background-color: #2288bb;
     flex-grow: 1;
 }
-
-.Row3__block3 {
+.Row3_hole3 {
     height: 330px;
     width: 300px;
     border: 1px solid white;
     background-color: #449966;
     flex-grow: 1;
 }
-
-.Row3__block4 {
+.Row3_hole4 {
     height: 330px;
     width: 300px;
     border: 1px solid white;
     background-color: #a4a430;
     flex-grow: 1;
 }
-.Row3__container {
-    margin-top: 60px;
-    margin-left: 40px;
-    margin-right: 10%;
-    color: white;
+
+.block1Row3 {
+
 }
-.Row3__conteiner_textHead {
+.block2Row3 {
+
+}
+.block3Row3 {
+
+}
+.block4Row3 {
+
+}
+
+.block1Row3_textHead {
+    color:white;
+    margin-top:60px;
+    margin-left:40px;
     font-size: 36px;
 }
-.Row3__conteiner_textUnderhead {
+.block2Row3_textHead {
+    color:white;
+    margin-top:60px;
+    margin-left:40px;
+    font-size: 36px;
+}
+.block3Row3_textHead {
+    color:white;
+    margin-top:60px;
+    margin-left:40px;
+    font-size: 36px;
+}
+.block4Row3_textHead {
+    color:white;
+    margin-top:60px;
+    margin-left:40px;
+    font-size: 36px;
+}
+
+.block1Row3_textUnderhead {
+    color:white;
     margin-top: 30px;
+    margin-left:40px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.block2Row3_textUnderhead {
+    color:white;
+    margin-top: 30px;
+    margin-left:40px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.block3Row3_textUnderhead {
+    color:white;
+    margin-top: 30px;
+    margin-left:40px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.block4Row3_textUnderhead {
+    color:white;
+    margin-top: 30px;
+    margin-left:40px;
     font-size: 21px;
     line-height: 1.5;
 }

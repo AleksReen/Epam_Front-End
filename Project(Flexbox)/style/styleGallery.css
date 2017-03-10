@@ -1,6 +1,6 @@
 ﻿.Gallery
 {
-    display:block;
+
 }
 
 .Galleryline1 {
@@ -12,7 +12,7 @@
     flex-grow: 1;
 }
 
-.Galleryline1__block1 {
+.Galleryline1_element1 {
     min-height: 280px;
     width: 400px;
     border: 1px solid white;
@@ -20,8 +20,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-
-.Galleryline1__block2 {
+.Galleryline1_element2 {
     min-height: 280px;
     width: 400px;
     border: 1px solid white;
@@ -29,8 +28,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-
-.Galleryline1__block3 {
+.Galleryline1_element3 {
     min-height: 280px;
     width: 400px;
     border: 1px solid white;
@@ -47,17 +45,15 @@
     flex-wrap: wrap;
     text-align: center;
 }
-
-.Galleryline2__bigBlock {
+.Galleryline2_elementMax {
     width: 475px;
     height: 630px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-04.jpg');
     background-size: cover;
-    flex-grow: 1.001;
+    flex-grow: 1.73;
 }
-
-.Galleryline2__blockGroup {
+.Galleryline2_elementGroup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,8 +61,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
 }
-
-.Galleryline2__blockGroup_innerBlock {
+.Galleryline2_elementBottom {
     min-width:200px;
     height: 315px;
     border: 1px solid white;
@@ -74,8 +69,7 @@
     background-image: url('../image/tm-sigma-05.jpg');
     background-size: cover;
 }
-
-.Galleryline2__blockGroup_innerBlockTop {
+.Galleryline2_elementTop {
     min-width:200px;
     height: 314px;
     border: 1px solid white;
@@ -92,16 +86,14 @@
     align-items: stretch;
     flex-wrap: wrap;
 }
-
-.Galleryline3__block1 {
+.Galleryline3_element1 {
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-07.jpg');
     background-size: cover;
     flex-grow: 1;
 }
-
-.Galleryline3__block2 {
+.Galleryline3_element2 {
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-08.jpg');
@@ -117,8 +109,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
 }
-
-.Galleryline4__block1 {
+.Galleryline4_element1 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
@@ -126,8 +117,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-
-.Galleryline4__block2 {
+.Galleryline4_element2 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
@@ -135,8 +125,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-
-.Galleryline4__block3 {
+.Galleryline4_element3 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
@@ -144,8 +133,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-
-.Galleryline4__block4 {
+.Galleryline4_element4 {
     height: 230px;
     width: 350px;
     border: 1px solid white;

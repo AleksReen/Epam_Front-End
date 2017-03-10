@@ -1,7 +1,8 @@
 ﻿.lineContact {
     min-height: 360px;
 }
-.lineContact__lineWhithBack {
+
+.lineContact_hole {
     display: flex;
     align-items: center;
     min-height: 360px;
@@ -10,53 +11,52 @@
     background-size: cover;
 }
 
-.lineContact__conteiner {
-    margin: 0 auto;
+.blockContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    flex-grow:1;
 }
-.lineContact__conteiner_maintext {
+.blockContact_maintext {
+    width: 50%;
+    text-align:center;
     color: #373a3c;
     font-size: 38px;
     font-weight: 500;
     margin: 0px;
 }
-
-
-.lineContact__conteiner_discription {
-    font-size: 21px;
+.blockContact_discription {
+    width: 50%;
     text-align: center;
+    font-size: 21px;
     color: #676767;
     line-height: 1.5;
 }
-
-.hrefContact {
+.blockContact_href {
     color: #2288bb;
     text-decoration: none;
 }
-
-.hrefContact:hover {
+.blockContact_href:hover {
         color: #176992;
         text-decoration: underline;
     }
+
 @media (max-width:1003px) {
-    .lineContact__conteiner_maintext {
+    .blockContact_maintext {
         font-size: 30px;
     }
 
-    .lineContact__conteiner_discription {
+    .blockContact_discription {
         font-size: 18px;
     }
 }
 @media (max-width:500px) {
-    .lineContact__conteiner_maintext {
+    .blockContact_maintext {
         font-size: 26px;
     }
 
-    .lineContact__conteiner_discription {
+    .blockContact_discription {
         font-size: 16px;
     }
 }
