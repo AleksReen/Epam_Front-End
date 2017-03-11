@@ -1,7 +1,7 @@
 ﻿.lineAboutUs {
     height: 330px;
 }
-.lineAboutUs_hole {
+.lineAboutUs__hole {
     display: flex;
     flex-direction:row;
     justify-content:center;
@@ -21,7 +21,7 @@
     flex-grow:1;
     
 }
-.blocklineAboutUs_maintext{
+.blocklineAboutUs__maintext{
     width:50%;
     text-align:center;
     color: #373a3c;
@@ -30,7 +30,7 @@
     margin: 0px;
 }
 
-.blocklineAboutUs_discription {
+.blocklineAboutUs__discription {
     width:50%;
     text-align:center;
     font-size: 21px;
@@ -39,20 +39,20 @@
     line-height: 1.5;
 }
 @media (max-width:1003px) {
-    .blocklineAboutUs_maintext {
+    .blocklineAboutUs__maintext {
         font-size: 30px;
     }
 
-    .blocklineAboutUs_discription {
+    .blocklineAboutUs__discription {
         font-size: 18px;
     }
 }
 @media (max-width:500px) {
-    .blocklineAboutUs_maintext {
+    .blocklineAboutUs__maintext {
         font-size: 26px;
     }
 
-    .blocklineAboutUs_discription {
+    .blocklineAboutUs__discription {
         font-size: 16px;
     }
 }

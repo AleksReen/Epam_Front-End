@@ -2,7 +2,7 @@
     height: 615px;
     border: 1px solid white;
 }
-.Home__Background {
+.Home__hole {
     display: flex;
     align-items: center;
     min-height: 615px;
@@ -11,34 +11,34 @@
     background-size: cover;
 }
 
-.Home__conteiner {
-    margin: 0 auto;
+.blockHome {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
-.Home__conteiner_maintext {
+.blockHome__maintext {
+    width:50%;
     color: #373a3c;
     font-size: 52px;
     font-weight: 500;
-    margin: 0px;
+    text-align:center;
 }
-.Home__conteiner_discription {
+.blockHome__discription {
+    width:50%;
     font-size: 26px;
     text-align: center;
     color: #676767;
     line-height: 1.5;
 }
-.Home__conteiner__HomeButton {
+.blockHome__HomeButton {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.HomeButton_button {
+.blockHome__button {
     text-align: center;
     line-height: 67px;
     height: 67px;
@@ -52,48 +52,46 @@
     cursor: pointer;
 }
 
-.HomeButton_button--backgroundRed {
+.blockHome__button_backgroundRed {
     background-color: #d9534f;
 }
 
-    .HomeButton_button--backgroundRed:hover {
+    .blockHome__button_backgroundRed:hover {
         background-color: #c9302c;
     }
 
-    .HomeButton_button--backgroundRed:active {
+    .blockHome__button_backgroundRed:active {
         background-color: #a12926;
     }
 
-.HomeButton_button--backgroundGreen {
+.blockHome__button_backgroundGreen {
     background-color: #5cb85c;
 }
 
-    .HomeButton_button--backgroundGreen:hover {
+    .blockHome__button_backgroundGreen:hover {
         background-color: #449d44;
     }
 
-    .HomeButton_button--backgroundGreen:active {
+    .blockHome__button_backgroundGreen:active {
         background-color: #3b8a3b;
     }
     
-    
-    
-    
+ 
 @media (max-width:1003px) {
-    .Home__conteiner_maintext {
+    .blockHome__maintext {
         font-size: 32px;
     }
-    .Home__conteiner_discription {
+    .blockHome__discription {
         font-size: 20px;
     }
 }
 
 @media (max-width:500px) {
 
-    .Home__conteiner_maintext {
+    .blockHome__maintext {
         font-size: 28px;
     }
-    .Home__conteiner_discription {
+    .blockHome__discription {
         font-size: 18px;
     }
 }

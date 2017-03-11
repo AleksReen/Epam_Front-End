@@ -4,119 +4,103 @@
     justify-content: flex-start;
     align-items: stretch;
     flex-wrap: wrap;
-    flex-grow: 1;
-}
-
-.forma__PersonInfo {
-    min-height: 460px;
-    width: 400px;
-    border: 1px solid white;
-    flex-grow: 1;
-}
-
-.froma__Subject {
-    min-height: 460px;
-    width: 400px;
-    border: 1px solid white;
-    background-size: cover;
-    flex-grow: 1;
-}
-
-.froma__OurAddress {
-    min-height: 460px;
-    width: 400px;
-    border: 1px solid white;
-    background-size: cover;
-    flex-grow: 1;
-}
-.froma__container {
-    margin-top: 60px;
-    margin-left: 40px;
-    margin-right: 10%;
-    color:#373a3c;
     
 }
 
-.froma__containerTexBox {
-    margin-left: 30px;
+.forma__holePersonalInfo {
+    min-height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
+.PersonalInfo {
+    color: #373a3c;
+    font-size: 21px;
+}
+.PersonalInfo__lable
+{
+    margin-left: 15px;
     margin-right: 5%;
+    margin-top:20px;
+}
+.PersonalInfo__TexBoxInput{
+    margin-top:15px;
+    margin-left: 15px;
+    margin-right: 5%;
+    border-radius:5px;
+    border:1px solid #ccc; 
+    height:35px;
+    font-size:18px;
+    outline:none;  
+    width:95%; 
+}
+.PersonalInfo__TexBoxInput:focus{
+    border:1px solid #66afe9;
+}
+
+.froma__holeSubject {
+    min-height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.Subject {
     color: #373a3c;
     font-size: 21px;
     
 }
-.froma__containerTexBox_lable
+.Subject__lable
 {
+    margin-left: 15px;
     margin-top:20px;
 }
-.froma__conteinerTexBox_input{
+.Subject__TextBoxInput{
+    margin-left: 15px;
+    margin-right: 5%;
     margin-top:15px;
     border-radius:5px;
     border:1px solid #ccc; 
-    width:100%;
+    width:90%;
     height:35px;
     font-size:18px;
     outline:none;   
 }
-
-.froma__conteinerTexBox_input:focus{
+.Subject__TextBoxInput:focus{
     border:1px solid #66afe9;
 }
-
-.froma__conteinerTexBox_textArea{
+.Subject__TextArea{
+    margin-left: 15px;
+    margin-right: 5%;
     margin-top:15px;
     border-radius:5px;
     border:1px solid #ccc;
     line-height:1.5;
     resize:vertical;
     min-height:137px;
-    width:100%;
+    width:95%;
     height:35px;
     font-family:Calibri;
     font-size:21px;
 }
-
-.froma__conteiner_textHead {
-    color: #373a3c;
-    font-size: 36px;
+.Subject__TextArea:focus{
+    border:1px solid #66afe9;
 }
-.froma__conteiner_textUnderhead {
-    margin-top: 30px;
-    font-size: 21px;
-    line-height: 1.5;
-}
-.forma__conteiner_mail{
-    margin-top: 30px;
-    font-size: 21px;
-    line-height: 1.5;
-}
-.forma__conteiner_phone{
-    margin-top: 30px;
-    font-size: 21px;
-    line-height: 1.5;
-}
-.form__boxSimbol {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    font-size:30px;
-    width:55px;
-}
-
-.mail:before {
-    content: "\f003";
-    margin-right:25px;
-    color: #373a3c;
-}
-.phone:before {
-    content: "\f095";
-    margin-right:25px;
-    color: #373a3c; 
-}
-.froma__containerTexBox_containercheckbox
+.Subject__checkboxItems
 {
+    margin-left: 15px;
     margin-top:20px;
 }
-.froma__containerTexBox_button{
+.Subject__checkbox{
+
+}
+.Subject__checkboxTekst{
+
+}
+.Subject__buttonSubmit{
+    margin-left: 15px;
     height:55px;
     line-height: 55px;
     width:110px;
@@ -130,10 +114,61 @@
     outline: none;
     cursor: pointer;
 }
-    .froma__containerTexBox_button:hover {
+    .Subject__buttonSubmit:hover {
         background-color: #449d44;
     }
-
-    .froma__containerTexBox_button:active {
+    .Subject__buttonSubmit:active {
         background-color: #3b8a3b;
     }
+
+.froma__holeOurAddress {
+    min-height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.OurAddress {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 10%;
+    color:#373a3c;
+    
+}
+.OurAddress__textHead {
+    color: #373a3c;
+    font-size: 36px;
+}
+.OurAddress__textUnderhead {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.OurAddress__mail{
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.OurAddress__phone{
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.OurAddress__boxSimbol {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    font-size:30px;
+    width:55px;
+}
+.OurAddress__boxSimbol_Mail:before {
+    content: "\f003";
+    margin-right:25px;
+    color: #373a3c;
+}
+.OurAddress__boxSimbol_Phone:before {
+    content: "\f095";
+    margin-right:25px;
+    color: #373a3c; 
+}

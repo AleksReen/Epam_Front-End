@@ -23,28 +23,35 @@
     <div class="main">
 
         <header id="Header" class="header">
-            <div class="header__logo">
-                <h1 class="logo_maintext">Sigma</h1>
-                <h2 class="logo_sidetext">Image Gallery built on Bootstrap 4.0</h2>
+            <div class="header__holeLogo">
+
+                <div class="logo">
+                    <h1 class="logo__maintext">Sigma</h1>
+                    <h2 class="logo__sidetext">Image Gallery built on Bootstrap 4.0</h2>
+                </div>
+
             </div>
-            <div class="header__menu">
+
+            <div class="header__holeMenu">
+
                 <div id="menu" class="menu">
                     <div class="menu__items">
-                        <a class="items_nav" href="#Home">Home</a>
+                        <a class="menu__nav" href="#Home">Home</a>
                     </div>
                     <div class="menu__items">
-                        <a class="items_nav" href="#Gallery">Gallery</a>
+                        <a class="menu__nav" href="#Gallery">Gallery</a>
                     </div>
                     <div class="menu__items">
-                        <a class="items_nav" href="#AboutUs">About</a>
+                        <a class="menu__nav" href="#AboutUs">About</a>
                     </div>
                     <div class="menu__items">
-                        <a class="items_nav" href="#Contact">Contact</a>
+                        <a class="menu__nav" href="#Contact">Contact</a>
                     </div>
-                    <div class="menu__items">
-                        <a class="items_nav" href="#lineInfo">External</a>
+                    <div class="menu__items menu__items_paddingRight">
+                        <a class="menu__nav" href="#lineInfo">External</a>
                     </div>
                 </div>
+
             </div>
         </header>
 
@@ -55,19 +62,19 @@
 
 
         <div id="Home" class="Home">
-            <div class="Home__Background">
-                <div class="Home__conteiner">
-                    <h1 class="Home__conteiner_maintext">Bootstrap 4.0 Theme</h1>
-                    <p class="Home__conteiner_discription">
+            <div class="Home__hole">
+                <div class="blockHome">
+                    <h1 class="blockHome__maintext">Bootstrap 4.0 Theme</h1>
+                    <p class="blockHome__discription">
                         Sigma is free Bootstrap 4
                         (alpha 2) theme designed
                         for a metro-style image grid gallery.
                         Download, modify and use this layout
                         for your websites.
                     </p>
-                    <div class="Home__conteiner__HomeButton">
-                        <button class="HomeButton_button  HomeButton_button--backgroundRed">Our Gallery</button>
-                        <button class="HomeButton_button  HomeButton_button--backgroundGreen">Learn More</button>
+                    <div class="blockHome__HomeButton">
+                        <button class="blockHome__button  blockHome__button_backgroundRed">Our Gallery</button>
+                        <button class="blockHome__button  blockHome__button_backgroundGreen">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -75,51 +82,55 @@
 
 
         <div class="Row">
-            <div class="Row__block Row__block--color1">
-                <div class="Row__container Row__container--CenterColorBlack">
-                    <div class="Row__conteiner_boxSimbol">
-                        <span class="power-off"></span>
+            <div class="Row__hole Row__hole_veryLightGray">
+
+                <div class="blockRow blockRow_ColorBlack">
+                    <div class="blockRow__boxSimbol">
+                        <span class="blockRow__powerOff"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Design</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="blockRow__textHead">Design</div>
+                    <div class="blockRow__textUnderhead">
+                        Praesent lorem dui, suscipit eu
+                        volutpat id, sollicitudin ut mi.
+                        Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Row__hole Row__hole_lightGray">
+                <div class="blockRow">
+                    <div class="blockRow__boxSimbol">
+                        <span class="blockRow__flash"></span>
+                    </div>
+                    <div class="blockRow__textHead">Implement</div>
+                    <div class="blockRow__textUnderhead">
                         Praesent lorem dui, suscipit eu
                         volutpat id, sollicitudin ut mi.
                         Praesent ornare massa vehicula.
                     </div>
                 </div>
             </div>
-            <div class="Row__block Row__block--color2">
-                <div class="Row__container">
-                    <div class="Row__conteiner_boxSimbol">
-                        <span class="flash"></span>
+
+            <div class="Row__hole Row__hole_Gray">
+                <div class="blockRow">
+                    <div class="blockRow__boxSimbol">
+                        <span class="blockRow__thumbs-up"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Implement</div>
-                    <div class="Row__conteiner_textUnderhead">
-                        Praesent lorem dui, suscipit eu
-                        volutpat id, sollicitudin ut mi.
-                        Praesent ornare massa vehicula.
-                    </div>
-                </div>
-            </div>
-            <div class="Row__block Row__block--color3">
-                <div class="Row__container">
-                    <div class="Row__conteiner_boxSimbol">
-                        <span class="thumbs-up"></span>
-                    </div>
-                    <div class="Row__conteiner_textHead">Enhance</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="blockRow__textHead">Enhance</div>
+                    <div class="blockRow__textUnderhead">
                         Praesent loremuiftudin ut mi.
                         Praesent ornare massa vehicula.
                     </div>
                 </div>
             </div>
-            <div class="Row__block Row__block--color4">
-                <div class="Row__container">
-                    <div class="Row__conteiner_boxSimbol">
-                        <span class="chart"></span>
+            <div class="Row__hole Row__hole_darkGray">
+                <div class="blockRow">
+                    <div class="blockRow__boxSimbol">
+                        <span class="blockRow__chart"></span>
                     </div>
-                    <div class="Row__conteiner_textHead">Monitor</div>
-                    <div class="Row__conteiner_textUnderhead">
+                    <div class="blockRow__textHead">Monitor</div>
+                    <div class="blockRow__textUnderhead">
                         Praesent lorem dui, suscipit eu
                         volutpat id, sollicitudin ut mi.
                         Praesent ornare massa vehicula.
@@ -128,44 +139,41 @@
             </div>
         </div>
 
-
-        <div id="Gallery" class="Gallery">
-            <div class="Galleryline1">
-                <div class="Galleryline1_element1">
-                </div>
-                <div class="Galleryline1_element2">
-                </div>
-                <div class="Galleryline1_element3">
-                </div>
+        <div class="GalleryRow1">
+            <div class="GalleryRow1__image1">
             </div>
-
-            <div class="Galleryline2">
-                <div class="Galleryline2_elementMax"></div>
-                <div class="Galleryline2_elementGroup">
-                    <div class="Galleryline2_elementTop"></div>
-                    <div class="Galleryline2_elementBottom"></div>
-                </div>
+            <div class="GalleryRow1__image2">
             </div>
-
-            <div class="Galleryline3">
-                <div class="Galleryline3_element1"></div>
-                <div class="Galleryline3_element2"></div>
+            <div class="GalleryRow1__image3">
             </div>
+        </div>
 
-            <div class="Galleryline4">
-                <div class="Galleryline4_element1"></div>
-                <div class="Galleryline4_element2"></div>
-                <div class="Galleryline4_element3"></div>
-                <div class="Galleryline4_element4"></div>
+        <div class="GalleryRow2">
+            <div class="GalleryRow2__imageMax"></div>
+            <div class="GalleryRow2__imageGroup">
+                <div class="GalleryRow2__imageTop"></div>
+                <div class="GalleryRow2__imageBottom"></div>
             </div>
+        </div>
+
+        <div class="GalleryRow3">
+            <div class="GalleryRow3__image1"></div>
+            <div class="GalleryRow3__image2"></div>
+        </div>
+
+        <div class="GalleryRow4">
+            <div class="GalleryRow4__image1"></div>
+            <div class="GalleryRow4__image2"></div>
+            <div class="GalleryRow4__image3"></div>
+            <div class="GalleryRow4__image4"></div>
         </div>
 
 
         <div id="AboutUs" class="lineAboutUs">
-            <div class="lineAboutUs_hole">
+            <div class="lineAboutUs__hole">
                 <div class="blocklineAboutUs">
-                    <h1 class="blocklineAboutUs_maintext">About Us</h1>
-                    <p class="blocklineAboutUs_discription">
+                    <h1 class="blocklineAboutUs__maintext">About Us</h1>
+                    <p class="blocklineAboutUs__discription">
                         Sed elit elit, dictum eu turpis non,
                         fringilla efficitur ipsum.
                         Phasellus ultrices, nunc et tempus porta,
@@ -178,25 +186,13 @@
 
 
         <div class="RowsWhithBlocks">
-            
+
             <div class="Row1">
-                
-                <div class="Row1_hole1">
+
+                <div class="Row1__hole Row1__hole_bgColor_lightGray">
                     <div class="block1Row1">
-                        <div class="block1Row1_textHead">01 Design</div>
-                        <div class="block1Row1_textUnderhead">
-                            Praesent lorem dui,
-                            suscipit eu volutpat id,
-                            sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="Row1_hole2">
-                    <div class="block2Row1">
-                        <div class="block2Row1_textHead">02 Coding</div>
-                        <div class="block2Row1_textUnderhead">
+                        <div class="block1Row1__textHead">01 Design</div>
+                        <div class="block1Row1__textUnderhead">
                             Praesent lorem dui,
                             suscipit eu volutpat id,
                             sollicitudin ut mi.
@@ -205,10 +201,22 @@
                     </div>
                 </div>
 
-                <div class="Row1_hole3">
+                <div class="Row1__hole Row1__hole_bgColor_Gray ">
+                    <div class="block2Row1">
+                        <div class="block2Row1__textHead">02 Coding</div>
+                        <div class="block2Row1__textUnderhead">
+                            Praesent lorem dui,
+                            suscipit eu volutpat id,
+                            sollicitudin ut mi.
+                            Praesent ornare massa vehicula.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Row1__hole Row1__hole_bgColor_darkGray">
                     <div class="block3Row1">
-                        <div class="block3Row1_textHead">03 Mobile Ready</div>
-                        <div class="block3Row1_textUnderhead">
+                        <div class="block3Row1__textHead">03 Mobile Ready</div>
+                        <div class="block3Row1__textUnderhead">
                             Praesent lorem dui,
                             suscipit eu volutpat id,
                             sollicitudin ut mi.
@@ -220,64 +228,64 @@
             </div>
 
             <div class="Row2">
-                <div class="Row2_hole1">
+                <div class="Row2__holeLeft">
                     <div class="LeftColumnRow2">
-                        <div class="LeftColumnRow2_textHead">Left Column</div>
-                        <div class="LeftColumnRow2_textUnderhead">
+                        <div class="LeftColumnRow2__textHead">Left Column</div>
+                        <div class="LeftColumnRow2__textUnderhead">
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
                         </div>
-                        <button class="LeftColumnRow2_colButton">Our Gallery</button>
+                        <button class="LeftColumnRow2__colButton">Our Gallery</button>
                     </div>
                 </div>
-                <div class="Row2_hole2">
+                <div class="Row2__holeRight">
                     <div class="RightColumnRow2">
-                        <div class="RightColumnRow2_textHead">Right Column</div>
-                        <div class="RightColumnRow2_textUnderhead">
+                        <div class="RightColumnRow2__textHead">Right Column</div>
+                        <div class="RightColumnRow2__textUnderhead">
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
                         </div>
-                        <button class="RightColumnRow2_colButton">Learn More</button>
+                        <button class="RightColumnRow2__colButton">Learn More</button>
                     </div>
                 </div>
             </div>
 
             <div class="Row3">
-                <div class="Row3_hole1">
+                <div class="Row3__hole1">
                     <div class="block1Row3">
-                        <div class="block1Row3_textHead">Our Team</div>
-                        <div class="block1Row3_textUnderhead">
+                        <div class="block1Row3__textHead">Our Team</div>
+                        <div class="block1Row3__textUnderhead">
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
                         </div>
                     </div>
                 </div>
-                <div class="Row3_hole2">
+                <div class="Row3__hole2">
                     <div class="block2Row3">
-                        <div class="block2Row3_textHead">History</div>
-                        <div class="block2Row3_textUnderhead">
+                        <div class="block2Row3__textHead">History</div>
+                        <div class="block2Row3__textUnderhead">
                             Praesent lorem dui, suscipit eu volutpat id,
                             sollicitudin ut mi. Praesent ornare massa vehicula.
                         </div>
                     </div>
                 </div>
-                <div class="Row3_hole3">
+                <div class="Row3__hole3">
                     <div class="block3Row3">
-                        <div class="block3Row3_textHead">Management</div>
-                        <div class="block3Row3_textUnderhead">
+                        <div class="block3Row3__textHead">Management</div>
+                        <div class="block3Row3__textUnderhead">
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
                         </div>
                     </div>
                 </div>
-                <div class="Row3_hole4">
+                <div class="Row3__hole4">
                     <div class="block4Row3">
-                        <div class="block4Row3_textHead">Career</div>
-                        <div class="block4Row3_textUnderhead">
+                        <div class="block4Row3__textHead">Career</div>
+                        <div class="block4Row3__textUnderhead">
                             Praesent lorem dui, suscipit eu
                             volutpat id, sollicitudin ut mi.
                             Praesent ornare massa vehicula.
@@ -285,15 +293,16 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
 
         <div id="Contact" class="lineContact">
-            <div class="lineContact_hole">
+            <div class="lineContact__hole">
                 <div class="blockContact">
-                    <h1 class="blockContact_maintext">Contact</h1>
-                    <p class="blockContact_discription">
-                        You may <a class="blockContact_hrefContact" href="#">contact</a> contact templatemo if you have any question.
+                    <h1 class="blockContact__maintext">Contact</h1>
+                    <p class="blockContact__discription">
+                        You may <a class="blockContact__hrefContact" href="#">contact</a> contact templatemo if you have any question.
                         Suspendisse dolor purus, malesuada ut luctus quis,
                         consectetur vel ante. Integer a pulvinar orci.
                     </p>
@@ -302,15 +311,16 @@
         </div>
 
 
-        <div class="forma">
-            <div class="forma__PersonInfo">
-                <div class="froma__containerTexBox">
-                    <div class="froma__containerTexBox_lable">Your Name</div>
-                    <input class="froma__conteinerTexBox_input" type="text" name="name" placeholder=" Write a full name" value="" />
-                    <div class="froma__containerTexBox_lable">Your Email</div>
-                    <input class="froma__conteinerTexBox_input" type="text" name="name" placeholder=" Enter your email" value="" />
-                    <div class="froma__containerTexBox_lable">Your Budget</div>
-                    <select class="froma__conteinerTexBox_input">
+        <form class="forma">
+
+            <div class="forma__holePersonalInfo">
+                <div class="PersonalInfo">
+                    <div class="PersonalInfo__lable">Your Name</div>
+                    <input class="PersonalInfo__TexBoxInput" type="text" name="name" placeholder=" Write a full name" value="" />
+                    <div class="PersonalInfo__lable">Your Email</div>
+                    <input class="PersonalInfo__TexBoxInput" type="text" name="name" placeholder=" Enter your email" value="" />
+                    <div class="PersonalInfo__lable">Your Budget</div>
+                    <select class="PersonalInfo__TexBoxInput">
                         <option value="$500">$500</option>
                         <option value="value">$1000</option>
                         <option value="value">$1500</option>
@@ -319,24 +329,24 @@
                 </div>
             </div>
 
-            <div class="froma__Subject">
-                <div class="froma__containerTexBox">
-                    <div class="froma__containerTexBox_lable">Subject</div>
-                    <input class="froma__conteinerTexBox_input" type="text" name="name" placeholder=" Subject" value="" />
-                    <div class="froma__containerTexBox_lable">Your Messaget</div>
-                    <textarea class="froma__conteinerTexBox_textArea" placeholder=" Write a message"></textarea>
-                    <div class="froma__containerTexBox_containercheckbox">
-                        <input type="checkbox" name="name" value="" />
-                        <span>I am not a robot.</span>
+            <div class="froma__holeSubject">
+                <div class="Subject">
+                    <div class="Subject__lable">Subject</div>
+                    <input class="Subject__TextBoxInput" type="text" name="name" placeholder=" Subject" value="" />
+                    <div class="Subject__lable">Your Messaget</div>
+                    <textarea class="Subject__TextArea" placeholder=" Write a message"></textarea>
+                    <div class="Subject__checkboxItems">
+                        <input class="Subject__checkbox" type="checkbox" name="name" value="" />
+                        <span class="Subject__checkboxTekst">I am not a robot.</span>
                     </div>
-                    <button class="froma__containerTexBox_button">Submit</button>
+                    <button class="Subject__buttonSubmit">Submit</button>
                 </div>
             </div>
 
-            <div class="froma__OurAddress">
-                <div class="froma__container">
-                    <div class="froma__conteiner_textHead">Our Address</div>
-                    <div class="froma__conteiner_textUnderhead">
+            <div class="froma__holeOurAddress">
+                <div class="OurAddress">
+                    <div class="OurAddress__textHead">Our Address</div>
+                    <div class="OurAddress__textUnderhead">
                         Suspendisse dolor purus,
                         malesuada ut luctus quis,
                         consectetur vel ante.
@@ -344,19 +354,19 @@
                         eget sagittis enim.
                    
                     </div>
-                    <div class="forma__conteiner_mail">
-                        <span class="form__boxSimbol mail"></span>
+                    <div class="OurAddress__mail">
+                        <span class="OurAddress__boxSimbol OurAddress__boxSimbol_Mail"></span>
                         Email: info@company.com
                    
                     </div>
-                    <div class="forma__conteiner_phone">
-                        <span class="form__boxSimbol phone"></span>
+                    <div class="OurAddress__phone">
+                        <span class="OurAddress__boxSimbol OurAddress__boxSimbol_Phone"></span>
                         Phone: 070-070-0880
                    
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
 
 
         <div class="separator">
@@ -365,9 +375,9 @@
 
 
         <div id="UnderLine" class="UnderLine">
-            <div class="UnderLine_License">Copyright © 2016 Sigma HTML CSS Template</div>
-            <div class="UnderLine_GoToTop">
-                <a class="UnderLine_GoToTop_Href" href="#Header">Go to top</a>
+            <div class="UnderLine__textLicense">Copyright © 2016 Sigma HTML CSS Template</div>
+            <div class="UnderLine__conteinerGoToTop">
+                <a class="UnderLine__GoToTopHref" href="#Header">Go to top</a>
             </div>
         </div>
 

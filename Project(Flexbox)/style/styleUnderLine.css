@@ -7,19 +7,19 @@
     min-height: 83px;
 }
 
-.UnderLine_License {
+.UnderLine__textLicense {
     color: #373a3c;
     font-size: 16px;
     font-weight: 500;
     width: 66%;
 }
 
-.UnderLine_GoToTop {
+.UnderLine__conteinerGoToTop {
     
     text-align: right;
     width: 33%;
 }
-.UnderLine_GoToTop_Href{
+.UnderLine__GoToTopHref{
     color: #2288bb;
     font-size: 16px;
     font-weight: 500;

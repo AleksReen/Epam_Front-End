@@ -3,7 +3,7 @@
 
 }
 
-.Galleryline1 {
+.GalleryRow1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -12,7 +12,7 @@
     flex-grow: 1;
 }
 
-.Galleryline1_element1 {
+.GalleryRow1__image1 {
     min-height: 280px;
     width: 400px;
     border: 1px solid white;
@@ -20,7 +20,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-.Galleryline1_element2 {
+.GalleryRow1__image2 {
     min-height: 280px;
     width: 400px;
     border: 1px solid white;
@@ -28,7 +28,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-.Galleryline1_element3 {
+.GalleryRow1__image3 {
     min-height: 280px;
     width: 400px;
     border: 1px solid white;
@@ -37,7 +37,7 @@
     flex-grow: 1;
 }
 
-.Galleryline2 {
+.GalleryRow2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     text-align: center;
 }
-.Galleryline2_elementMax {
+.GalleryRow2__imageMax {
     width: 475px;
     height: 630px;
     border: 1px solid white;
@@ -53,7 +53,7 @@
     background-size: cover;
     flex-grow: 1.73;
 }
-.Galleryline2_elementGroup {
+.GalleryRow2__imageGroup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,7 +61,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
 }
-.Galleryline2_elementBottom {
+.GalleryRow2__imageBottom {
     min-width:200px;
     height: 315px;
     border: 1px solid white;
@@ -69,7 +69,7 @@
     background-image: url('../image/tm-sigma-05.jpg');
     background-size: cover;
 }
-.Galleryline2_elementTop {
+.GalleryRow2__imageTop {
     min-width:200px;
     height: 314px;
     border: 1px solid white;
@@ -78,7 +78,7 @@
     background-size: cover;
 }
 
-.Galleryline3 {
+.GalleryRow3{
     height: 430px;
     display: flex;
     flex-direction: row;
@@ -86,14 +86,14 @@
     align-items: stretch;
     flex-wrap: wrap;
 }
-.Galleryline3_element1 {
+.GalleryRow3__image1 {
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-07.jpg');
     background-size: cover;
     flex-grow: 1;
 }
-.Galleryline3_element2 {
+.GalleryRow3__image2 {
     width: 400px;
     border: 1px solid white;
     background-image: url('../image/tm-sigma-08.jpg');
@@ -101,7 +101,7 @@
     flex-grow: 1;
 }
 
-.Galleryline4 {
+.GalleryRow4 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -109,7 +109,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
 }
-.Galleryline4_element1 {
+.GalleryRow4__image1 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
@@ -117,7 +117,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-.Galleryline4_element2 {
+.GalleryRow4__image2 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
@@ -125,7 +125,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-.Galleryline4_element3 {
+.GalleryRow4__image3 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
@@ -133,7 +133,7 @@
     background-size: cover;
     flex-grow: 1;
 }
-.Galleryline4_element4 {
+.GalleryRow4__image4 {
     height: 230px;
     width: 350px;
     border: 1px solid white;
