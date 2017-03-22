@@ -9,14 +9,13 @@
 
         function Machine() {
             var enable = false;
-            this.on = function () {
-                this.enable = true;
-            }
-            this.off = function () {
-                this.enable = false;
-            }
         }
-
+        Machine.prototype.on = function () {
+            this.enable = true;
+        }
+        Machine.prototype.off = function () {
+            this.enable = false;
+        }
 
         function Fridge(power) {
 
@@ -45,26 +44,10 @@
                 return food.slice();
             }
         }
-        Fridge.prototype.QQQ = function () {
-
-        }
-
-        function Test() {
-            this.eee = eee;
-            this.fff = function () {
-
-            }
-        }
-
-    
 
         Fridge.prototype = Object.create(Machine.prototype);
         Fridge.prototype.constructor = Machine;
 
-        Test.prototype = Object.create(Fridge.prototype);
-        Test.prototype.constructor = Fridge;
-        var test = new Test();
-        test.;
 
         var fridge = new Fridge(200);
         fridge.addFood("котлета"); // ошибка, холодильник выключен
