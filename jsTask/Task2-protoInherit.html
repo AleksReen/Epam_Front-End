@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script>
+
+
+        function Machine() {
+            var enable = false;
+        }
+        Machine.prototype.on = function () {
+            this.enable = true;
+        }
+        Machine.prototype.off = function () {
+            this.enable = false;
+        }
+
+        function Fridge(power) {
+
+            var power = power;
+            var food = [];
+
+            this.addFood = function () {
+
+                if (this.enable) {
+
+                    if (food.length + arguments.length <= power / 100) {
+                        for (var i = 0; i < arguments.length; i++) {
+                            food.push(arguments[i]);
+                        }
+                    }
+                    else {
+                        alert("Холодильник не резиновый!!!!");
+                    }
+                }
+                else
+                    return alert("Вы не включили холодильник!!!");
+            }
+
+            this.getFood = function () {
+
+                return food.slice();
+            }
+        }
+
+        Fridge.prototype = Object.create(Machine.prototype);
+        Fridge.prototype.constructor = Machine;
+
+
+        var fridge = new Fridge(200);
+        fridge.addFood("котлета"); // ошибка, холодильник выключен
+
+        //// создать холодильник мощностью 500 (не более 5 еды)
+        var fridge = new Fridge(500);
+        fridge.on();
+        fridge.addFood("котлета");
+        fridge.addFood("сок", "зелень");
+        fridge.addFood("варенье", "пирог", "торт"); // ошибка, слишком много еды
+
+        var fridge = new Fridge(500);
+        fridge.on();
+        fridge.addFood("котлета");
+        fridge.addFood("сок", "варенье");
+
+        var fridgeFood = fridge.getFood();
+        alert(fridgeFood); // котлета, сок, варенье
+
+        //// добавление элементов не влияет на еду в холодильнике
+        fridgeFood.push("вилка", "ложка");
+
+        alert(fridge.getFood()); // внутри по-прежнему: котлета, сок, варенье
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
+

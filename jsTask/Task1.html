@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+
+        function makeBuffer() {
+
+            var localStorage = [];
+
+            return function buffer(value) {
+
+                if (value != undefined) {
+                    localStorage.push(value);
+                }
+                else {
+                    return localStorage.join("");
+                }
+            }
+        }
+
+        var buffer = makeBuffer();
+
+        buffer("замыкание");
+        buffer(" использовать");
+        buffer(" нужно!!!");
+
+        alert(buffer());
+
+        var buffer = makeBuffer();
+
+        buffer(0);
+        buffer(1);
+        buffer(0);
+
+        alert(buffer());
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
+

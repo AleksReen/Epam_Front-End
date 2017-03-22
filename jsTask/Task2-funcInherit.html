@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script>
+
+         /*1. Создайте класс для холодильника Fridge(power), наследующий от Machine,
+              с приватным свойством food и методами addFood(...), getFood():!!!!!!
+
+          2. Приватное свойство food хранит массив еды.!!!!!!!!!!
+
+          3.  Публичный метод addFood(item) добавляет в массив food новую еду,
+              доступен вызов с несколькими аргументами addFood(item1, item2...) для добавления нескольких элементов сразу.!!!!!!
+
+          4.  Если холодильник выключен, то добавить еду нельзя, будет ошибка.!!!!!!!!!
+
+          5.  Максимальное количество еды ограничено power/100, где power – мощность холодильника, указывается в конструкторе.
+              При попытке добавить больше – будет ошибка
+
+          6.  Публичный метод getFood() возвращает еду в виде массива, добавление или удаление элементов из которого не
+              должно влиять на свойство food холодильника.*/
+
+        function Machine() {
+            var _this = this;
+            this._enable = false;
+
+            this.enable = function () {
+                _this._enable = true;
+            }
+            this.disable = function () {
+                _this._enable = false;
+            }
+        }
+
+        function Fridge(power) {
+
+            Machine.apply(this);
+
+            this.power = power;
+            var food = [];
+
+            this.addFood = function () {
+
+                if (this._enable) {
+
+                    if (food.length+arguments.length<=power/100) {
+                        for (var i = 0; i < arguments.length; i++) {
+                            food.push(arguments[i]);
+                        }
+                    }
+                    else {
+                        alert("Холодильник не резиновый!!!!")
+                    }
+                }
+                else
+                    return alert("Вы не включили холодильник!!!");
+            }
+
+            this.getFood = function () {
+
+                return food.slice();
+            }
+        }
+
+
+        var fridge = new Fridge(200);
+        fridge.addFood("котлета"); // ошибка, холодильник выключен
+
+        // создать холодильник мощностью 500 (не более 5 еды)
+        var fridge = new Fridge(500);
+        fridge.enable();
+        fridge.addFood("котлета");
+        fridge.addFood("сок", "зелень");
+        fridge.addFood("варенье", "пирог","торт"); // ошибка, слишком много еды
+
+        var fridge = new Fridge(500);
+        fridge.enable();
+        fridge.addFood("котлета");
+        fridge.addFood("сок", "варенье");
+
+        var fridgeFood = fridge.getFood();
+        alert(fridgeFood); // котлета, сок, варенье
+
+        // добавление элементов не влияет на еду в холодильнике
+        fridgeFood.push("вилка", "ложка");
+
+        alert(fridge.getFood()); // внутри по-прежнему: котлета, сок, варенье
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
