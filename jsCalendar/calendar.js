@@ -48,6 +48,4 @@
         input.value = d + " " + monthNames[month] + " " + fullYear;
         calendar.style.display = "none";   
     }
-    this.color = function (e) {
-    }
 }
