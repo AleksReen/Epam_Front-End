@@ -1,0 +1,58 @@
+﻿.containerDatepicker
+{
+    margin:0 auto;
+    width:210px;
+}
+.datepicker {
+
+}
+.datepicker__input {
+    width:210px;
+}
+.datepicker__calendar {
+    width: 210px;
+    border: 2px solid rgb(77,144,254);
+    margin-top:5px;
+    display:none;
+}
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calendar__month {
+
+    align-self: stretch;
+    text-align: center;
+    background-color: rgb(77,144,254);
+    color:white;
+    padding: 6px;
+}
+.calendar__days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.calendar__numbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: flex-start;
+}
+.calendar__num {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height:30px;
+    cursor: pointer;
+}
+.calendar__num:hover
+{
+    border-color:red;
+}
+.calendar__num-notDate {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+}
