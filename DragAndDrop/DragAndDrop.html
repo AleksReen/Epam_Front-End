@@ -1,0 +1,24 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="dragDemo.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div class="conteiner">
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="img img2" draggable="true" ondragstart="drag(event)"></div>
+            <div class="img img4" draggable="true" ondragstart="drag(event)"></div>
+            <div class="img img1" draggable="true" ondragstart="drag(event)"></div>
+            <div class="img img3" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+
+    <script src="DragManager.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿#div1 {
+    float: left;
+    width: 624px;
+    height: 482px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#div2 {
+    float: left;
+    width: 624px;
+    height: 482px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.img {
+    float: left;
+    width: 302px;
+    height: 231px;
+    margin: 5px;
+}
+
+.img1 {
+    background-image: url('image/001.jpg');
+}
+
+.img2 {
+    background-image: url('image/002.jpg');
+}
+
+.img3 {
+    background-image: url('image/003.jpg');
+}
+
+.img4 {
+    background-image: url('image/004.jpg');
+}
+
+
+
+
+.conteiner {
+    /*width:400px;
+            height:400px;
+            margin:0 auto;*/
+}
