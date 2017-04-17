@@ -1,0 +1,101 @@
+﻿.containerDatepicker
+{
+    margin:0 auto;
+    width:210px;
+}
+.datepicker {
+
+}
+.datepicker__input {
+    width:210px;
+}
+.datepicker__calendar {
+    width: 210px;
+    border: 2px solid rgb(77,144,254);
+    margin-top:5px;
+    display:none;
+}
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calendar__month {
+
+    align-self: stretch;
+    text-align: center;
+    background-color: rgb(77,144,254);
+    color:white;
+    padding: 6px;
+}
+.calendar__days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.calendar__numbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: flex-start;
+}
+.calendar__num {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height:30px;
+    cursor: pointer;
+}
+.calendar__num:hover
+{
+    background-color:yellow;
+}
+.calendar__num-notDate {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+}
+.buttonsConteiner__buttonPrevius{
+    width: 95px;
+    height: 27px;
+    color: white;
+    background-color: rgb(77,144,254);
+    border: none;
+   
+    outline: none;
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align:center;
+    line-height:27px;
+    cursor: pointer;
+}
+                
+.buttonsConteiner__buttonNext{
+    width: 95px;
+    height: 27px;
+    color: white;
+    background-color: rgb(77,144,254);
+    border: none;
+  
+    outline: none;
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align:center;
+    line-height:27px;
+    cursor: pointer;
+}
+.buttonsConteiner{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+}
+.buttonsConteiner__buttonNext:active 
+{
+    box-shadow: inset 0px 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.buttonsConteiner__buttonPrevius:active 
+{
+    box-shadow: inset 0px 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
