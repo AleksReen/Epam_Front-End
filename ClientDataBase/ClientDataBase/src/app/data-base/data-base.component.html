@@ -1,22 +1,5 @@
-<h3>Form Add</h3>
-
-<form class="conteiner-new-client">
-    <label for="">Name</label>
-    <input type="text" name="name" value="" [(ngModel)]="name">
-    <br>
-    <label for="">Adress</label>
-    <input type="text" name="address" value="" [(ngModel)]="address">
-    <br>
-    <label for="">Phone</label>
-    <input type="text" name="phone" value="" [(ngModel)]="phone">
-    <br>
-    <label for="">Email</label>
-    <input type="text" name="email" value="" [(ngModel)]="email">
-    <br>
-    <button (click)="addClient()">Add Clients</button>
-</form>
-
-
+<div>
+<app-form (onChanged)="addClient($event)"></app-form>
 
 <h3>Clients Data Base</h3>
 <table class="data-base">
@@ -27,5 +10,5 @@
         <td class="data-base-td">{{item.email}}</td>
         <td><button (click)="deleteClient(item.name, i)">Delete Client</button></td>
     </tr>
-
 </table>
+</div>
