@@ -25,8 +25,14 @@ export class DataBaseComponent implements OnInit {
   }
 
   addClient(){
+    
+    if(this.name != null){
     this.newclient = new Client(this.name,this.address,this.phone,this.email)
-    this.dataBase.push(this.newclient);
+    this.dataBase.push(this.newclient);}
+    
+    else{
+      return false;
+    }
   }
 
   deleteClient(deleteName:string, i:number){ 
