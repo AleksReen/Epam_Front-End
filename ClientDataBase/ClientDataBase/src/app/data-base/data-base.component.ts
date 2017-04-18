@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ddb3f9e... load local storage
 
 @Component({
   selector: 'app-data-base',
@@ -7,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-base.component.css']
 })
 export class DataBaseComponent implements OnInit {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   public dataBase: Client [] = []; 
@@ -31,6 +35,14 @@ export class DataBaseComponent implements OnInit {
      this.dataBase = this.dataBase.filter(client => client.name != deleteName)
   }
 =======
+  }
+
+>>>>>>> parent of ddb3f9e... load local storage
+=======
+
+  constructor() { }
+
+  ngOnInit() {
   }
 
 >>>>>>> parent of ddb3f9e... load local storage
