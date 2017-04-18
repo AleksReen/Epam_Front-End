@@ -5,8 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DataBaseComponent } from './data-base/data-base.component';
+<<<<<<< HEAD
 import { DataService } from './data.service';
 import { FormComponent } from './form/form.component';
+=======
+>>>>>>> parent of ddb3f9e... load local storage
 
 @NgModule({
   declarations: [
@@ -19,7 +22,7 @@ import { FormComponent } from './form/form.component';
     FormsModule,
     HttpModule
   ],
-  providers: [DataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Client } from '../client';
-import { DataService } from '../data.service';
 
 
 @Component({
@@ -9,15 +7,19 @@ import { DataService } from '../data.service';
   styleUrls: ['./data-base.component.css']
 })
 export class DataBaseComponent implements OnInit {
+<<<<<<< HEAD
 
   public dataBase: Client [] = []; 
   public newclient: Client;
 
   constructor(private _dataService: DataService) {
+=======
+>>>>>>> parent of ddb3f9e... load local storage
 
-  }
+  constructor() { }
 
   ngOnInit() {
+<<<<<<< HEAD
      this.dataBase = this._dataService.getDatas();
   }
 
@@ -28,4 +30,8 @@ export class DataBaseComponent implements OnInit {
   deleteClient(deleteName: string, i: number){
      this.dataBase = this.dataBase.filter(client => client.name != deleteName)
   }
+=======
+  }
+
+>>>>>>> parent of ddb3f9e... load local storage
 }
