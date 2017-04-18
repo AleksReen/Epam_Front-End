@@ -7,8 +7,11 @@ import { AppComponent } from './app.component';
 import { DataBaseComponent } from './data-base/data-base.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { DataService } from './data.service';
 import { FormComponent } from './form/form.component';
+=======
+>>>>>>> parent of ddb3f9e... load local storage
 =======
 >>>>>>> parent of ddb3f9e... load local storage
 =======
