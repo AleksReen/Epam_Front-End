@@ -1,31 +1,54 @@
-<h3>Form Add</h3>
+<div *ngIf="editeState == 'default'">
+    <h3>Form New Client</h3>
+    <form class="conteiner-new-client">
+        <label for="">Name</label>
+        <input type="text" name="name" value="" [(ngModel)]="name">
+        <br>
+        <label for="">Adress</label>
+        <input type="text" name="address" value="" [(ngModel)]="address">
+        <br>
+        <label for="">Phone</label>
+        <input type="text" name="phone" value="" [(ngModel)]="phone">
+        <br>
+        <label for="">Email</label>
+        <input type="text" name="email" value="" [(ngModel)]="email">
+        <br>
+        <button (click)="addClient()">Add Clients</button>
+    </form>
+</div>
 
-<form class="conteiner-new-client">
-    <label for="">Name</label>
-    <input type="text" name="name" value="" [(ngModel)]="name">
-    <br>
-    <label for="">Adress</label>
-    <input type="text" name="address" value="" [(ngModel)]="address">
-    <br>
-    <label for="">Phone</label>
-    <input type="text" name="phone" value="" [(ngModel)]="phone">
-    <br>
-    <label for="">Email</label>
-    <input type="text" name="email" value="" [(ngModel)]="email">
-    <br>
-    <button (click)="addClient()">Add Clients</button>
-</form>
+<div *ngIf="editeState == 'edite'">
+    <h3>Form Update Client</h3>
+    <form class="conteiner-new-client">
+        <label for="">Name</label>
+        <input type="text" name="name" value="" [(ngModel)]="name">
+        <br>
+        <label for="">Adress</label>
+        <input type="text" name="address" value="" [(ngModel)]="address">
+        <br>
+        <label for="">Phone</label>
+        <input type="text" name="phone" value="" [(ngModel)]="phone">
+        <br>
+        <label for="">Email</label>
+        <input type="text" name="email" value="" [(ngModel)]="email">
+        <br>
+        <div>
+            <button (click)="updateClient()">Update Clients</button>
+            <button (click)="finishEdite()"> Finish editing</button>
+        </div>
 
+    </form>
+</div>
 
 
 <h3>Clients Data Base</h3>
 <table class="data-base">
-    <tr class="data-base-tr" *ngFor="let item of dataBase; let i = index">
+    <tr class="data-base-tr" *ngFor="let item of dataBase">
+        <td><button (click)="editeClient(item)">Edite Client</button></td>
         <td class="data-base-td">{{item.name}}</td>
         <td class="data-base-td">{{item.address}}</td>
         <td class="data-base-td">{{item.phone}}</td>
         <td class="data-base-td">{{item.email}}</td>
-        <td><button (click)="deleteClient(item.name, i)">Delete Client</button></td>
+        <td><button (click)="deleteClient(item.name)">Delete Client</button></td>
     </tr>
-
 </table>

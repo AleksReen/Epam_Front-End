@@ -1,18 +1,13 @@
 export class Client {
-    public name:string;
-    private address:string;
-    private phone:string;
-    private email:string;
+    public name: string;
+    public address: string;
+    public phone: string;
+    public email: string;
 
-    constructor(name:string,address:string,phone:string,email:string){
+    constructor(name: string, address: string, phone: string, email: string) {
         this.name = name;
         this.address = address;
-        this.phone=phone;
-        this.email=email;
-    }  
-   
-   public get getName() : string {
-       return this.name;
-   }
-   
+        this.phone = phone;
+        this.email = email;
+    }
 }

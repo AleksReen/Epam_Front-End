@@ -6,20 +6,48 @@ export class DataService extends Init {
 
   constructor() {
     super();
-    console.log("dataBase service working!!!")
+    console.log('dataBase service working!!!')
     this.load();
    }
 
    public getDatas(){
-
-     /* this.dataBase = [
-      {name:"Aleksandr Reentovich", address:"Mogilev, Lenina str., 18-29", phone:"8-029-331-26-46", email:"aleks@tut.by"},
-       {name:"Kovaloy Kirill", address:"Mogilev, Dimitrova str., 45-15", phone:"8-029-125-52-84", email:"kiril@tut.by"},
-        {name:"Ardenov Ivan", address:"Mogilev, Solnechnaya str., 45-69", phone:"8-029-859-69-45", email:"ivan@tut.by"}
-    ]*/
-
-    let dataBase =JSON.parse(localStorage.getItem('ClientDataBase'));
+     let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
      return dataBase;
+   }
+
+   public addClient (newClient){
+      let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
+      dataBase.push(newClient);
+      localStorage.setItem('ClientDataBase', JSON.stringify(dataBase));
+   }
+
+   public deleteClient(deleteName:string){ 
+     let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
+     dataBase = dataBase.filter(client => client.name != deleteName);
+     localStorage.setItem('ClientDataBase', JSON.stringify(dataBase));
+  }
+
+   public updateClient(oldName, oldAddress, oldPhone, oldEmail, name, address, phone, email){
+     let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
+     
+     for (var i = 0; i < dataBase.length; i++){
+         if (dataBase[i].name == oldName){
+               dataBase[i].name = name }
+       }
+       for (var i = 0; i < dataBase.length; i++){
+         if (dataBase[i].address == oldAddress){
+               dataBase[i].address = address }
+       }
+       for (var i = 0; i < dataBase.length; i++){
+         if (dataBase[i].phone == oldPhone){
+               dataBase[i].phone = phone }
+       }
+       for (var i = 0; i < dataBase.length; i++){
+         if (dataBase[i].email == oldEmail){
+               dataBase[i].email = email }
+       }
+
+     localStorage.setItem('ClientDataBase', JSON.stringify(dataBase));
    }
 
 }

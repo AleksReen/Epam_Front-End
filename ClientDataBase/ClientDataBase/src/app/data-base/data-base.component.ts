@@ -9,12 +9,13 @@ import { DataService } from '../data.service';
 })
 export class DataBaseComponent implements OnInit {
   
-  public name:string;
-  public address:string;
-  public phone:string;
-  public email:string;
-  public dataBase:Client [] = [];
-  public newclient:Client;
+  public name: string; oldName:string;
+  public address: string; oldAddress:string;
+  public phone: string; oldPhone:string;
+  public email: string; oldEmail:string;
+  public dataBase: Client [] = [];
+  public newClient: Client;
+  public editeState: string = 'default';
   
   constructor(private _dataService: DataService) { 
 
@@ -25,11 +26,57 @@ export class DataBaseComponent implements OnInit {
   }
 
   addClient(){
-    this.newclient = new Client(this.name,this.address,this.phone,this.email)
-    this.dataBase.push(this.newclient);
+    this.newClient = new Client(this.name, this.address, this.phone, this.email)
+    this.dataBase.push(this.newClient);
+    this._dataService.addClient(this.newClient);
   }
 
-  deleteClient(deleteName:string, i:number){ 
+  deleteClient(deleteName: string){ 
      this.dataBase = this.dataBase.filter(client => client.name != deleteName)
+     this._dataService.deleteClient(deleteName);
+  }
+
+  public editeClient(editeClient: Client){
+      this.editeState = 'edite';
+      this.oldName = editeClient.name;
+      this.name = editeClient.name;
+      this.oldAddress = editeClient.address;
+      this.address = editeClient.address;
+      this.oldPhone = editeClient.phone;
+      this.phone = editeClient.phone;
+      this.oldEmail = editeClient.email;
+      this.email = editeClient.email;
+  }
+
+  public finishEdite ()
+  {
+    this.editeState = 'default';
+    this.name = '';
+    this.address = '' ;
+    this.phone = '' ;
+    this.email = '' ;
+  }
+
+  public updateClient(){
+
+       for (var i = 0; i < this.dataBase.length; i++){
+         if (this.dataBase[i].name == this.oldName){
+               this.dataBase[i].name = this.name }
+       }
+       for (var i = 0; i < this.dataBase.length; i++){
+         if (this.dataBase[i].address == this.oldAddress){
+               this.dataBase[i].address = this.address }
+       }
+       for (var i = 0; i < this.dataBase.length; i++){
+         if (this.dataBase[i].phone == this.oldPhone){
+               this.dataBase[i].phone = this.phone }
+       }
+       for (var i = 0; i < this.dataBase.length; i++){
+         if (this.dataBase[i].email == this.oldEmail){
+               this.dataBase[i].email = this.email }
+       }
+
+       this._dataService.updateClient(this.oldName, this.oldAddress, this.oldPhone, this.oldEmail,
+                                      this.name, this.address, this.phone, this.email)
   }
 }
