@@ -22,7 +22,7 @@
 
 <div *ngIf="editeState == 'edite'">
     <h3>Form Update Client</h3>
-    <form class="conteiner-new-client">
+    <div class="conteiner-new-client">
         <label for="">Name</label>
         <input type="text" name="name" value="" [(ngModel)]="name">
         <br>
@@ -39,8 +39,7 @@
             <button (click)="updateClient()">Update Clients</button>
             <button (click)="finishEdite()"> Finish editing</button>
         </div>
-
-    </form>
+    </div>
 </div>
 
 
