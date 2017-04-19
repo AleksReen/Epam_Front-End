@@ -1,0 +1,44 @@
+
+<!--<div *ngIf="editeState == 'default'">-->
+    <h3>Form New Client</h3>
+    <div class="conteiner-new-client">
+        <label for="">Name</label>
+        <input type="text" name="name" value="" [(ngModel)]="name">
+        <br>
+        <label for="">Adress</label>
+        <input type="text" name="address" value="" [(ngModel)]="address">
+        <br>
+        <label for="">Phone</label>
+        <input type="text" name="phone" value="" [(ngModel)]="phone">
+        <br>
+        <label for="">Email</label>
+        <input type="text" name="email" value="" [(ngModel)]="email">
+        <br>
+        <div>
+            <button (click)="addClient()">Add Clients</button>
+            <button (click)="clearClient()">Clear Form</button>
+        </div>
+    </div>
+<!--</div>
+
+<div *ngIf="editeState == 'edite'">
+    <h3>Form Update Client</h3>
+    <div class="conteiner-new-client">
+        <label for="">Name</label>
+        <input type="text" name="name" value="" [(ngModel)]="name">
+        <br>
+        <label for="">Adress</label>
+        <input type="text" name="address" value="" [(ngModel)]="address">
+        <br>
+        <label for="">Phone</label>
+        <input type="text" name="phone" value="" [(ngModel)]="phone">
+        <br>
+        <label for="">Email</label>
+        <input type="text" name="email" value="" [(ngModel)]="email">
+        <br>
+        <div>
+            <button (click)="updateClient()">Update Clients</button>
+            <button (click)="finishEdite()"> Finish editing</button>
+        </div>
+    </div>
+</div>-->

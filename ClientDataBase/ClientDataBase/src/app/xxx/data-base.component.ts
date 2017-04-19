@@ -38,13 +38,13 @@ export class DataBaseComponent implements OnInit {
     this._dataService.addClient(this.newClient);
   }
 
-  public deleteClient(deleteName: string){ 
+ /* public deleteClient(deleteName: string){ 
      this.dataBase = this.dataBase.filter(client => client.name != deleteName);
      this.searchArray = this.searchArray.filter(client => client.name != deleteName);
      this._dataService.deleteClient(deleteName);
-  }
+  }*/
 
-  public editeClient(editeClient: Client) {
+ /* public editeClient(editeClient: Client) {
       this.editeState = 'edite';
 
       this.oldName = editeClient.name;
@@ -58,7 +58,7 @@ export class DataBaseComponent implements OnInit {
 
       this.oldEmail = editeClient.email;
       this.email = editeClient.email;
-  }
+  }*/
 
   public finishEdite () {
     this.editeState = 'default';
@@ -68,7 +68,7 @@ export class DataBaseComponent implements OnInit {
     this.email = '';
   }
 
-  public updateClient() {
+ /* public updateClient() {
 
       for (let i = 0; i < this.dataBase.length; i++){
          if (this.dataBase[i].name === this.oldName && this.dataBase[i].address === this.oldAddress
@@ -81,13 +81,13 @@ export class DataBaseComponent implements OnInit {
        }
        this._dataService.updateClient(this.oldName, this.oldAddress, this.oldPhone, this.oldEmail,
                                       this.name, this.address, this.phone, this.email);
-  }
+  }*/
 
-  public searchClient() {
+ /* public searchClient() {
     this.searchState = 'search';
     this.searchArray = [];
     this.dataBase.forEach( client => {if (client.name == this.searchName) {this.searchArray.push(client); }; });
-  }
+  }*/
 
   public returnBase() {
     this.searchState = 'default';

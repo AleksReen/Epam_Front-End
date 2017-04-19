@@ -1,0 +1,50 @@
+
+<h3 *ngIf="searchState == 'default'">Clients Data Base</h3>
+<!--<h3 *ngIf="searchState == 'search'">Result of Search</h3>-->
+
+<label for="">Search</label>
+<input type="text" name="search" value="" [(ngModel)]="searchName">
+<button (click)="searchClient()">Search Client</button>
+<button *ngIf="searchState == 'search'" (click)="returnBase()">Return to Base</button>
+<br>
+<br>
+
+<table class="data-base">
+    <tr>
+        <th></th>
+        <th class="data-base-td">Name</th>
+        <th class="data-base-td">Address</th>
+        <th class="data-base-td">Phone</th>
+        <th class="data-base-td">Email</th>
+        <th></th>
+    </tr>
+
+    <tr class="data-base-tr" *ngFor="let item of dataBase; let i = index">
+        <td><button (click)="editeClient(item, i)">Edite Client</button></td>
+        <td class="data-base-td">{{item.name}}</td>
+        <td class="data-base-td">{{item.address}}</td>
+        <td class="data-base-td">{{item.phone}}</td>
+        <td class="data-base-td">{{item.email}}</td>
+        <td><button (click)="deleteClient()">Delete Client</button></td>
+    </tr>
+</table>
+
+<!--<table *ngIf="searchState == 'search'" class="data-base">
+    <tr>
+        <th></th>
+        <th class="data-base-td">Name</th>
+        <th class="data-base-td">Address</th>
+        <th class="data-base-td">Phone</th>
+        <th class="data-base-td">Email</th>
+        <th></th>
+    </tr>
+
+    <tr class="data-base-tr" *ngFor="let item of searchArray">
+        <td><button (click)="editeClient(item)">Edite Client</button></td>
+        <td class="data-base-td">{{item.name}}</td>
+        <td class="data-base-td">{{item.address}}</td>
+        <td class="data-base-td">{{item.phone}}</td>
+        <td class="data-base-td">{{item.email}}</td>
+        <td><button (click)="deleteClient(item.name)">Delete Client</button></td>
+    </tr>
+</table>-->
