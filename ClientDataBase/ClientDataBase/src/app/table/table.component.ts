@@ -1,3 +1,4 @@
+import { Client } from './../client';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+
+  public listClients: Client [];
 
   constructor() { }
 

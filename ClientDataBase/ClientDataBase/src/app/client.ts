@@ -6,11 +6,11 @@ export class Client {
     private _phone: string;
     private _email: string;
 
-    constructor(name: string, phone: string, address?: string, email?: string) {
+    constructor(name: string, phone: string, address: string, email: string) {
         this._id = Math.random();
         this._name = name;
-        this._address = address;
         this._phone = phone;
+        this._address = address;
         this._email = email;
     }
 
