@@ -1,6 +1,6 @@
 <div *ngIf="editeState == 'default'">
     <h3>Form New Client</h3>
-    <form class="conteiner-new-client">
+    <div class="conteiner-new-client">
         <label for="">Name</label>
         <input type="text" name="name" value="" [(ngModel)]="name">
         <br>
@@ -13,8 +13,11 @@
         <label for="">Email</label>
         <input type="text" name="email" value="" [(ngModel)]="email">
         <br>
-        <button (click)="addClient()">Add Clients</button>
-    </form>
+        <div>
+            <button (click)="addClient()">Add Clients</button>
+            <button (click)="clearClient()">Clear Form</button>
+        </div>
+    </div>
 </div>
 
 <div *ngIf="editeState == 'edite'">
@@ -61,8 +64,8 @@
         <th></th>
     </tr>
 
-    <tr class="data-base-tr" *ngFor="let item of dataBase">
-        <td><button (click)="editeClient(item)">Edite Client</button></td>
+    <tr class="data-base-tr" *ngFor="let item of dataBase; let i = index">
+        <td><button (click)="editeClient(item, i)">Edite Client</button></td>
         <td class="data-base-td">{{item.name}}</td>
         <td class="data-base-td">{{item.address}}</td>
         <td class="data-base-td">{{item.phone}}</td>

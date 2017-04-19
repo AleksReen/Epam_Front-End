@@ -6,48 +6,42 @@ export class DataService extends Init {
 
   constructor() {
     super();
-    console.log('Data Service ОК!')
+    console.log('Data service ОК!');
     this.load();
    }
 
    public getDatas(){
-     let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
-     return dataBase;
+     let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
+     return dB;
    }
 
    public addClient (newClient){
-      let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
-      dataBase.push(newClient);
-      localStorage.setItem('ClientDataBase', JSON.stringify(dataBase));
+      let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
+      dB.push(newClient);
+      localStorage.setItem('ClientDataBase', JSON.stringify(dB));
+      console.log('service ADD');
    }
 
-   public deleteClient(deleteName:string){ 
-     let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
-     dataBase = dataBase.filter(client => client.name != deleteName);
-     localStorage.setItem('ClientDataBase', JSON.stringify(dataBase));
+   public deleteClient(deleteName: string) {
+     let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
+     dB = dB.filter(client => client.name != deleteName);
+     localStorage.setItem('ClientDataBase', JSON.stringify(dB));
+     console.log('service DELETE');
   }
 
-   public updateClient(oldName, oldAddress, oldPhone, oldEmail, name, address, phone, email){
-     let dataBase = JSON.parse(localStorage.getItem('ClientDataBase'));
-     
-     for (var i = 0; i < dataBase.length; i++){
-         if (dataBase[i].name == oldName){
-               dataBase[i].name = name }
-       }
-       for (var i = 0; i < dataBase.length; i++){
-         if (dataBase[i].address == oldAddress){
-               dataBase[i].address = address }
-       }
-       for (var i = 0; i < dataBase.length; i++){
-         if (dataBase[i].phone == oldPhone){
-               dataBase[i].phone = phone }
-       }
-       for (var i = 0; i < dataBase.length; i++){
-         if (dataBase[i].email == oldEmail){
-               dataBase[i].email = email }
-       }
+   public updateClient(oldName, oldAddress, oldPhone, oldEmail, name, address, phone, email) {
+     let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
 
-     localStorage.setItem('ClientDataBase', JSON.stringify(dataBase));
+      for (let i = 0; i < dB.length; i++) {
+         if (dB[i].name === oldName && dB[i].address === oldAddress && dB[i].phone === oldPhone && dB[i].email === oldEmail ) {
+           dB[i].name = name;
+           dB[i].address = address;
+           dB[i].phone = phone;
+           dB[i].email = email;
+          }
+       }
+     localStorage.setItem('ClientDataBase', JSON.stringify(dB));
+     console.log('service UDATE');
    }
 
 }
