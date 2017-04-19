@@ -15,7 +15,11 @@ export class DataBaseComponent implements OnInit {
   public email: string; oldEmail:string;
   public dataBase: Client [] = [];
   public newClient: Client;
+  public searchArray:Client [] = [];
+  public searchName: string;
+  public searchState:string = 'default';
   public editeState: string = 'default';
+
   
   constructor(private _dataService: DataService) { 
 
@@ -78,5 +82,15 @@ export class DataBaseComponent implements OnInit {
 
        this._dataService.updateClient(this.oldName, this.oldAddress, this.oldPhone, this.oldEmail,
                                       this.name, this.address, this.phone, this.email)
+  }
+
+  public searchClient(){
+    this.searchState = 'search';
+    this.searchArray = [];
+    this.dataBase.forEach( client => {if (client.name == this.searchName) {this.searchArray.push(client)}})
+  }
+
+  public returnBase(){
+    this.searchState = 'default';
   }
 }

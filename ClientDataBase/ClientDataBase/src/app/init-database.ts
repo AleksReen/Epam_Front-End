@@ -1,10 +1,9 @@
 export class Init {
     public load (){
         if (localStorage.getItem('ClientDataBase') === null || localStorage.getItem('ClientDataBase') == undefined){
-            console.log("Database NO Creating.....")
+            console.log("ClientDataBase NO Creating NEW.....")
             
             let dataBase = [
-                {name: 'Aleks', address: 'Mogilev', phone: '012',email: 'tut@.bt'},
                 {name:"Aleksandr Reentovich", address:"Mogilev, Lenina str., 18-29", phone:"8-029-331-26-46", email:"aleks@tut.by"},
                 {name:"Kovaloy Kirill", address:"Mogilev, Dimitrova str., 45-15", phone:"8-029-125-52-84", email:"kiril@tut.by"},
                 {name:"Ardenov Ivan", address:"Mogilev, Solnechnaya str., 45-69", phone:"8-029-859-69-45", email:"ivan@tut.by"}]
@@ -12,7 +11,7 @@ export class Init {
             return;
         }
         else {
-            console.log("Find DataBase");
+            console.log("ClientDataBase OK!");
         }
     }
 

@@ -6,7 +6,7 @@ export class DataService extends Init {
 
   constructor() {
     super();
-    console.log('dataBase service working!!!')
+    console.log('Data Service ОК!')
     this.load();
    }
 
