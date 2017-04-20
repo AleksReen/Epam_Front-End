@@ -1,5 +1,5 @@
 
-<!--<div *ngIf="editeState == 'default'">-->
+<div *ngIf="toggleForm == 'default'">
     <h3>Form New Client</h3>
     <div class="conteiner-new-client">
         <label for="">Name</label>
@@ -20,26 +20,26 @@
             <button>TESTFORM</button>
         </div>
     </div>
-<!--</div>
+</div>
 
-<div *ngIf="editeState == 'edite'">
+<div *ngIf="toggleForm == 'edite'">
     <h3>Form Update Client</h3>
     <div class="conteiner-new-client">
         <label for="">Name</label>
-        <input type="text" name="name" value="" [(ngModel)]="name">
-        <br>
-        <label for="">Adress</label>
-        <input type="text" name="address" value="" [(ngModel)]="address">
+        <input #name type="text" name="name" [value]="editeClientForm.getName">
         <br>
         <label for="">Phone</label>
-        <input type="text" name="phone" value="" [(ngModel)]="phone">
+        <input #phone type="text" name="phone" [value]="editeClientForm.getPhone">
+        <br>
+        <label for="">Adress</label>
+        <input #address type="text" name="address" [value]="editeClientForm.getAddress">
         <br>
         <label for="">Email</label>
-        <input type="text" name="email" value="" [(ngModel)]="email">
+        <input #email type="text" name="email" [value]="editeClientForm.getEmail">
         <br>
         <div>
-            <button (click)="updateClient()">Update Clients</button>
+            <button (click)="updateClient(name.value, phone.value, address.value, email.value)">Update Clients</button>
             <button (click)="finishEdite()"> Finish editing</button>
         </div>
     </div>
-</div>-->
+</div>

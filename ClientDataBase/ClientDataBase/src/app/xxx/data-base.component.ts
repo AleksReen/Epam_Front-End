@@ -23,19 +23,15 @@ export class DataBaseComponent implements OnInit {
   constructor(private _dataService: DataService) {}
 
   ngOnInit() {
-     let temp = this._dataService.getDatas();
+    
 
-     this.dataBase = temp.sort(function (ClientA, ClientB) {
-                     if (ClientA.name > ClientB.name) { return 1; }
-                     if (ClientA.name < ClientB.name) { return -1; }
-                     return 0;
-  });
+     
   }
 
  public addClient() {
     this.newClient = new Client(this.name, this.address, this.phone, this.email)
     this.dataBase.push(this.newClient);
-    this._dataService.addClient(this.newClient);
+
   }
 
  /* public deleteClient(deleteName: string){ 

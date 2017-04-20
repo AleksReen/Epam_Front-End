@@ -4,8 +4,10 @@
 
 <label for="">Search</label>
 <input type="text" name="search" value="" [(ngModel)]="searchName">
+
 <button (click)="searchClient()">Search Client</button>
-<button *ngIf="searchState == 'search'" (click)="returnBase()">Return to Base</button>
+<!--<button *ngIf="searchState == 'search'" (click)="returnBase()">Return to Base</button>-->
+<button (click)="TESTTABLE()">TESTTABLE</button>
 <br>
 <br>
 
@@ -19,13 +21,13 @@
         <th></th>
     </tr>
 
-    <tr class="data-base-tr" *ngFor="let item of dataBase; let i = index">
-        <td><button (click)="editeClient(item, i)">Edite Client</button></td>
-        <td class="data-base-td">{{item.name}}</td>
-        <td class="data-base-td">{{item.address}}</td>
-        <td class="data-base-td">{{item.phone}}</td>
-        <td class="data-base-td">{{item.email}}</td>
-        <td><button (click)="deleteClient()">Delete Client</button></td>
+    <tr class="data-base-tr" *ngFor="let item of listClients">
+        <td><button (click)="editeClient(item.getId)">Edite Client</button></td>
+        <td class="data-base-td">{{item.getName}}</td>
+        <td class="data-base-td">{{item.getAddress}}</td>
+        <td class="data-base-td">{{item.getPhone}}</td>
+        <td class="data-base-td">{{item.getEmail}}</td>
+        <td><button (click)="deleteClient(item.getId)">Delete Client</button></td>
     </tr>
 </table>
 

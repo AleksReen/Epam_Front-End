@@ -1,8 +1,15 @@
-<button (click)="onChanged()">TESTBASE</button>
+
 <br>
 <app-form 
-
-(createClientForm) = "createClientBase($event)"
+(createClientForm) = "addClientBase($event)"
+[(editeClientForm)]="editeClient"
+[(toggleForm)]="toggleFormState"
+(updatesClientForm) = "updateClientBase($event)"
+(toglleOff) = "toggleForm($event)"
  ></app-form>
 <br>
-<app-table></app-table>
+<app-table 
+[(listClients)]="clientBase"
+(deleteClientTable) = "deleteClientBase($event)"
+(editeClientTable) = "editeClientBase($event)"
+></app-table>

@@ -1,5 +1,5 @@
 import { Client } from './../client';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -8,11 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
-  public listClients: Client [];
+  @Input()
+  public listClients: Client [] = [];
+  @Output()
+  public deleteClientTable = new EventEmitter <number> ();
+  @Output()
+  public editeClientTable = new EventEmitter <number> ();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  public deleteClient(id: number){
+    this.deleteClientTable.emit(id);
+  }
+
+   public editeClient(id: number){
+    this.editeClientTable.emit(id);
   }
 
 }
