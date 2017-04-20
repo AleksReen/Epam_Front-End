@@ -1,16 +1,51 @@
 export class Client {
 
     private _id: number;
-    private _name: string;
-    private _address: string;
-    private _phone: string;
-    private _email: string;
+    private _name: string = '';
+    private _address: string = '';
+    private _phone: string = '';
+    private _email: string = '';
+
+
+    public static toJson(client: Client): any {
+        return {
+            getId: client.getId,
+            getName: client.getName,
+            getPhone: client.getPhone,
+            getAddress: client.getAddress,
+            getEmail: client.getEmail
+        }
+    }
+
+    public static fromJson(client: any): Client {
+        return new Client(client.getName, client.getPhone, client.getAddress, client.getEmail);
+    }
 
     constructor(name: string, phone: string, address: string, email: string) {
         this._id = Math.random();
+        /*if (name === null || name === undefined){
+            throw  'Error name is Empty';
+        } else {
+            this._address = name;
+        }
+        if (phone === null || phone === undefined){
+            this._phone = '';
+        } else {
+            this._address = address;
+        }
+        if (address === null || address === undefined){
+            this._address = '';
+        } else {
+            this._address = address;
+        }
+        if (email === null || email === undefined){
+            this._email = '';
+        } else {
+            this._email = email;
+        }*/
         this._name = name;
-        this._phone = phone;
         this._address = address;
+        this._phone = phone;
         this._email = email;
     }
 
@@ -31,37 +66,23 @@ export class Client {
         this._email = email;
     }
 
-     public get getId() : number {
+     public get getId(): number {
         return this._id;
     }
 
-    public get getName() : string {
+    public get getName(): string {
         return this._name;
     }
 
-    public get getPhone() : string {
+    public get getPhone(): string {
         return this._phone;
     }
 
-    public get getAddress() : string {
+    public get getAddress(): string {
         return this._address;
     }
 
-    public get getEmail() : string {
+    public get getEmail(): string {
         return this._email;
-    }
-
-     public static toJson(client: Client): any {
-        return {
-            id: client.getId,
-            name: client.getName,
-            phone:client.getPhone,
-            address: client.getAddress,
-            email:client.getEmail
-        }
-    }
-
-    public static fromJson(client: any): Client {
-        return new Client(client.getName, client.getPhone, client.getAddress,client.getEmail);
     }
 }

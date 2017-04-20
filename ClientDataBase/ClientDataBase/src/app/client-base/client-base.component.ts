@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Base } from '../base';
 import { Client } from '../client';
@@ -11,48 +10,47 @@ import { DataService } from '../data.service';
 })
 export class ClientBaseComponent implements OnInit {
 
-  // INPUT сверху в низ
+/*INPUT сверху в низ - OUTPUT снизу в верх*/
 
   public clientBase: Client[] = [];
   public base: Base;
   public editeClient: Client;
-  public toggleFormState: string = 'default';
+  public toggleFormState = 'default';
   private someToken: string;
 
 
-  constructor(private _dataService: DataService) {
-    this.base = new Base ();
-  }
+  constructor(private _dataService: DataService) {}
 
   ngOnInit() {
-    let tb = localStorage.getItem('teacherBookBox');
-    this.base = Base.fromJson(JSON.parse(tb));
+    this.base = new Base ();
+    this.base = this._dataService.getClientBase();
+    this.clientBase = this.base.getClientBase;
   }
 
   public addClientBase(newClient: Client): void {
-        this.clientBase = this.base.addClient(newClient);
-        this._dataService.putTeacherBook('test',this.base)
-    }
-
-  public deleteClientBase(id: number): void {
-        this.clientBase = this.base.deleteClient(id);
-    }
-
-  public editeClientBase (id: number){
-      this.editeClient = this.base.findClient(id);
-      this.toggleFormState = 'edite';
+    this.clientBase = this.base.addClient(newClient);
+    this._dataService.setClientBase(this.base);
   }
 
-   public updateClientBase(updates:string[]){
+  public deleteClientBase(id: number): void {
+    this.clientBase = this.base.deleteClient(id);
+    this._dataService.setClientBase(this.base);
+  }
+
+  public editeClientBase (id: number): void {
+    this.editeClient = this.base.findClient(id);
+    this.toggleFormState = 'edite';
+  }
+
+   public updateClientBase(updates: string[]): void {
 
      this.editeClient.setName = updates[0];
      this.editeClient.setPhone = updates[1];
      this.editeClient.setAddress = updates[2];
      this.editeClient.setEmail = updates[3];
-
-     console.log(this.base)
    }
-   public toggleForm (toggle:string){
+
+   public toggleForm (toggle: string): void {
         this.toggleFormState = toggle;
    }
 }

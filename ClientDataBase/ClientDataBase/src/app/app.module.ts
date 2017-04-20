@@ -14,7 +14,7 @@ import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
-    AppComponent,  
+    AppComponent,
     ClientBaseComponent,
     FormComponent,
     TableComponent

@@ -6,7 +6,21 @@ export class Base {
     private _clientBase: Client [] = [];
     private _findClient: Client;
 
-    constructor(){}
+     public static toJson(base: Base): any {
+        return {
+            clientBase: base._clientBase.map(c => Client.toJson(c)),
+            findClient: base._findClient
+        };
+    }
+
+    public static fromJson(json: any): Base {
+        let base: Base = new Base();
+        base.setClientBase = json.clientBase.map(c => Client.toJson(c));
+        base._findClient = json.findClient;
+        return base;
+    }
+
+    constructor() {}
 
     public set setClientBase (v: Client []){
         this._clientBase = v;
@@ -43,23 +57,4 @@ export class Base {
         }
         return this._findClient;
     }
-
-
-    public static toJson(base: Base): any {
-        return {
-            clientBase: base._clientBase.map(c => Client.toJson(c)),
-            findClient: base._findClient
-        };
-    }
-
-    public static fromJson(json: any): Base {
-        console.log(json);
-       
-        let base = new Base();
-        base._clientBase = json.clientBase.map(c => Client.toJson(c))
-
-        base._findClient = json.findClient
-        return base;
-    }
-
 }
