@@ -22,7 +22,7 @@ export class Client {
     }
 
     constructor(name: string, phone: string, address: string, email: string, id?: number) {
-       
+
         if (name === null || name === undefined){
            this._name = '';
         } else {
@@ -42,7 +42,7 @@ export class Client {
         } else {
             this._address = address;
         }
-        
+
         if (email === null || email === undefined){
             this._email = '';
         } else {
@@ -54,10 +54,6 @@ export class Client {
         } else {
             this._id = id;
         }
-       /* this._name = name;
-        this._address = address;
-        this._phone = phone;
-        this._email = email;*/
     }
 
 

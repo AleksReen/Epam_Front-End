@@ -45,11 +45,6 @@ export class ClientBaseComponent implements OnInit {
 
    public updateClientBase(updates: string[]): void {
 
-     /*this.editeClient.setName = updates[0];
-     this.editeClient.setPhone = updates[1];
-     this.editeClient.setAddress = updates[2];
-     this.editeClient.setEmail = updates[3];*/
-
      for (let index = 0; index < this.base.getClientBase.length; index++) {
         if (this.base.getClientBase[index].getId === this.editeClient.getId){
           this.base.getClientBase[index].setName = updates[0];
