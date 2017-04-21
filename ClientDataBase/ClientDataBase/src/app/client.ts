@@ -13,18 +13,18 @@ export class Client {
             getName: client.getName,
             getPhone: client.getPhone,
             getAddress: client.getAddress,
-            getEmail: client.getEmail
+            getEmail: client.getEmail,
         }
     }
 
     public static fromJson(client: any): Client {
-        return new Client(client.getName, client.getPhone, client.getAddress, client.getEmail);
+        return new Client(client.setName, client.setPhone, client.setAddress, client.setEmail);
     }
 
     constructor(name: string, phone: string, address: string, email: string) {
         this._id = Math.random();
-        /*if (name === null || name === undefined){
-            throw  'Error name is Empty';
+      /*  if (name === null || name === undefined){
+           this._address = '';
         } else {
             this._address = name;
         }

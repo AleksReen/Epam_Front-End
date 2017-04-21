@@ -14,13 +14,29 @@ export class TableComponent implements OnInit {
   public deleteClientTable = new EventEmitter <number> ();
   @Output()
   public editeClientTable = new EventEmitter <number> ();
+  public searchState = 'default';
+  public searchArray: Client [] = [];
+  public searchName: string;
 
   constructor() {}
 
   ngOnInit() {}
 
+   public searchClient() {
+    this.searchState = 'search';
+    this.searchArray = [];
+    this.listClients.forEach( client => {if (client.getName == this.searchName) {this.searchArray.push(client); }; });
+  }
+
+  public returnBase() {
+    this.searchState = 'default';
+  }
+
   public deleteClient(id: number){
     this.deleteClientTable.emit(id);
+    if (this.searchArray.length >= 0){
+     this.searchArray = this.searchArray.filter(client => client.getId != id);
+    }
   }
 
    public editeClient(id: number){

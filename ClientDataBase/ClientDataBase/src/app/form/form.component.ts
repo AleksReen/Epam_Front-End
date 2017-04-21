@@ -29,6 +29,10 @@ export class FormComponent implements OnInit {
 
   ngOnInit() {}
 
+  Test (){
+    console.log(this.editeClientForm)
+  }
+
   public createClient(): void {
         this.newClient = new Client (this.name, this.phone, this.address, this.email)
         this.createClientForm.emit(this.newClient);

@@ -3,12 +3,12 @@ import { Client } from './client';
 
 export class Base {
 
-    private _clientBase: Client [] = [];
+    public clientBase: Client [] = [];
     private _findClient: Client;
 
      public static toJson(base: Base): any {
         return {
-            clientBase: base._clientBase.map(c => Client.toJson(c)),
+            clientBase: base.clientBase.map(c => Client.toJson(c)),
             findClient: base._findClient
         };
     }
@@ -23,11 +23,11 @@ export class Base {
     constructor() {}
 
     public set setClientBase (v: Client []){
-        this._clientBase = v;
+        this.clientBase = v;
     }
 
     public get getClientBase (){
-        return this._clientBase;
+        return this.clientBase;
     }
 
     public set setFindClient(v: Client) {
@@ -39,20 +39,20 @@ export class Base {
     }
 
     public addClient (newClient: Client): Client []{
-        this._clientBase.push(newClient);
-        return this._clientBase;
+        this.clientBase.push(newClient);
+        return this.clientBase;
     }
 
     public deleteClient (id: number): Client [] {
-        this._clientBase = this._clientBase.filter(client => client.getId != id)
-        return this._clientBase;
+        this.clientBase = this.clientBase.filter(client => client.getId != id)
+        return this.clientBase;
     }
 
     public findClient (id: number): Client {
 
-        for (let i = 0; i < this._clientBase.length; i++){
-            if (this._clientBase[i].getId === id){
-                this._findClient = this._clientBase[i];
+        for (let i = 0; i < this.clientBase.length; i++){
+            if (this.clientBase[i].getId === id){
+                this._findClient = this.clientBase[i];
             }
         }
         return this._findClient;
