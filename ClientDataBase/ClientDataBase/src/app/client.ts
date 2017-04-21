@@ -7,46 +7,57 @@ export class Client {
     private _email: string = '';
 
 
-    public static toJson(client: Client): any {
+    public static toJson(client: Client) {
         return {
-            getId: client.getId,
-            getName: client.getName,
-            getPhone: client.getPhone,
-            getAddress: client.getAddress,
-            getEmail: client.getEmail,
+            name: client.getName,
+            phone: client.getPhone,
+            address: client.getAddress,
+            email: client.getEmail,
+            id: client.getId,
         }
     }
 
     public static fromJson(client: any): Client {
-        return new Client(client.setName, client.setPhone, client.setAddress, client.setEmail);
+        return new Client(client.name, client.phone, client.address, client.email, client.id);
     }
 
-    constructor(name: string, phone: string, address: string, email: string) {
-        this._id = Math.random();
-      /*  if (name === null || name === undefined){
-           this._address = '';
+    constructor(name: string, phone: string, address: string, email: string, id?: number) {
+       
+        if (name === null || name === undefined){
+           this._name = '';
         } else {
-            this._address = name;
+            this._name = name;
         }
+
+
         if (phone === null || phone === undefined){
             this._phone = '';
         } else {
-            this._address = address;
+            this._phone = phone;
         }
+
+
         if (address === null || address === undefined){
             this._address = '';
         } else {
             this._address = address;
         }
+        
         if (email === null || email === undefined){
             this._email = '';
         } else {
             this._email = email;
-        }*/
-        this._name = name;
+        }
+
+        if (id === null || id === undefined){
+            this._id = Math.random();
+        } else {
+            this._id = id;
+        }
+       /* this._name = name;
         this._address = address;
         this._phone = phone;
-        this._email = email;
+        this._email = email;*/
     }
 
 

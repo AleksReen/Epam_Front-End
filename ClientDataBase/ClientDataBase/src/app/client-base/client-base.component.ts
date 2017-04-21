@@ -19,17 +19,23 @@ export class ClientBaseComponent implements OnInit {
   private someToken: string;
 
 
-  constructor(private _dataService: DataService) {}
+  constructor(private _dataService: DataService) {
+    
+  }
 
   ngOnInit() {
-  this.base = new Base ();
-   /* this.base = this._dataService.getClientBase();*/
+    this.base = new Base ();
+   this.base = this._dataService.getClientBase();
+   console.log(this.base);
     this.clientBase = this.base.getClientBase;
+  /*  this.base = new Base ();
+    this.base = this._dataService.getClientBase();
+    this.clientBase = this.base.getClientBase;*/
   }
 
   public addClientBase(newClient: Client): void {
     this.clientBase = this.base.addClient(newClient);
- /*   this._dataService.setClientBase(this.base);*/
+    this._dataService.setClientBase(this.base);
   }
 
   public deleteClientBase(id: number): void {
