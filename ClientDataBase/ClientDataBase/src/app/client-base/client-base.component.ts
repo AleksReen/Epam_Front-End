@@ -19,18 +19,13 @@ export class ClientBaseComponent implements OnInit {
   private someToken: string;
 
 
-  constructor(private _dataService: DataService) {
-    
-  }
+  constructor(private _dataService: DataService) {}
 
   ngOnInit() {
     this.base = new Base ();
-   this.base = this._dataService.getClientBase();
-   console.log(this.base);
-    this.clientBase = this.base.getClientBase;
-  /*  this.base = new Base ();
     this.base = this._dataService.getClientBase();
-    this.clientBase = this.base.getClientBase;*/
+    console.log(this.base);
+    this.clientBase = this.base.getClientBase;
   }
 
   public addClientBase(newClient: Client): void {
@@ -40,7 +35,7 @@ export class ClientBaseComponent implements OnInit {
 
   public deleteClientBase(id: number): void {
     this.clientBase = this.base.deleteClient(id);
-  /*  this._dataService.setClientBase(this.base);*/
+    this._dataService.setClientBase(this.base);
   }
 
   public editeClientBase (id: number): void {
@@ -63,7 +58,7 @@ export class ClientBaseComponent implements OnInit {
           this.base.getClientBase[index].setEmail = updates[3];
      }
    }
- /*  this._dataService.setClientBase(this.base);*/
+     this._dataService.setClientBase(this.base);
   }
 
    public toggleForm (toggle: string): void {
