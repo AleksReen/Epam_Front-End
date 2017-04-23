@@ -1,30 +1,30 @@
-<!--<button type="" (click) = "Test()">TEST</button>-->
 <div *ngIf="toggleForm == 'default'">
-    <h3>Form New Client</h3>
-    <div class="conteiner-new-client">
+
+    <div class="form">
+        <h2 class="form-name">Form New Client</h2>
         <label for="">Name</label>
-        <input type="text" name="name" value="" [(ngModel)]="name">
+        <input class="form-input" type="text" name="name" value="" [(ngModel)]="name">
         <br>
         <label for="">Phone</label>
-        <input type="text" name="phone" value="" [(ngModel)]="phone">
+        <input class="form-input" type="text" name="phone" value="" [(ngModel)]="phone">
         <br>
         <label for="">Adress</label>
-        <input type="text" name="address" value="" [(ngModel)]="address">
+        <input class="form-input" type="text" name="address" value="" [(ngModel)]="address">
         <br>
         <label for="">Email</label>
-        <input type="text" name="email" value="" [(ngModel)]="email">
+        <input class="form-input" type="text" name="email" value="" [(ngModel)]="email">
         <br>
         <div>
-            <button (click)="createClient()">Create Client</button>
-            <button (click)="clearForm()">Clear Form</button>
-          <!--  <button>TESTFORM</button>-->
+            <button class="form-button-create" (click)="createClient()">Create Client</button>
+            <button class="form-button-clear" (click)="clearForm()">Clear Form</button>
         </div>
     </div>
 </div>
 
 <div *ngIf="toggleForm == 'edite'">
-    <h3>Form Update Client</h3>
-    <div class="conteiner-new-client">
+
+    <div class="form">
+        <h2>Form Update Client</h2>
         <label for="">Name</label>
         <input #name type="text" name="name" [value]="editeClientForm.getName">
         <br>

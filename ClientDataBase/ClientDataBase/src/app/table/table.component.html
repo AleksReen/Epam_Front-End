@@ -1,5 +1,5 @@
-
-<h3 *ngIf="searchState == 'default'">Clients Data Base</h3>
+<h3 *ngIf="searchState == 'default'">
+    Clients Data Base</h3>
 <h3 *ngIf="searchState == 'search'">Result of Search</h3>
 
 <label for="">Search</label>
@@ -7,7 +7,7 @@
 
 <button (click)="searchClient()">Search Client</button>
 <button *ngIf="searchState == 'search'" (click)="returnBase()">Return to Base</button>
-<!--<button (click)="TESTTABLE()">TESTTABLE</button>-->
+
 <br>
 <br>
 
@@ -35,7 +35,7 @@
     <tr>
         <th></th>
         <th class="data-base-td">Name</th>
-        <th class="data-base-td">Phone</th>        
+        <th class="data-base-td">Phone</th>
         <th class="data-base-td">Address</th>
         <th class="data-base-td">Email</th>
         <th></th>
