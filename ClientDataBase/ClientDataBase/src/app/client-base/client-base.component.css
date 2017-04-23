@@ -1,0 +1,20 @@
+.app-client-base-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.app-client-base-conteiner-form{
+    background-color: green;
+    height: 500px;
+    flex-grow: 0.5;
+}
+
+.app-client-base-conteiner-table{
+    background-color: yellow;
+    height: 500px;
+    flex-grow: 1.5;
+}

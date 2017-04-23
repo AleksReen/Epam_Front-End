@@ -1,3 +1,6 @@
+<div class="app-client-base-conteiner">
+    <div class="app-client-base-conteiner-form" >
+
 <app-form 
 
 (createClientForm) = "addClientBase($event)"
@@ -11,7 +14,8 @@
 (toglleOff) = "toggleForm($event)"
 
  ></app-form>
-<br>
+    </div>
+    <div class="app-client-base-conteiner-table" >
 <app-table 
 [(listClients)]="clientBase"
 
@@ -19,3 +23,5 @@
 
 (editeClientTable) = "editeClientBase($event)"
 ></app-table>
+    </div>
+</div>
