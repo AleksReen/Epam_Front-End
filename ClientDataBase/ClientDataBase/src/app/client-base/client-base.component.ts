@@ -22,9 +22,7 @@ export class ClientBaseComponent implements OnInit {
   constructor(private _dataService: DataService) {}
 
   ngOnInit() {
-    this.base = new Base ();
     this.base = this._dataService.getClientBase();
-    console.log(this.base);
     this.clientBase = this.base.getClientBase;
   }
 

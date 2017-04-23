@@ -12,16 +12,15 @@ constructor() {}
     localStorage.setItem(this.KEY, JSON.stringify(Base.toJson(tb)));
   }
 
- public getClientBase ()  {
+ public getClientBase ():Base  {
 
-      let date = localStorage.getItem(this.KEY)
-      if(date !== null) {
-        return Base.fromJson(JSON.parse(date));
-      }
-      else {
+      let data = localStorage.getItem(this.KEY)
+      if(data !== null) {
+        return Base.fromJson(JSON.parse(data));
+      } else {
         let newBase: Base = new Base ();
         localStorage.setItem(this.KEY, JSON.stringify(Base.toJson(newBase)));
-      }
+        return newBase;
+    }
   }
-  
 }
