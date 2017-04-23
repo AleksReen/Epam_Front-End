@@ -1,16 +1,19 @@
-<h3 *ngIf="searchState == 'default'">
-    Clients Data Base</h3>
-<h3 *ngIf="searchState == 'search'">Result of Search</h3>
 
-<label for="">Search</label>
-<input type="text" name="search" value="" [(ngModel)]="searchName">
-
-<button (click)="searchClient()">Search Client</button>
-<button *ngIf="searchState == 'search'" (click)="returnBase()">Return to Base</button>
-
+<div class="table">
+    
+<h2 *ngIf="searchState == 'default'">Clients Data Base</h2>
+<h2 *ngIf="searchState == 'search'">Result of Search</h2>
+<br>
+<div class="table-search-conteiner">
+<label class="table-lable-search" for="">Search</label>
+<input class="table-input-search" type="text" name="search" value="" [(ngModel)]="searchName">
+<button class = "table-button-search" (click)="searchClient()">Search Client</button>
+<button *ngIf = "searchState == 'search'" (click)="returnBase()">Return to Base</button>
+</div>
 <br>
 <br>
 
+<div class="data-base-conteiner">
 <table class="data-base" *ngIf="searchState == 'default'">
     <tr>
         <th></th>
@@ -20,18 +23,25 @@
         <th class="data-base-td">Email</th>
         <th></th>
     </tr>
-
-    <tr class="data-base-tr" *ngFor="let item of listClients">
-        <td><button (click)="editeClient(item.getId)">Edite Client</button></td>
+    <tr *ngFor="let item of listClients">
+        <td>
+            <div class="table-button-edit" (click)="editeClient(item.getId)">
+                <span class="glyphicon glyphicon-edit"></span>
+            </div>
+        </td>
         <td class="data-base-td">{{item.getName}}</td>
         <td class="data-base-td">{{item.getPhone}}</td>
         <td class="data-base-td">{{item.getAddress}}</td>
         <td class="data-base-td">{{item.getEmail}}</td>
-        <td><button (click)="deleteClient(item.getId)">Delete Client</button></td>
+        <td>
+            <div class="table-button-delete" (click)="deleteClient(item.getId)">
+                <span class="glyphicon glyphicon-remove"></span>
+            </div>
+        </td>
     </tr>
 </table>
 
-<table *ngIf="searchState == 'search'" class="data-base">
+<table class="data-base" *ngIf="searchState == 'search'">
     <tr>
         <th></th>
         <th class="data-base-td">Name</th>
@@ -41,12 +51,17 @@
         <th></th>
     </tr>
 
-    <tr class="data-base-tr" *ngFor="let item of searchArray">
-        <td><button (click)="editeClient(item.getId)">Edite Client</button></td>
+    <tr  *ngFor="let item of searchArray">
+        <td><div class="table-button-edit" (click)="editeClient(item.getId)">
+             <span class="glyphicon glyphicon-edit"></span>
+            </div></td>
         <td class="data-base-td">{{item.getName}}</td>
         <td class="data-base-td">{{item.getPhone}}</td>
         <td class="data-base-td">{{item.getAddress}}</td>
         <td class="data-base-td">{{item.getEmail}}</td>
-        <td><button (click)="deleteClient(item.getId)">Delete Client</button></td>
+        <td><div class="table-button-delete" (click)="deleteClient(item.getId)">
+             <span class="glyphicon glyphicon-remove"></span>
+            </div></td>
     </tr>
 </table>
+</div>

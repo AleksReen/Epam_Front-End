@@ -1,11 +1,116 @@
 .data-base {
-    
+    width: 90%;
+    margin: 0 auto;
     border-collapse: collapse;
-    border: 1px solid black;
+}
+
+.table{
+    display: flex;
+    min-width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.data-base-conteiner{
+    overflow-y: auto;
+    height: 300px;
+    width: 100%
+}
+
+.table-search-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 90%;
+    margin-top: 5px;
+}
+
+.table-lable-search {    
+    margin-bottom: 0px;
+    margin-right: 10px;
+    line-height: 30px;
+    }
+
+.table-input-search {
+    width: 250px;
+    height: 30px;
+}
+
+.table-button-search {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    margin-left:10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.table-button-search:hover {
+    background-color: #4a8e4a;
+}
+
+.table-button-search:active {
+    background-color: #2f5e2f;
 }
 
 .data-base-tr,
 .data-base-td {
     padding: 3px;
     border: 1px solid black;
+    overflow-wrap: break-word;
+}
+
+.table-first-colon{
+    text-align: center;
+    width: 30px;
+}
+
+.table-button-edit {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    color: #ec971f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.table-button-edit:hover {
+     border: 1px solid #ec971f
+}
+
+.table-button-edit:active {
+    border: 2px solid #c97f18;
+}
+
+.table-button-delete {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    color:red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.table-button-delete:hover {
+     border: 1px solid red;
+}
+
+.table-button-delete:active {
+    border: 2px solid red;
 }

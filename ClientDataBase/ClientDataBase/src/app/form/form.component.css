@@ -14,19 +14,18 @@
 .form-lable {}
 
 .form-input {
-    width: 200px;
-    height: 20px;
+    width: 250px;
+    height: 30px;
 }
 
 .form-button-create {
-    height: 30px;
-    line-height: 30px;
-    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    width: 130px;
     margin-top: 15px;
     text-align: center;
     border-radius: 5px;
     color: white;
-    /*background-color: #51a351;*/
     background-color: green;
     border: none;
     outline: none;
@@ -42,9 +41,9 @@
 }
 
 .form-button-clear {
-    height: 30px;
-    line-height: 30px;
-    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    width: 130px;
     margin-top: 15px;
     text-align: center;
     border-radius: 5px;
