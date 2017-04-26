@@ -29,13 +29,11 @@ export class Client {
             this._name = name;
         }
 
-
         if (phone === null || phone === undefined){
             this._phone = '';
         } else {
             this._phone = phone;
         }
-
 
         if (address === null || address === undefined){
             this._address = '';

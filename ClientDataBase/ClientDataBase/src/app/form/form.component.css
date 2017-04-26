@@ -18,49 +18,64 @@
     height: 30px;
 }
 
-.form-button-create {
+.form-button {
     height: 45px;
     line-height: 45px;
     width: 130px;
     margin-top: 15px;
     text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     color: white;
-    background-color: green;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.form-button-create:hover {
+.form-button--create {
+    background-color: green;
+}
+
+.form-button--create:hover {
     background-color: #4a8e4a;
 }
 
-.form-button-create:active {
+.form-button--create:active {
     background-color: #2f5e2f;
 }
 
-.form-button-clear {
-    height: 45px;
-    line-height: 45px;
-    width: 130px;
-    margin-top: 15px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    background-color: #1976d2;
-    ;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.form-button--clear {
+    background-color: #bd362f;
 }
 
-.form-button-clear:hover {
-    background-color: #3598f4;
-    ;
+.form-button--clear:hover {
+    background-color: #ee5f5b;
 }
 
-.form-button-clear:active {
-    background-color: #0f5699;
-    ;
+.form-button--clear:active {
+    background-color: #802420;
+}
+
+.form-button--update {
+    background-color: #f89406;
+}
+
+.form-button--update:hover {
+    background-color: #faa732;
+}
+
+.form-button--update:active {
+    background-color: #ad6704;
+}
+
+.form-button--return {
+    background-color: #006dcc;
+}
+
+.form-button--return:hover {
+    background-color: #0088cc;
+}
+
+.form-button--return:active {
+    background-color: #0044cc;
 }

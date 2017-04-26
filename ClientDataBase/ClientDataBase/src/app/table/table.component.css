@@ -1,10 +1,4 @@
-.data-base {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-.table{
+.table {
     display: flex;
     min-width: 250px;
     flex-direction: column;
@@ -13,13 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.data-base-conteiner{
-    overflow-y: auto;
-    height: 300px;
-    width: 100%
-}
-
-.table-search-conteiner{
+.table-search-conteiner {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -28,89 +16,123 @@
     margin-top: 5px;
 }
 
-.table-lable-search {    
+.table-lable-search {
     margin-bottom: 0px;
     margin-right: 10px;
     line-height: 30px;
-    }
+}
 
 .table-input-search {
     width: 250px;
     height: 30px;
 }
 
-.table-button-search {
+.table-button {
     height: 30px;
     line-height: 30px;
     width: 100px;
-    margin-left:10px;
+    margin-left: 10px;
     text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     color: white;
-    background-color: green;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.table-button-search:hover {
+.table-button--search {
+    background-color: green;
+}
+
+.table-button--search:hover {
     background-color: #4a8e4a;
 }
 
-.table-button-search:active {
+.table-button--search:active {
     background-color: #2f5e2f;
 }
 
-.data-base-tr,
+.table-button--return {
+    background-color: #006dcc;
+}
+
+.table-button--return:hover {
+    background-color: #0088cc;
+}
+
+.table-button--return:active {
+    background-color: #0044cc;
+}
+
+.data-base {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.data-base-conteiner {
+    overflow-y: auto;
+    height: 300px;
+    width: 100%
+}
+
+.data-base-header {
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
 .data-base-td {
     padding: 3px;
     border: 1px solid black;
     overflow-wrap: break-word;
 }
 
-.table-first-colon{
-    text-align: center;
-    width: 30px;
+.data-base-tr:hover {
+    background-color: #1976d2;
+    color: white;
 }
 
-.table-button-edit {
+.data-base-button-edit {
     height: 30px;
     line-height: 30px;
     width: 30px;
     margin: 0 auto;
     text-align: center;
     border-radius: 5px;
-    color: #ec971f;
+    color: #f89406;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.table-button-edit:hover {
-     border: 1px solid #ec971f
+.data-base-button-edit:hover {
+    border: 1px solid #faa732
 }
 
-.table-button-edit:active {
-    border: 2px solid #c97f18;
+.data-base-button-edit:active {
+    border: 2px solid #ad6704;
 }
 
-.table-button-delete {
+.data-base-button-delete {
     height: 30px;
     line-height: 30px;
     width: 30px;
     margin: 0 auto;
     text-align: center;
     border-radius: 5px;
-    color:red;
+    color: red;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.table-button-delete:hover {
-     border: 1px solid red;
+.data-base-button-delete:hover {
+    border: 1px solid red;
 }
 
-.table-button-delete:active {
+.data-base-button-delete:active {
     border: 2px solid red;
 }

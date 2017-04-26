@@ -15,8 +15,12 @@
         <input class="form-input" type="text" name="email" value="" [(ngModel)]="email">
         <br>
         <div>
-            <button class="form-button-create" (click)="createClient()">Create Client</button>
-            <button class="form-button-clear" (click)="clearForm()">Clear Form</button>
+            <button class="form-button form-button--create" (click)="createClient()">
+                 <span class="glyphicon glyphicon-ok"></span>
+                 Create Client</button>
+            <button class="form-button form-button--clear" (click)="clearForm()">
+                <span class= "glyphicon glyphicon-remove"></span>
+                Clear Form</button>
         </div>
     </div>
 </div>
@@ -24,22 +28,22 @@
 <div *ngIf="toggleForm == 'edite'">
 
     <div class="form">
-        <h2>Form Update Client</h2>
+        <h2 class="form-name">Form Update Client</h2>
         <label for="">Name</label>
-        <input #name type="text" name="name" [value]="editeClientForm.getName">
+        <input class="form-input" #name type="text" name="name" [value]="editeClientForm.getName">
         <br>
         <label for="">Phone</label>
-        <input #phone type="text" name="phone" [value]="editeClientForm.getPhone">
+        <input class="form-input" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
         <br>
         <label for="">Adress</label>
-        <input #address type="text" name="address" [value]="editeClientForm.getAddress">
+        <input class="form-input" #address type="text" name="address" [value]="editeClientForm.getAddress">
         <br>
         <label for="">Email</label>
-        <input #email type="text" name="email" [value]="editeClientForm.getEmail">
+        <input class="form-input" #email type="text" name="email" [value]="editeClientForm.getEmail">
         <br>
         <div>
-            <button (click)="updateClient(name.value, phone.value, address.value, email.value)">Update Clients</button>
-            <button (click)="finishEdite()"> Finish editing</button>
+            <button class="form-button form-button--update" (click)="updateClient(name.value, phone.value, address.value, email.value)">Update Clients</button>
+            <button class="form-button form-button--return" (click)="finishEdite()"> Finish editing</button>
         </div>
     </div>
 </div>
