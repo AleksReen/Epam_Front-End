@@ -90,6 +90,12 @@
     overflow-wrap: break-word;
 }
 
+.data-base-button-conteiner {}
+
+.data-base-button-conteiner:hover {
+    background-color: white;
+}
+
 .data-base-tr:hover {
     background-color: #1976d2;
     color: white;

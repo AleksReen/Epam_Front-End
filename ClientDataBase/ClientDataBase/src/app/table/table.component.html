@@ -4,8 +4,8 @@
     <h2 *ngIf="searchState == 'search'">Result of Search</h2>
     <br>
     <div class="table-search-conteiner">
-        <label class="table-lable-search" for="">Search</label>
-        <input class="table-input-search" type="text" name="search" value="" [(ngModel)]="searchName">
+        <label class="table-lable-search" for="search">Search</label>
+        <input id="search" class="table-input-search" type="text" name="search" value="" [(ngModel)]="searchName">
         <button class="table-button table-button--search" (click)="searchClient()">
            <span class="glyphicon glyphicon-search"></span> 
             Search</button>
@@ -27,7 +27,7 @@
                 <th></th>
             </tr>
             <tr class="data-base-tr" *ngFor="let item of listClients">
-                <td>
+                <td class="data-base-button-conteiner">
                     <div class="data-base-button-edit" (click)="editeClient(item.getId)">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
@@ -36,7 +36,7 @@
                 <td class="data-base-td">{{item.getPhone}}</td>
                 <td class="data-base-td">{{item.getAddress}}</td>
                 <td class="data-base-td">{{item.getEmail}}</td>
-                <td>
+                <td class="data-base-button-conteiner">
                     <div class="data-base-button-delete" (click)="deleteClient(item.getId)">
                         <span class="glyphicon glyphicon-remove"></span>
                     </div>
@@ -55,7 +55,7 @@
             </tr>
 
             <tr class="data-base-tr" *ngFor="let item of searchArray">
-                <td>
+                <td class="data-base-button-conteiner">
                     <div class="data-base-button-edit" (click)="editeClient(item.getId)">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
@@ -64,7 +64,7 @@
                 <td class="data-base-td">{{item.getPhone}}</td>
                 <td class="data-base-td">{{item.getAddress}}</td>
                 <td class="data-base-td">{{item.getEmail}}</td>
-                <td>
+                <td class="data-base-button-conteiner">
                     <div class="data-base-button-delete" (click)="deleteClient(item.getId)">
                         <span class="glyphicon glyphicon-remove"></span>
                     </div>

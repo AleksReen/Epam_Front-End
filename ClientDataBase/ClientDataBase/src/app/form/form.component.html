@@ -2,17 +2,17 @@
 
     <div class="form">
         <h2 class="form-name">Form New Client</h2>
-        <label for="">Name</label>
-        <input class="form-input" type="text" name="name" value="" [(ngModel)]="name">
+        <label for="name">Name</label>
+        <input id="name" class="form-input" type="text" name="name" value="" [(ngModel)]="name">
         <br>
-        <label for="">Phone</label>
-        <input class="form-input" type="text" name="phone" value="" [(ngModel)]="phone">
+        <label for="phone">Phone</label>
+        <input id="phone" class="form-input" type="text" name="phone" value="" [(ngModel)]="phone">
         <br>
-        <label for="">Adress</label>
-        <input class="form-input" type="text" name="address" value="" [(ngModel)]="address">
+        <label for="address">Address</label>
+        <input id="address" class="form-input" type="text" name="address" value="" [(ngModel)]="address">
         <br>
-        <label for="">Email</label>
-        <input class="form-input" type="text" name="email" value="" [(ngModel)]="email">
+        <label for="email">Email</label>
+        <input id="email" class="form-input" type="text" name="email" value="" [(ngModel)]="email">
         <br>
         <div>
             <button class="form-button form-button--create" (click)="createClient()">
@@ -29,17 +29,17 @@
 
     <div class="form">
         <h2 class="form-name">Form Update Client</h2>
-        <label for="">Name</label>
-        <input class="form-input" #name type="text" name="name" [value]="editeClientForm.getName">
+        <label for="name">Name</label>
+        <input id="name" class="form-input" #name type="text" name="name" [value]="editeClientForm.getName">
         <br>
-        <label for="">Phone</label>
-        <input class="form-input" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
+        <label for="phone">Phone</label>
+        <input id="phone" class="form-input" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
         <br>
-        <label for="">Adress</label>
-        <input class="form-input" #address type="text" name="address" [value]="editeClientForm.getAddress">
+        <label for="address">Address</label>
+        <input id="address" class="form-input" #address type="text" name="address" [value]="editeClientForm.getAddress">
         <br>
-        <label for="">Email</label>
-        <input class="form-input" #email type="text" name="email" [value]="editeClientForm.getEmail">
+        <label for="email">Email</label>
+        <input id="email" class="form-input" #email type="text" name="email" [value]="editeClientForm.getEmail">
         <br>
         <div>
             <button class="form-button form-button--update" (click)="updateClient(name.value, phone.value, address.value, email.value)">Update Clients</button>
