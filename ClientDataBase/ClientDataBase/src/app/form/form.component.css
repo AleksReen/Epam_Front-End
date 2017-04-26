@@ -79,3 +79,25 @@
 .form-button--return:active {
     background-color: #0044cc;
 }
+
+.form-attention {
+    font-size: 10px;
+    margin-bottom: -20px;
+}
+
+.inValid {
+    border: 2px solid red;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.hiddenAttention {
+    visibility: hidden;
+}
+
+.showAttention {
+    visibility: visible;
+    color: red;
+}

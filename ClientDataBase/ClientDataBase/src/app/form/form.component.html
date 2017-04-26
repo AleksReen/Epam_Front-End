@@ -3,16 +3,17 @@
     <div class="form">
         <h2 class="form-name">Form New Client</h2>
         <label for="name">Name</label>
-        <input id="name" class="form-input" type="text" name="name" value="" [(ngModel)]="name">
+        <input class="form-input" id="name" [class.inValid]="inValid" [class.valid]="valid" type="text" name="name" value="" [(ngModel)]="name">
+        <div class="form-attention" [class.hiddenAttention]="hiddenAttention" [class.showAttention]="showAttention">обязательное поле</div>
         <br>
         <label for="phone">Phone</label>
-        <input id="phone" class="form-input" type="text" name="phone" value="" [(ngModel)]="phone">
+        <input class="form-input" id="phone" type="text" name="phone" value="" [(ngModel)]="phone">
         <br>
         <label for="address">Address</label>
-        <input id="address" class="form-input" type="text" name="address" value="" [(ngModel)]="address">
+        <input class="form-input" id="address" type="text" name="address" value="" [(ngModel)]="address">
         <br>
         <label for="email">Email</label>
-        <input id="email" class="form-input" type="text" name="email" value="" [(ngModel)]="email">
+        <input class="form-input" id="email" type="text" name="email" value="" [(ngModel)]="email">
         <br>
         <div>
             <button class="form-button form-button--create" (click)="createClient()">

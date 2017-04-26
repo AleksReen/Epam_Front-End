@@ -24,18 +24,30 @@ export class FormComponent implements OnInit {
   updatesClient: string [] = [];
   @Output() 
   toglleOff = new EventEmitter <string> ();
+  public inValid:boolean = false;
+  public valid:boolean = false;
+  public hiddenAttention:boolean = true;
+  public showAttention:boolean = false;
 
   constructor() {}
 
   ngOnInit() {}
 
-  Test (){
-    console.log(this.editeClientForm)
-  }
+  public createClient(): boolean {
+        if (this.name === undefined || this.name.length <= 0) {
+           this.inValid = true;
+           this.valid = false;
+           this.showAttention = true;
+           return false;
+        } else {
+           this.inValid = false;
+           this.valid = true;
+            this.showAttention = false;
+        }
 
-  public createClient(): void {
         this.newClient = new Client (this.name, this.phone, this.address, this.email)
         this.createClientForm.emit(this.newClient);
+        return true;
     }
 
   public updateClient(name: string, phone: string, address: string, email: string){
@@ -60,5 +72,9 @@ export class FormComponent implements OnInit {
     this.phone = '';
     this.address = '';
     this.email = '';
+    this.valid = false;
+    this.inValid = false;
+    this.hiddenAttention = true;
+    this. showAttention = false;
   }
 }
