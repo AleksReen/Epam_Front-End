@@ -1,21 +1,21 @@
-<div *ngIf="toggleForm == 'default'">
+<div class="app-form-continer-client" *ngIf="toggleForm == 'default'">
 
     <div class="form">
         <h2 class="form-name">Form New Client</h2>
-        <label for="name">Name</label>
+        <label class="form-lable" for="name">Name</label>
         <input class="form-input" id="name" [class.inValid]="inValid" [class.valid]="valid" type="text" name="name" value="" [(ngModel)]="name">
         <div class="form-attention" [class.hiddenAttention]="hiddenAttention" [class.showAttention]="showAttention">обязательное поле</div>
         <br>
-        <label for="phone">Phone</label>
+        <label class="form-lable" for="phone">Phone</label>
         <input class="form-input" id="phone" type="text" name="phone" value="" [(ngModel)]="phone">
         <br>
-        <label for="address">Address</label>
+        <label class="form-lable" for="address">Address</label>
         <input class="form-input" id="address" type="text" name="address" value="" [(ngModel)]="address">
         <br>
-        <label for="email">Email</label>
+        <label class="form-lable" for="email">Email</label>
         <input class="form-input" id="email" type="text" name="email" value="" [(ngModel)]="email">
         <br>
-        <div>
+        <div class="forma-button-conteiner">
             <button class="form-button form-button--create" (click)="createClient()">
                  <span class="glyphicon glyphicon-ok"></span>
                  Create Client</button>
@@ -26,25 +26,29 @@
     </div>
 </div>
 
-<div *ngIf="toggleForm == 'edite'">
+<div class="app-form-continer-edite" *ngIf="toggleForm == 'edite'">
 
     <div class="form">
         <h2 class="form-name">Form Update Client</h2>
-        <label for="name">Name</label>
-        <input id="name" class="form-input" #name type="text" name="name" [value]="editeClientForm.getName">
+        <label class="form-lable" for="name">Name</label>
+        <input class="form-lable" id="name" class="form-input" #name type="text" name="name" [value]="editeClientForm.getName">
         <br>
-        <label for="phone">Phone</label>
-        <input id="phone" class="form-input" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
+        <label class="form-lable" for="phone">Phone</label>
+        <input class="form-input" id="phone" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
         <br>
-        <label for="address">Address</label>
-        <input id="address" class="form-input" #address type="text" name="address" [value]="editeClientForm.getAddress">
+        <label class="form-lable" for="address">Address</label>
+        <input class="form-input" id="address" #address type="text" name="address" [value]="editeClientForm.getAddress">
         <br>
-        <label for="email">Email</label>
-        <input id="email" class="form-input" #email type="text" name="email" [value]="editeClientForm.getEmail">
+        <label class="form-lable" for="email">Email</label>
+        <input class="form-input" id="email" #email type="text" name="email" [value]="editeClientForm.getEmail">
         <br>
         <div>
-            <button class="form-button form-button--update" (click)="updateClient(name.value, phone.value, address.value, email.value)">Update Clients</button>
-            <button class="form-button form-button--return" (click)="finishEdite()"> Finish editing</button>
+            <button class="form-button form-button--update" (click)="updateClient(name.value, phone.value, address.value, email.value)">
+                 <span class= " glyphicon glyphicon-retweet"></span>
+                 Update Client</button>
+            <button class="form-button form-button--return" (click)="finishEdite()"> 
+                 <span class= "glyphicon glyphicon-off"></span>
+                Finish editing</button>
         </div>
     </div>
 </div>

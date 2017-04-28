@@ -1,0 +1,18 @@
+.app-root-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.app-header {
+    display: block;
+}
+
+.app-client-base {
+    display: block;
+}
+
+.app-footer {
+    display: block;
+}

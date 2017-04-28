@@ -1,22 +1,30 @@
-<div class="table">
+<div class="app-table-main-conteiner">
 
-    <h2 *ngIf="searchState == 'default'">Clients Data Base</h2>
-    <h2 *ngIf="searchState == 'search'">Result of Search</h2>
+    <h2 class="app-table-maintext" *ngIf="searchState == 'default'">Clients Data Base</h2>
+    <h2 class="app-table-maintext" *ngIf="searchState == 'search'">Result of Search</h2>
     <br>
-    <div class="table-search-conteiner">
-        <label class="table-lable-search" for="search">Search</label>
-        <input id="search" class="table-input-search" type="text" name="search" value="" [(ngModel)]="searchName">
-        <button class="table-button table-button--search" (click)="searchClient()">
-           <span class="glyphicon glyphicon-search"></span> 
-            Search</button>
-        <button class="table-button table-button--return" *ngIf="searchState == 'search'" (click)="returnBase()">
-          <span class="glyphicon glyphicon-repeat"></span>  
-            Return</button>
+
+    <div class="app-table-search-conteiner">
+
+        <div class="search">
+            <label class="search-lable" for="search">Search</label>
+            <input id="search" class="search-input" type="text" name="search" value="" [(ngModel)]="searchName">
+            <div class="search-button-conteiner">
+                <button class="search-button search-button--search" (click)="searchClient()">
+                    <span class="glyphicon glyphicon-search"></span> 
+                 Search</button>
+                <button class="search-button search-button--return" *ngIf="searchState == 'search'" (click)="returnBase()">
+                     <span class="glyphicon glyphicon-repeat"></span>  
+                 Return</button>
+            </div>
+        </div>
+
     </div>
     <br>
     <br>
 
-    <div class="data-base-conteiner">
+    <div class="app-table-data-base-conteiner">
+
         <table class="data-base" *ngIf="searchState == 'default'">
             <tr>
                 <th></th>
@@ -28,7 +36,7 @@
             </tr>
             <tr class="data-base-tr" *ngFor="let item of listClients">
                 <td class="data-base-button-conteiner">
-                    <div class="data-base-button-edit" (click)="editeClient(item.getId)">
+                    <div class="data-base-button-edit" (click)="editeClient(item.getId)" tooltip="WWWW">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
                 </td>
@@ -71,4 +79,5 @@
                 </td>
             </tr>
         </table>
+
     </div>

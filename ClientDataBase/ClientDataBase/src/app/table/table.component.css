@@ -1,4 +1,4 @@
-.table {
+.app-table-main-conteiner {
     display: flex;
     min-width: 250px;
     flex-direction: column;
@@ -7,31 +7,47 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.table-search-conteiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
-    width: 90%;
-    margin-top: 5px;
+.app-table-maintext {
+    display: block;
 }
 
-.table-lable-search {
+.app-table-search-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    width: 90%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-button-conteiner {
+    display: block;
+}
+
+.search-lable {
     margin-bottom: 0px;
     margin-right: 10px;
     line-height: 30px;
+    margin-top: 5px;
 }
 
-.table-input-search {
+.search-input {
     width: 250px;
     height: 30px;
+    margin-top: 5px;
 }
 
-.table-button {
+.search-button {
     height: 30px;
     line-height: 30px;
     width: 100px;
     margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -41,40 +57,40 @@
     cursor: pointer;
 }
 
-.table-button--search {
+.search-button--search {
     background-color: green;
 }
 
-.table-button--search:hover {
+.search-button--search:hover {
     background-color: #4a8e4a;
 }
 
-.table-button--search:active {
+.search-button--search:active {
     background-color: #2f5e2f;
 }
 
-.table-button--return {
+.search-button--return {
     background-color: #006dcc;
 }
 
-.table-button--return:hover {
+.search-button--return:hover {
     background-color: #0088cc;
 }
 
-.table-button--return:active {
+.search-button--return:active {
     background-color: #0044cc;
+}
+
+.app-table-data-base-conteiner {
+    overflow-y: auto;
+    height: 442px;
+    width: 100%
 }
 
 .data-base {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
-}
-
-.data-base-conteiner {
-    overflow-y: auto;
-    height: 300px;
-    width: 100%
 }
 
 .data-base-header {
@@ -90,7 +106,9 @@
     overflow-wrap: break-word;
 }
 
-.data-base-button-conteiner {}
+.data-base-button-conteiner {
+    display: table-cell;
+}
 
 .data-base-button-conteiner:hover {
     background-color: white;
@@ -140,5 +158,5 @@
 }
 
 .data-base-button-delete:active {
-    border: 2px solid red;
+    border: 1px solid red;
 }

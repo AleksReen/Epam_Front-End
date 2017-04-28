@@ -1,11 +1,7 @@
-.app-header-conteinerLogo {
+.app-header-conteiner {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-content: center;
     background-color: #1976d2;
-    min-height: 200px;
-    min-height: 100px;
 }
 
 .logo {
@@ -23,6 +19,6 @@
 
 .logo-maintext {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
