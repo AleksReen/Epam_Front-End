@@ -46,4 +46,16 @@ export class Base {
         }
         return findClient;
     }
+
+     public sortClientBase (): Client [] {
+        this._clientBase.sort((clientA: Client, clientB: Client) => {
+               if (clientA.getName > clientB.getName) {
+                   return 1; }
+               if (clientA.getName < clientB.getName) {
+                   return -1; }
+                return 0;
+            }
+        );
+        return this._clientBase;
+    }
 }

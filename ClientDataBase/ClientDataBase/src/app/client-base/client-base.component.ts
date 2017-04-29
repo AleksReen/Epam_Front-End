@@ -23,7 +23,7 @@ export class ClientBaseComponent implements OnInit {
 
   ngOnInit() {
     this.base = this._dataService.getClientBase();
-    this.clientBase = this.base.getClientBase;
+    this.clientBase = this.base.sortClientBase();
   }
 
   public addClientBase(newClient: Client): void {
