@@ -1,4 +1,4 @@
-.app-table-main-conteiner {
+.app-table__main-conteiner {
     display: flex;
     min-width: 250px;
     flex-direction: column;
@@ -7,11 +7,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.app-table-maintext {
+.app-table__maintext {
     display: block;
 }
 
-.app-table-search-conteiner {
+.app-table__search-conteiner {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,29 +19,29 @@
     width: 90%;
 }
 
-.search {
+.app-table__search {
     display: flex;
     flex-direction: row;
 }
 
-.search-button-conteiner {
+.app-table__search-button-conteiner {
     display: block;
 }
 
-.search-lable {
+.app-table__search-lable {
     margin-bottom: 0px;
     margin-right: 10px;
     line-height: 30px;
     margin-top: 5px;
 }
 
-.search-input {
+.app-table__search-input {
     width: 250px;
     height: 30px;
     margin-top: 5px;
 }
 
-.search-button {
+.app-table__search-button {
     height: 30px;
     line-height: 30px;
     width: 100px;
@@ -57,69 +57,80 @@
     cursor: pointer;
 }
 
-.search-button--search {
+.app-table__search-button_green {
     background-color: green;
 }
 
-.search-button--search:hover {
+.app-table__search-button_green:hover {
     background-color: #4a8e4a;
 }
 
-.search-button--search:active {
+.app-table__search-button_green:active {
     background-color: #2f5e2f;
 }
 
-.search-button--return {
+.app-table__search-button_blue {
     background-color: #006dcc;
 }
 
-.search-button--return:hover {
+.app-table__search-button_blue:hover {
     background-color: #0088cc;
 }
 
-.search-button--return:active {
+.app-table__search-button_blue:active {
     background-color: #0044cc;
 }
 
-.app-table-data-base-conteiner {
+.app-table__data-base-conteiner {
     overflow-y: auto;
     height: 442px;
     width: 100%
 }
 
-.data-base {
+.app-table__data-base {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
 }
 
-.data-base-header {
+.app-table__data-base-header {
     background-color: #1976d2;
     color: white;
     text-align: center;
     border: 1px solid black;
 }
 
-.data-base-td {
+.app-table__data-base-td {
     padding: 3px;
     border: 1px solid black;
     overflow-wrap: break-word;
 }
 
-.data-base-button-conteiner {
+.app-table__data-base-tr:first-child {
+    background: white;
+    /* Цвет фона */
+}
+
+.app-table__data-base-button-conteiner {
     display: table-cell;
 }
 
-.data-base-button-conteiner:hover {
+.app-table__data-base-button-conteiner:hover {
     background-color: white;
 }
 
-.data-base-tr:hover {
+.app-table__data-base-tr:hover {
     background-color: #1976d2;
     color: white;
 }
 
-.data-base-button-edit {
+
+/*.app-table__data-base-tr:nth-child(odd) {
+    background: #666;
+   
+}*/
+
+.app-table__data-base-button-edit {
     height: 30px;
     line-height: 30px;
     width: 30px;
@@ -132,15 +143,15 @@
     cursor: pointer;
 }
 
-.data-base-button-edit:hover {
+.app-table__data-base-button-edit:hover {
     border: 1px solid #faa732
 }
 
-.data-base-button-edit:active {
+.app-table__data-base-button-edit:active {
     border: 2px solid #ad6704;
 }
 
-.data-base-button-delete {
+.app-table__data-base-button-delete {
     height: 30px;
     line-height: 30px;
     width: 30px;
@@ -153,10 +164,10 @@
     cursor: pointer;
 }
 
-.data-base-button-delete:hover {
+.app-table__data-base-button-delete:hover {
     border: 1px solid red;
 }
 
-.data-base-button-delete:active {
+.app-table__data-base-button-delete:active {
     border: 1px solid red;
 }

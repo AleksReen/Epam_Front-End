@@ -1,52 +1,52 @@
-<div class="app-form-continer-client" *ngIf="toggleForm == 'default'">
+<div class="app-form__continer-client" *ngIf="toggleForm == 'default'">
 
-    <div class="form">
-        <h2 class="form-name">Form New Client</h2>
-        <label class="form-lable" for="name">Name</label>
-        <input class="form-input" id="name" [class.inValid]="inValid" [class.valid]="valid" type="text" name="name" value="" [(ngModel)]="name">
-        <div class="form-attention" [class.hiddenAttention]="hiddenAttention" [class.showAttention]="showAttention">обязательное поле</div>
+    <div class="app-form__form">
+        <h2 class="app-form__form-name">Form New Client</h2>
+        <label class="app-form__form-lable" for="name">Name</label>
+        <input class="app-form__form-input" id="name" [class.app-form__form-input_inValid]="inValid" [class.app-form__form-input_valid]="valid" type="text" name="name" value="" [(ngModel)]="name">
+        <div class="app-form__form-attention" [class.app-form__form-attention_hidden]="hiddenAttention" [class.app-form__form-attention_visible]="showAttention">обязательное поле</div>
         <br>
-        <label class="form-lable" for="phone">Phone</label>
-        <input class="form-input" id="phone" type="text" name="phone" value="" [(ngModel)]="phone">
+        <label class="app-form__form-lable" for="phone">Phone</label>
+        <input class="app-form__form-input" id="phone" type="text" name="phone" value="" [(ngModel)]="phone">
         <br>
-        <label class="form-lable" for="address">Address</label>
-        <input class="form-input" id="address" type="text" name="address" value="" [(ngModel)]="address">
+        <label class="app-form__form-lable" for="address">Address</label>
+        <input class="app-form__form-input" id="address" type="text" name="address" value="" [(ngModel)]="address">
         <br>
-        <label class="form-lable" for="email">Email</label>
-        <input class="form-input" id="email" type="text" name="email" value="" [(ngModel)]="email">
+        <label class="app-form__form-lable" for="email">Email</label>
+        <input class="app-form__form-input" id="email" type="text" name="email" value="" [(ngModel)]="email">
         <br>
-        <div class="forma-button-conteiner">
-            <button class="form-button form-button--create" (click)="createClient()">
+        <div class="app-form__forma-button-conteiner">
+            <button class="app-form__form-button app-form__form-button_green" (click)="createClient()">
                  <span class="glyphicon glyphicon-ok"></span>
                  Create Client</button>
-            <button class="form-button form-button--clear" (click)="clearForm()">
+            <button class="app-form__form-button app-form__form-button_red" (click)="clearForm()">
                 <span class= "glyphicon glyphicon-remove"></span>
                 Clear Form</button>
         </div>
     </div>
 </div>
 
-<div class="app-form-continer-edite" *ngIf="toggleForm == 'edite'">
+<div class="app-form__continer-edite" *ngIf="toggleForm == 'edite'">
 
-    <div class="form">
-        <h2 class="form-name">Form Update Client</h2>
-        <label class="form-lable" for="name">Name</label>
-        <input class="form-lable" id="name" class="form-input" #name type="text" name="name" [value]="editeClientForm.getName">
+    <div class="app-form__form">
+        <h2 class="app-form__form-name">Form Update Client</h2>
+        <label class="app-form__form-lable" for="name">Name</label>
+        <input class="app-form__form-input" id="name" #name type="text" name="name" [value]="editeClientForm.getName">
         <br>
-        <label class="form-lable" for="phone">Phone</label>
-        <input class="form-input" id="phone" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
+        <label class="app-form__form-lable" for="phone">Phone</label>
+        <input class="app-form__form-input" id="phone" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
         <br>
-        <label class="form-lable" for="address">Address</label>
-        <input class="form-input" id="address" #address type="text" name="address" [value]="editeClientForm.getAddress">
+        <label class="app-form__form-lable" for="address">Address</label>
+        <input class="app-form__form-input" id="address" #address type="text" name="address" [value]="editeClientForm.getAddress">
         <br>
-        <label class="form-lable" for="email">Email</label>
-        <input class="form-input" id="email" #email type="text" name="email" [value]="editeClientForm.getEmail">
+        <label class="app-form__form-lable" for="email">Email</label>
+        <input class="app-form__form-input" id="email" #email type="text" name="email" [value]="editeClientForm.getEmail">
         <br>
         <div>
-            <button class="form-button form-button--update" (click)="updateClient(name.value, phone.value, address.value, email.value)">
+            <button class="app-form__form-button app-form__form-button_orange" (click)="updateClient(name.value, phone.value, address.value, email.value)">
                  <span class= " glyphicon glyphicon-retweet"></span>
                  Update Client</button>
-            <button class="form-button form-button--return" (click)="finishEdite()"> 
+            <button class="app-form__form-button app-form__form-button_return" (click)="finishEdite()"> 
                  <span class= "glyphicon glyphicon-off"></span>
                 Finish editing</button>
         </div>

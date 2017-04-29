@@ -1,4 +1,4 @@
-.app-client-base-conteiner {
+.app-client__base-conteiner {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;

@@ -1,10 +1,10 @@
-.app-header-conteiner {
+.app-header__conteiner {
     display: flex;
     justify-content: center;
     background-color: #1976d2;
 }
 
-.logo {
+.app-header__logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,11 +13,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo-picture {
+.app-header__logo-picture {
     height: 100px;
 }
 
-.logo-maintext {
+.app-header__logo-maintext {
     display: inline-flex;
     align-items: center;
     margin-bottom: 20px;

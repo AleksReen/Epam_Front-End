@@ -1,19 +1,19 @@
-<div class="app-table-main-conteiner">
+<div class="app-table__main-conteiner">
 
-    <h2 class="app-table-maintext" *ngIf="searchState == 'default'">Clients Data Base</h2>
-    <h2 class="app-table-maintext" *ngIf="searchState == 'search'">Result of Search</h2>
+    <h2 class="app-table__maintext" *ngIf="searchState == 'default'">Clients Data Base</h2>
+    <h2 class="app-table__maintext" *ngIf="searchState == 'search'">Result of Search</h2>
     <br>
 
-    <div class="app-table-search-conteiner">
+    <div class="app-table__search-conteiner">
 
-        <div class="search">
-            <label class="search-lable" for="search">Search</label>
-            <input id="search" class="search-input" type="text" name="search" value="" [(ngModel)]="searchName">
-            <div class="search-button-conteiner">
-                <button class="search-button search-button--search" (click)="searchClient()">
+        <div class="app-table__search">
+            <label class="app-table__search-lable" for="search">Search</label>
+            <input id="search" class="app-table__search-input" type="text" name="search" value="" [(ngModel)]="searchName">
+            <div class="app-table__search-button-conteiner">
+                <button class="app-table__search-button app-table__search-button_green" (click)="searchClient()">
                     <span class="glyphicon glyphicon-search"></span> 
                  Search</button>
-                <button class="search-button search-button--return" *ngIf="searchState == 'search'" (click)="returnBase()">
+                <button class="app-table__search-button app-table__search-button_blue" *ngIf="searchState == 'search'" (click)="returnBase()">
                      <span class="glyphicon glyphicon-repeat"></span>  
                  Return</button>
             </div>
@@ -23,61 +23,63 @@
     <br>
     <br>
 
-    <div class="app-table-data-base-conteiner">
+    <div class="app-table__data-base-conteiner">
 
-        <table class="data-base" *ngIf="searchState == 'default'">
+        <table class="app-table__data-base" *ngIf="searchState == 'default'">
+
             <tr>
                 <th></th>
-                <th class="data-base-header">Name</th>
-                <th class="data-base-header">Phone</th>
-                <th class="data-base-header">Address</th>
-                <th class="data-base-header">Email</th>
+                <th class="app-table__data-base-header">Name</th>
+                <th class="app-table__data-base-header">Phone</th>
+                <th class="app-table__data-base-header">Address</th>
+                <th class="app-table__data-base-header">Email</th>
                 <th></th>
             </tr>
-            <tr class="data-base-tr" *ngFor="let item of listClients">
-                <td class="data-base-button-conteiner">
-                    <div class="data-base-button-edit" (click)="editeClient(item.getId)" tooltip="WWWW">
+
+            <tr class="app-table__data-base-tr" *ngFor="let item of listClients">
+                <td class="app-table__data-base-button-conteiner">
+                    <div class="app-table__data-base-button-edit" (click)="editeClient(item.getId)" tooltip="WWWW">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
                 </td>
-                <td class="data-base-td">{{item.getName}}</td>
-                <td class="data-base-td">{{item.getPhone}}</td>
-                <td class="data-base-td">{{item.getAddress}}</td>
-                <td class="data-base-td">{{item.getEmail}}</td>
-                <td class="data-base-button-conteiner">
-                    <div class="data-base-button-delete" (click)="deleteClient(item.getId)">
+                <td class="app-table__data-base-td">{{item.getName}}</td>
+                <td class="app-table__data-base-td">{{item.getPhone}}</td>
+                <td class="app-table__data-base-td">{{item.getAddress}}</td>
+                <td class="app-table__data-base-td">{{item.getEmail}}</td>
+                <td class="app-table__data-base-button-conteiner">
+                    <div class="app-table__data-base-button-delete" (click)="deleteClient(item.getId)">
                         <span class="glyphicon glyphicon-remove"></span>
                     </div>
                 </td>
             </tr>
         </table>
 
-        <table class="data-base" *ngIf="searchState == 'search'">
+        <table class="app-table__data-base" *ngIf="searchState == 'search'">
             <tr>
+
                 <th></th>
-                <th class="data-base-header">Name</th>
-                <th class="data-base-header">Phone</th>
-                <th class="data-base-header">Address</th>
-                <th class="data-base-header">Email</th>
+                <th class="app-table__data-base-header">Name</th>
+                <th class="app-table__data-base-header">Phone</th>
+                <th class="app-table__data-base-header">Address</th>
+                <th class="app-table__data-base-header">Email</th>
                 <th></th>
             </tr>
 
-            <tr class="data-base-tr" *ngFor="let item of searchArray">
-                <td class="data-base-button-conteiner">
-                    <div class="data-base-button-edit" (click)="editeClient(item.getId)">
+            <tr class="app-table__data-base-tr" *ngFor="let item of searchArray">
+                <td class="app-table__data-base-button-conteiner">
+                    <div class="app-table__data-base-button-edit" (click)="editeClient(item.getId)">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
                 </td>
-                <td class="data-base-td">{{item.getName}}</td>
-                <td class="data-base-td">{{item.getPhone}}</td>
-                <td class="data-base-td">{{item.getAddress}}</td>
-                <td class="data-base-td">{{item.getEmail}}</td>
-                <td class="data-base-button-conteiner">
-                    <div class="data-base-button-delete" (click)="deleteClient(item.getId)">
+                <td class="app-table__data-base-td">{{item.getName}}</td>
+                <td class="app-table__data-base-td">{{item.getPhone}}</td>
+                <td class="app-table__data-base-td">{{item.getAddress}}</td>
+                <td class="app-table__data-base-td">{{item.getEmail}}</td>
+                <td class="app-table__data-base-button-conteiner">
+                    <div class="app-table__data-base-button-delete" (click)="deleteClient(item.getId)">
                         <span class="glyphicon glyphicon-remove"></span>
                     </div>
                 </td>
             </tr>
         </table>
-
     </div>

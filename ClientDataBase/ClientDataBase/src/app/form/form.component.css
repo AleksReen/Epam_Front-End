@@ -1,12 +1,12 @@
-.app-form-conteiner-client {
+.app-form__conteiner-client {
     display: block;
 }
 
-.app-form-continer-edite {
+.app-form__continer-edite {
     display: block;
 }
 
-.form {
+.app-form__form {
     display: flex;
     min-width: 250px;
     flex-direction: column;
@@ -15,27 +15,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-name {
+.app-form__form-name {
     display: block;
 }
 
-.form-lable {
+.app-form__form-lable {
     display: inline-block;
 }
 
-.form-input {
+.app-form__form-input {
     width: 250px;
     height: 30px;
 }
 
-.forma-button-conteiner {
+.app-form__forma-button-conteiner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.form-button {
+.app-form__form-button {
     height: 45px;
     line-height: 45px;
     width: 130px;
@@ -49,72 +49,72 @@
     cursor: pointer;
 }
 
-.form-button--create {
+.app-form__form-button_green {
     background-color: green;
 }
 
-.form-button--create:hover {
+.app-form__form-button_green:hover {
     background-color: #4a8e4a;
 }
 
-.form-button--create:active {
+.app-form__form-button_green:active {
     background-color: #2f5e2f;
 }
 
-.form-button--clear {
+.app-form__form-button_red {
     background-color: #bd362f;
 }
 
-.form-button--clear:hover {
+.app-form__form-button_red:hover {
     background-color: #ee5f5b;
 }
 
-.form-button--clear:active {
+.app-form__form-button_red:active {
     background-color: #802420;
 }
 
-.form-button--update {
+.app-form__form-button_orange {
     background-color: #f89406;
 }
 
-.form-button--update:hover {
+.app-form__form-button_orange:hover {
     background-color: #faa732;
 }
 
-.form-button--update:active {
+.app-form__form-button_orange:active {
     background-color: #ad6704;
 }
 
-.form-button--return {
+.app-form__form-button_blue {
     background-color: #006dcc;
 }
 
-.form-button--return:hover {
+.app-form__form-button_blue:hover {
     background-color: #0088cc;
 }
 
-.form-button--return:active {
+.app-form__form-button_blue:active {
     background-color: #0044cc;
 }
 
-.form-attention {
+.app-form__form-attention {
     font-size: 10px;
     margin-bottom: -20px;
 }
 
-.inValid {
+.app-form__form-input_inValid {
     border: 2px solid red;
 }
 
-.valid {
+.app-form__form-input_valid {
     border: 2px solid green;
 }
 
-.hiddenAttention {
+.app-form__form-attention_hidden {
     visibility: hidden;
 }
 
-.showAttention {
+.app-form__form-attention_visible {
     visibility: visible;
     color: red;
 }
