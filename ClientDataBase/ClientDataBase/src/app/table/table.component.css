@@ -106,11 +106,6 @@
     overflow-wrap: break-word;
 }
 
-.app-table__data-base-tr:first-child {
-    background: white;
-    /* Цвет фона */
-}
-
 .app-table__data-base-button-conteiner {
     display: table-cell;
 }
@@ -123,12 +118,6 @@
     background-color: #1976d2;
     color: white;
 }
-
-
-/*.app-table__data-base-tr:nth-child(odd) {
-    background: #666;
-   
-}*/
 
 .app-table__data-base-button-edit {
     height: 30px;
