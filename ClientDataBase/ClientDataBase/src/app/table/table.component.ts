@@ -36,13 +36,16 @@ export class TableComponent implements OnInit {
 
   public deleteClient(id: number) {
     this.deleteClientTable.emit(id);
-    if (this.searchArray.length >= 0){
+    if (this.searchArray.length >= 0) {
      this.searchArray = this.searchArray.filter(client => client.getId !== id);
     }
   }
 
-   public editeClient(item: Client) {
-    this.selectedClient = item;
-    this.editeClientTable.emit(item.getId);
+   public editeClient(id: number) {
+    this.editeClientTable.emit(id);
+  }
+
+  public onSelect(item: Client) {
+     this.selectedClient = item;
   }
 }
