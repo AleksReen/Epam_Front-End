@@ -29,6 +29,7 @@ export class FormComponent implements OnInit {
   public hiddenAttention:boolean = true;
   public showAttention:boolean = false;
 
+
   constructor() {}
 
   ngOnInit() {}
@@ -42,7 +43,7 @@ export class FormComponent implements OnInit {
         } else {
            this.inValid = false;
            this.valid = true;
-            this.showAttention = false;
+           this.showAttention = false;
         }
 
         this.newClient = new Client (this.name, this.phone, this.address, this.email)
@@ -51,6 +52,17 @@ export class FormComponent implements OnInit {
     }
 
   public updateClient(name: string, phone: string, address: string, email: string){
+
+        if (name === undefined || name.length <= 0) {
+           this.inValid = true;
+           this.valid = false;
+           this.showAttention = true;
+           return false;
+        } else {
+           this.inValid = false;
+           this.valid = true;
+           this.showAttention = false;
+        }
 
      for (let i = 0; i < arguments.length; i++){
         this.updatesClient.push(arguments[i]);
@@ -65,6 +77,10 @@ export class FormComponent implements OnInit {
     this.phone = '';
     this.address = '';
     this.email = '';
+    this.valid = false;
+    this.inValid = false;
+    this.hiddenAttention = true;
+    this. showAttention = false;
   }
 
   public clearForm(): void {
