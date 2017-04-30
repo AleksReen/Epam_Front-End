@@ -36,9 +36,9 @@
                 <th></th>
             </tr>
 
-            <tr class="app-table__data-base-tr" *ngFor="let item of listClients">
+            <tr class="app-table__data-base-tr" *ngFor="let item of listClients" [class.app-table__data-base-tr_selected]="item === selectedClient">
                 <td class="app-table__data-base-button-conteiner">
-                    <div class="app-table__data-base-button-edit" (click)="editeClient(item.getId)" tooltip="WWWW">
+                    <div class="app-table__data-base-button-edit" (click)="editeClient(item)">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
                 </td>
@@ -65,9 +65,9 @@
                 <th></th>
             </tr>
 
-            <tr class="app-table__data-base-tr" *ngFor="let item of searchArray">
+            <tr class="app-table__data-base-tr" *ngFor="let item of searchArray" [class.app-table__data-base-tr_selected]="item === selectedClient">
                 <td class="app-table__data-base-button-conteiner">
-                    <div class="app-table__data-base-button-edit" (click)="editeClient(item.getId)">
+                    <div class="app-table__data-base-button-edit" (click)="editeClient(item)">
                         <span class="glyphicon glyphicon-edit"></span>
                     </div>
                 </td>

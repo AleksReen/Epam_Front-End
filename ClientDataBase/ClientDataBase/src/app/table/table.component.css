@@ -119,6 +119,10 @@
     color: white;
 }
 
+.app-table__data-base-tr_selected {
+    border: 3px solid #1976d2
+}
+
 .app-table__data-base-button-edit {
     height: 30px;
     line-height: 30px;
