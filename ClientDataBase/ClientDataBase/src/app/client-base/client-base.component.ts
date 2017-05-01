@@ -10,14 +10,11 @@ import { DataService } from '../data.service';
 })
 export class ClientBaseComponent implements OnInit {
 
-/*INPUT сверху в низ - OUTPUT снизу в верх*/
-
   public clientBase: Client[] = [];
   public base: Base;
   public editeClient: Client;
   public toggleFormState = 'default';
   private someToken: string;
-
 
   constructor(private _dataService: DataService) {}
 

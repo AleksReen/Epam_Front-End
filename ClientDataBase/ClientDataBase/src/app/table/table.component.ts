@@ -16,22 +16,23 @@ export class TableComponent implements OnInit {
   public editeClientTable = new EventEmitter <number> ();
   public searchState = 'default';
   public searchArray: Client [] = [];
-  public searchName: string;
   public selectedClient: Client;
-
 
   constructor() {}
 
   ngOnInit() {}
 
-   public searchClient() {
+   public searchClient(name: string) {
     this.searchState = 'search';
     this.searchArray = [];
-    this.listClients.forEach( client => {if (client.getName === this.searchName) {this.searchArray.push(client); }; });
+    this.listClients.forEach( client => {if (client.getName === name) {this.searchArray.push(client); }; });
   }
 
-  public returnBase() {
-    this.searchState = 'default';
+  public returnBase(state: string) {
+    if ( state !== 'default') {
+      throw new  Error ('State is not correct');
+    }
+    this.searchState = state;
   }
 
   public deleteClient(id: number) {

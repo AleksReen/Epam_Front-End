@@ -6,18 +6,7 @@
 
     <div class="app-table__search-conteiner">
 
-        <div class="app-table__search">
-            <label class="app-table__search-lable" for="search">Search</label>
-            <input id="search" class="app-table__search-input" type="text" name="search" value="" [(ngModel)]="searchName">
-            <div class="app-table__search-button-conteiner">
-                <button class="app-table__search-button app-table__search-button_green" (click)="searchClient()">
-                    <span class="glyphicon glyphicon-search"></span> 
-                 Search</button>
-                <button class="app-table__search-button app-table__search-button_blue" *ngIf="searchState == 'search'" (click)="returnBase()">
-                     <span class="glyphicon glyphicon-repeat"></span>  
-                 Return</button>
-            </div>
-        </div>
+        <app-search (emitSearchName)="searchClient($event)" (emitReturnBase)="returnBase($event)"> </app-search>
 
     </div>
     <br>

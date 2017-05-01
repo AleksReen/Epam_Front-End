@@ -19,15 +19,15 @@ export class FormComponent implements OnInit {
   editeClientForm: Client;
   @Input()
   toggleForm: string;
-  @Output() 
+  @Output()
   updatesClientForm = new EventEmitter <string []> ();
   updatesClient: string [] = [];
-  @Output() 
+  @Output()
   toglleOff = new EventEmitter <string> ();
-  public inValid:boolean = false;
-  public valid:boolean = false;
-  public hiddenAttention:boolean = true;
-  public showAttention:boolean = false;
+  public inValid = false;
+  public valid = false;
+  public hiddenAttention = true;
+  public showAttention = false;
 
 
   constructor() {}
@@ -35,6 +35,7 @@ export class FormComponent implements OnInit {
   ngOnInit() {}
 
   public createClient(): boolean {
+
         if (this.name === undefined || this.name.length <= 0) {
            this.inValid = true;
            this.valid = false;
@@ -51,7 +52,7 @@ export class FormComponent implements OnInit {
         return true;
     }
 
-  public updateClient(name: string, phone: string, address: string, email: string){
+  public updateClient(name: string, phone: string, address: string, email: string) {
 
         if (name === undefined || name.length <= 0) {
            this.inValid = true;
@@ -69,6 +70,7 @@ export class FormComponent implements OnInit {
      }
         this.updatesClientForm.emit(this.updatesClient);
         this. updatesClient = [];
+        return true;
     }
 
   public finishEdite(): void {
