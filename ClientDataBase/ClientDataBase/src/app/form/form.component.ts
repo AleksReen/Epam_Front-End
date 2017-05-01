@@ -52,7 +52,7 @@ export class FormComponent implements OnInit {
         return true;
     }
 
-  public updateClient(name: string, phone: string, address: string, email: string) {
+  public updateClient(name: string, phone: string, address: string, email: string): boolean {
 
         if (name === undefined || name.length <= 0) {
            this.inValid = true;
