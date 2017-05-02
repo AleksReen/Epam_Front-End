@@ -14,6 +14,8 @@ import { TableComponent } from './table/table.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
+import { FormCreateComponent } from './form-create/form-create.component';
+import { FormUpdateComponent } from './form-update/form-update.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { SearchComponent } from './search/search.component';
     TableComponent,
     HeaderComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
+    FormCreateComponent,
+    FormUpdateComponent
   ],
   imports: [
     BrowserModule,
