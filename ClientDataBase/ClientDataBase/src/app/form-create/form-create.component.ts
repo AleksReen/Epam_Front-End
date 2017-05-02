@@ -24,9 +24,18 @@ export class FormCreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  public createClient(): boolean {
+  public createClient(): void {
 
-        if (this.name === undefined || this.name.length <= 0) {
+        if (this.validName()){
+
+        let newClient = new Client (this.name, this.phone, this.address, this.email);
+        this.clientFormCreate.emit(newClient);
+      }
+    }
+
+    public validName (): boolean {
+
+       if (this.name === undefined || this.name.length <= 0) {
            this.inValid = true;
            this.valid = false;
            this.showAttention = true;
@@ -36,10 +45,7 @@ export class FormCreateComponent implements OnInit {
            this.valid = true;
            this.showAttention = false;
         }
-
-        let newClient = new Client (this.name, this.phone, this.address, this.email);
-        this.clientFormCreate.emit(newClient);
-        return true;
+         return true;
     }
 
     public clearForm(): void {

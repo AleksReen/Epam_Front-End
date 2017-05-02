@@ -30,9 +30,22 @@ export class FormUpdateComponent implements OnInit {
   ngOnInit() {
   }
 
-  public updateClient(name: string, phone: string, address: string, email: string): boolean {
+  public updateClient(name: string, phone: string, address: string, email: string): void {
 
-      if (name === undefined || name.length <= 0) {
+     if (this.validName(name)){
+
+       let updatesClient: string [] = [];
+       for (let i = 0; i < arguments.length; i++){
+          updatesClient.push(arguments[i]);
+     }
+          this.updatesClientFormUpdate.emit(updatesClient);
+          updatesClient = [];
+     }
+    }
+
+    public validName (name:string): boolean {
+
+       if (name === undefined || name.length <= 0) {
            this.inValid = true;
            this.valid = false;
            this.showAttention = true;
@@ -42,13 +55,7 @@ export class FormUpdateComponent implements OnInit {
            this.valid = true;
            this.showAttention = false;
         }
-     let updatesClient: string [] = [];
-     for (let i = 0; i < arguments.length; i++){
-        updatesClient.push(arguments[i]);
-     }
-        this.updatesClientFormUpdate.emit(updatesClient);
-        updatesClient = [];
-        return true;
+         return true;
     }
 
   public finishEdite(): void {
