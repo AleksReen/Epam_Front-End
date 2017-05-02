@@ -11,86 +11,16 @@
     display: block;
 }
 
-.app-table__data-base-conteiner {
+.app-table__table-conteiner {
     overflow-y: auto;
     height: 442px;
     width: 100%
 }
 
-.app-table__data-base {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
+.app-table__table-data-base-conteiner {
+    display: block;
 }
 
-.app-table__data-base-header {
-    background-color: #1976d2;
-    color: white;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.app-table__data-base-td {
-    padding: 3px;
-    border: 1px solid black;
-    overflow-wrap: break-word;
-}
-
-.app-table__data-base-button-conteiner {
-    display: table-cell;
-}
-
-.app-table__data-base-button-conteiner:hover {
-    background-color: white;
-}
-
-.app-table__data-base-tr:hover {
-    background-color: #1976d2;
-    color: white;
-}
-
-.app-table__data-base-tr_selected {
-    border: 3px solid #1976d2
-}
-
-.app-table__data-base-button-edit {
-    height: 30px;
-    line-height: 30px;
-    width: 30px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 5px;
-    color: #f89406;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.app-table__data-base-button-edit:hover {
-    border: 1px solid #faa732
-}
-
-.app-table__data-base-button-edit:active {
-    border: 2px solid #ad6704;
-}
-
-.app-table__data-base-button-delete {
-    height: 30px;
-    line-height: 30px;
-    width: 30px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 5px;
-    color: red;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.app-table__data-base-button-delete:hover {
-    border: 1px solid red;
-}
-
-.app-table__data-base-button-delete:active {
-    border: 1px solid red;
+.app-table__table-search-conteiner {
+    display: block;
 }

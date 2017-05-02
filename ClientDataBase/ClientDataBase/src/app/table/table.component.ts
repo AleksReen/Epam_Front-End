@@ -15,8 +15,9 @@ export class TableComponent implements OnInit {
   @Output()
   public editeClientTable = new EventEmitter <number> ();
   public searchState = 'default';
-  public searchArray: Client [] = [];
-  public selectedClient: Client;
+
+  public searchClientList: Client [] = [];
+
 
   constructor() {}
 
@@ -24,8 +25,8 @@ export class TableComponent implements OnInit {
 
    public searchClient(name: string) {
     this.searchState = 'search';
-    this.searchArray = [];
-    this.listClients.forEach( client => {if (client.getName === name) {this.searchArray.push(client); }; });
+    this.searchClientList = [];
+    this.listClients.forEach( client => {if (client.getName === name) {this.searchClientList.push(client); }; });
   }
 
   public returnBase(state: string) {
@@ -37,16 +38,12 @@ export class TableComponent implements OnInit {
 
   public deleteClient(id: number) {
     this.deleteClientTable.emit(id);
-    if (this.searchArray.length >= 0) {
-     this.searchArray = this.searchArray.filter(client => client.getId !== id);
+    if (this.searchClientList.length >= 0) {
+    this.searchClientList = this.searchClientList.filter(client => client.getId !== id);
     }
   }
 
    public editeClient(id: number) {
     this.editeClientTable.emit(id);
-  }
-
-  public onSelect(item: Client) {
-     this.selectedClient = item;
   }
 }

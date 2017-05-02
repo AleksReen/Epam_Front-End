@@ -9,66 +9,21 @@
         <app-search (emitSearchName)="searchClient($event)" (emitReturnBase)="returnBase($event)"> </app-search>
 
     </div>
+
     <br>
     <br>
 
-    <div class="app-table__data-base-conteiner">
+    <div class="app-table__table-conteiner">
 
-        <table class="app-table__data-base" *ngIf="searchState == 'default'">
+        <div class="app-table__table-data-base-conteiner" *ngIf="searchState == 'default'">
 
-            <tr>
-                <th></th>
-                <th class="app-table__data-base-header">Name</th>
-                <th class="app-table__data-base-header">Phone</th>
-                <th class="app-table__data-base-header">Address</th>
-                <th class="app-table__data-base-header">Email</th>
-                <th></th>
-            </tr>
+            <app-table-data-base [(listClients)]="listClients" (deleteClientId)="deleteClient($event)" (editeClientId)="editeClient($event)"> </app-table-data-base>
 
-            <tr class="app-table__data-base-tr" *ngFor="let item of listClients" [class.app-table__data-base-tr_selected]="item === selectedClient" (click)="onSelect(item)">
-                <td class="app-table__data-base-button-conteiner">
-                    <div class="app-table__data-base-button-edit" (click)="editeClient(item.getId)">
-                        <span class="glyphicon glyphicon-edit"></span>
-                    </div>
-                </td>
-                <td class="app-table__data-base-td">{{item.getName}}</td>
-                <td class="app-table__data-base-td">{{item.getPhone}}</td>
-                <td class="app-table__data-base-td">{{item.getAddress}}</td>
-                <td class="app-table__data-base-td">{{item.getEmail}}</td>
-                <td class="app-table__data-base-button-conteiner">
-                    <div class="app-table__data-base-button-delete" (click)="deleteClient(item.getId)">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        </div>
 
-        <table class="app-table__data-base" *ngIf="searchState == 'search'">
-            <tr>
+        <div class="app-table__table-search-conteiner" *ngIf="searchState == 'search'">
 
-                <th></th>
-                <th class="app-table__data-base-header">Name</th>
-                <th class="app-table__data-base-header">Phone</th>
-                <th class="app-table__data-base-header">Address</th>
-                <th class="app-table__data-base-header">Email</th>
-                <th></th>
-            </tr>
+            <app-table-search [(searchClientList)]="searchClientList" (deleteClientId)="deleteClient($event)" (editeClientId)="editeClient($event)"> </app-table-search>
 
-            <tr class="app-table__data-base-tr" *ngFor="let item of searchArray" [class.app-table__data-base-tr_selected]="item === selectedClient" (click)="onSelect(item)">
-                <td class="app-table__data-base-button-conteiner">
-                    <div class="app-table__data-base-button-edit" (click)="editeClient(item.getId)">
-                        <span class="glyphicon glyphicon-edit"></span>
-                    </div>
-                </td>
-                <td class="app-table__data-base-td">{{item.getName}}</td>
-                <td class="app-table__data-base-td">{{item.getPhone}}</td>
-                <td class="app-table__data-base-td">{{item.getAddress}}</td>
-                <td class="app-table__data-base-td">{{item.getEmail}}</td>
-                <td class="app-table__data-base-button-conteiner">
-                    <div class="app-table__data-base-button-delete" (click)="deleteClient(item.getId)">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        </div>
     </div>
