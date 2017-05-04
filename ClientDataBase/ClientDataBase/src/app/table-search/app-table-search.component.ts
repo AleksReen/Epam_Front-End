@@ -4,8 +4,8 @@ import { Client } from 'app/client';
 
 @Component({
   selector: 'app-table-search',
-  templateUrl: './table-search.component.html',
-  styleUrls: ['./table-search.component.css']
+  templateUrl: './app-table-search.component.html',
+  styleUrls: ['./app-table-search.component.css']
 })
 export class TableSearchComponent implements OnInit {
 

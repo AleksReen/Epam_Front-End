@@ -1,44 +1,46 @@
-.app-table-search__table {
-    width: 90%;
+.app-table-data-base__table {
+    width: 95%;
     margin: 0 auto;
     border-collapse: collapse;
 }
 
-.app-table-search__header {
+.app-table-data-base__header {
     background-color: #1976d2;
     color: white;
     text-align: center;
     border: 1px solid black;
 }
 
-.app-table-search__table-data {
+.app-table-data-base__table-data {
     padding: 3px;
     border: 1px solid black;
     overflow-wrap: break-word;
 }
 
-.app-table-search__button-conteiner {
+.app-table-data-base__button-conteiner {
     display: table-cell;
+    width: 30px
 }
 
-.app-table-search__button-conteiner:hover {
+.app-table-data-base__button-conteiner:hover {
     background-color: white;
 }
 
-.app-table-search__table-row:hover {
+.app-table-data-base__table-row:hover {
     background-color: #1976d2;
     color: white;
 }
 
-.app-table-search__table-row_selected {
+.app-table-data-base__table-row_selected {
     border: 3px solid #1976d2
 }
 
-.app-table-search__button-edit {
+.app-table-data-base__button-edit {
     height: 30px;
     line-height: 30px;
     width: 30px;
-    margin: 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
     border-radius: 5px;
     color: #f89406;
@@ -47,19 +49,20 @@
     cursor: pointer;
 }
 
-.app-table-search__button-edit:hover {
+.app-table-data-base__button-edit:hover {
     border: 1px solid #faa732
 }
 
-.app-table-search__button-edit:active {
+.app-table-data-base__button-edit:active {
     border: 2px solid #ad6704;
 }
 
-.app-table-search__button-delete {
+.app-table-data-base__button-delete {
     height: 30px;
     line-height: 30px;
     width: 30px;
-    margin: 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
     border-radius: 5px;
     color: red;
@@ -68,10 +71,10 @@
     cursor: pointer;
 }
 
-.app-table-search__button-delete:hover {
+.app-table-data-base__button-delete:hover {
     border: 1px solid red;
 }
 
-.app-table-search__button-delete:active {
-    border: 1px solid red;
+.app-table-data-base__button-delete:active {
+    border: 2px solid #b70909;
 }

@@ -1,18 +1,17 @@
-.app-root-content {
+.app__main-conteiner {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
 }
 
-.app-header {
+.app__app-header-conteiner{
     display: block;
 }
-
-.app-client-base {
+.app__app-client-base-conteiner{
     display: block;
 }
-
-.app-footer {
+.app__app-footer-conteiner{
     display: block;
 }

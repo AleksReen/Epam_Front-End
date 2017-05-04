@@ -3,8 +3,8 @@ import { Client } from 'app/client';
 
 @Component({
   selector: 'app-form-create',
-  templateUrl: './form-create.component.html',
-  styleUrls: ['./form-create.component.css']
+  templateUrl: './app-form-create.component.html',
+  styleUrls: ['./app-form-create.component.css']
 })
 export class FormCreateComponent implements OnInit {
 

@@ -12,9 +12,10 @@
 }
 
 .app-table__table-conteiner {
-    overflow-y: auto;
-    height: 442px;
-    width: 100%
+    overflow-y: overlay;
+    max-height: 450px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .app-table__table-data-base-conteiner {

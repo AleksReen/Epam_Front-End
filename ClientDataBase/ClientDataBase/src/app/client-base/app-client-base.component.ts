@@ -5,8 +5,8 @@ import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-client-base',
-  templateUrl: './client-base.component.html',
-  styleUrls: ['./client-base.component.css']
+  templateUrl: './app-client-base.component.html',
+  styleUrls: ['./app-client-base.component.css']
 })
 export class ClientBaseComponent implements OnInit {
 

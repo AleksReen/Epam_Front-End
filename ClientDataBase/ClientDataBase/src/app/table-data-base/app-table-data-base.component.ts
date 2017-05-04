@@ -4,8 +4,8 @@ import { Client } from 'app/client';
 
 @Component({
   selector: 'app-table-data-base',
-  templateUrl: './table-data-base.component.html',
-  styleUrls: ['./table-data-base.component.css']
+  templateUrl: './app-table-data-base.component.html',
+  styleUrls: ['./app-table-data-base.component.css']
 })
 export class TableDataBaseComponent implements OnInit {
 

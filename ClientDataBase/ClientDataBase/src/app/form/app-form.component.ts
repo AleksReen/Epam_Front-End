@@ -3,8 +3,8 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  templateUrl: './app-form.component.html',
+  styleUrls: ['./app-form.component.css']
 })
 export class FormComponent implements OnInit {
 

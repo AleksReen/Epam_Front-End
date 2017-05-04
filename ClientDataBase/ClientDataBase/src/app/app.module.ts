@@ -8,16 +8,16 @@ import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { AppComponent } from './app.component';
 
 import { DataService } from './data.service';
-import { ClientBaseComponent } from './client-base/client-base.component';
-import { FormComponent } from './form/form.component';
-import { TableComponent } from './table/table.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { SearchComponent } from './search/search.component';
-import { FormCreateComponent } from './form-create/form-create.component';
-import { FormUpdateComponent } from './form-update/form-update.component';
-import { TableDataBaseComponent } from './table-data-base/table-data-base.component';
-import { TableSearchComponent } from './table-search/table-search.component';
+import { ClientBaseComponent } from './client-base/app-client-base.component';
+import { FormComponent } from './form/app-form.component';
+import { TableComponent } from './table/app-table.component';
+import { HeaderComponent } from './header/app-header.component';
+import { FooterComponent } from './footer/app-footer.component';
+import { SearchComponent } from './search/app-search.component';
+import { FormCreateComponent } from './form-create/app-form-create.component';
+import { FormUpdateComponent } from './form-update/app-form-update.component';
+import { TableDataBaseComponent } from './table-data-base/app-table-data-base.component';
+import { TableSearchComponent } from './table-search/app-table-search.component';
 
 
 @NgModule({
