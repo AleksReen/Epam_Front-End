@@ -1,0 +1,19 @@
+﻿.forma {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.forma__conteiner-personal-info {
+    flex-grow: 1;
+}
+
+.froma__conteiner-subject {
+    flex-grow: 1;
+}
+
+.froma__conteiner-address {
+    flex-grow: 1;
+}

@@ -1,5 +1,4 @@
-﻿
-.UnderLine {
+﻿.footer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,25 +6,27 @@
     min-height: 83px;
 }
 
-.UnderLine__textLicense {
+.footer__text {
     color: #373a3c;
     font-size: 16px;
     font-weight: 500;
     width: 66%;
 }
 
-.UnderLine__conteinerGoToTop {
-    
+.footer__conteiner-href {
     text-align: right;
     width: 33%;
 }
-.UnderLine__GoToTopHref{
+
+.footer__href {
     color: #2288bb;
     font-size: 16px;
     font-weight: 500;
-    text-decoration:none;
+    text-decoration: none;
 }
-.UnderLine_GoToTop_Href:focus, .UnderLine_GoToTop_Href:hover {
+
+.footer__href:focus,
+.footer__href:hover {
     color: #014c8c;
     text-decoration: underline;
 }

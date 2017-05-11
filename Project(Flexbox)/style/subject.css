@@ -1,0 +1,81 @@
+.subject {
+    min-height: 460px;
+    width: 400px;
+    border: 1px solid white;
+    background-size: cover;
+    color: #373a3c;
+    font-size: 21px;
+}
+
+.subject__lable {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.subject__textbox {
+    margin-left: 15px;
+    margin-right: 5%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 95%;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+}
+
+.subject__textbox:focus {
+    border: 1px solid #66afe9;
+}
+
+.subject__textarea {
+    margin-left: 15px;
+    margin-right: 5%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+    resize: vertical;
+    min-height: 137px;
+    width: 95%;
+    height: 35px;
+    font-family: Calibri;
+    font-size: 21px;
+}
+
+.subject__textarea:focus {
+    border: 1px solid #66afe9;
+}
+
+.subject__checkbox-items {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.subject__checkbox {}
+
+.subject__checkbox-text {}
+
+.subject__button {
+    margin-left: 15px;
+    height: 55px;
+    line-height: 55px;
+    width: 110px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #5cb85c;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.subject__buttonSubmit:hover {
+    background-color: #449d44;
+}
+
+.subject__buttonSubmit:active {
+    background-color: #3b8a3b;
+}

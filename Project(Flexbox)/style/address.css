@@ -1,0 +1,53 @@
+.address {
+    min-height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    background-size: cover;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 10%;
+    color: #373a3c;
+}
+
+.address__text-head {
+    color: #373a3c;
+    font-size: 36px;
+}
+
+.address__text-underhead {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.address__mail {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.address__phone {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.address__simbol {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    font-size: 30px;
+    width: 55px;
+}
+
+.address__simbol_mail:before {
+    content: "\f003";
+    margin-right: 25px;
+    color: #373a3c;
+}
+
+.address__simbol_phone:before {
+    content: "\f095";
+    margin-right: 25px;
+    color: #373a3c;
+}
