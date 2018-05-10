@@ -1,0 +1,27 @@
+.logo {
+    display: block;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.logo__maintext {
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.logo__sidetext {
+    font-size: 20px;
+    color: #888;
+    font-weight: 500;
+}
+
+@media (max-width:500px) {
+    .logo__maintext {
+        text-align: center;
+    }
+    .logo__sidetext {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+}

@@ -1,29 +1,37 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <title></title>
+    <title>Sigma</title>
     <meta charset="utf-8" />
-    <meta http-equiv="Cache-Control" content="no-cache">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="style/styleMain.css" rel="stylesheet" />
-    <link href="style/styleHeader.css" rel="stylesheet" />
-    <link href="style/styleSeparator.css" rel="stylesheet" />
-    <link href="style/styleHome.css" rel="stylesheet" />
-    <link href="style/styleRow.css" rel="stylesheet" />
-    <link href="style/styleGallery.css" rel="stylesheet" />
-    <link href="style/styleLineAboutUs.css" rel="stylesheet" />
-    <link href="style/styleRowsWhithBlocks.css" rel="stylesheet" />
-    <link href="style/styleLineContact.css" rel="stylesheet" />
-    <link href="style/styleForma.css" rel="stylesheet" />
-    <link href="style/styleUnderLine.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+    <link href="style/header.css" rel="stylesheet" />
+    <link href="style/logo.css" rel="stylesheet" />
+    <link href="style/menu.css" rel="stylesheet" />
+    <link href="style/separator.css" rel="stylesheet" />
+    <link href="style/home.css" rel="stylesheet" />
+    <link href="style/row.css" rel="stylesheet" />
+    <link href="style/gallery.css" rel="stylesheet" />
+    <link href="style/line-about-us.css" rel="stylesheet" />
+    <link href="style/line1.css" rel="stylesheet" />
+    <link href="style/line2.css" rel="stylesheet" />
+    <link href="style/line3.css" rel="stylesheet" />
+    <link href="style/contact.css" rel="stylesheet" />
+    <link href="style/forma.css" rel="stylesheet" />
+    <link href="style/personal-info.css" rel="stylesheet" />
+    <link href="style/subject.css" rel="stylesheet" />
+    <link href="style/address.css" rel="stylesheet" />
+    <link href="style/footer.css" rel="stylesheet" />
     <script src="jQuery/jquery.min.js"></script>
 
 </head>
+
 <body>
     <div class="main">
 
-        <header id="Header" class="header">
-            <div class="header__holeLogo">
+        <div id="header" class="header">
+            <div class="header__logo-conteiner">
 
                 <div class="logo">
                     <h1 class="logo__maintext">Sigma</h1>
@@ -32,20 +40,20 @@
 
             </div>
 
-            <div class="header__holeMenu">
+            <div class="header__menu-conteiner">
 
                 <div id="menu" class="menu">
                     <div class="menu__items">
-                        <a class="menu__nav" href="#Home">Home</a>
+                        <a class="menu__nav" href="#home">Home</a>
                     </div>
                     <div class="menu__items">
-                        <a class="menu__nav" href="#Gallery">Gallery</a>
+                        <a class="menu__nav" href="#gallery">Gallery</a>
                     </div>
                     <div class="menu__items">
-                        <a class="menu__nav" href="#AboutUs">About</a>
+                        <a class="menu__nav" href="#about">About</a>
                     </div>
                     <div class="menu__items">
-                        <a class="menu__nav" href="#Contact">Contact</a>
+                        <a class="menu__nav" href="#contact">Contact</a>
                     </div>
                     <div class="menu__items menu__items_paddingRight">
                         <a class="menu__nav" href="#lineInfo">External</a>
@@ -53,347 +61,328 @@
                 </div>
 
             </div>
-        </header>
-
+        </div>
 
         <div class="separator">
             <hr class="separator__line" />
         </div>
 
 
-        <div id="Home" class="Home">
-            <div class="Home__hole">
-                <div class="blockHome">
-                    <h1 class="blockHome__maintext">Bootstrap 4.0 Theme</h1>
-                    <p class="blockHome__discription">
-                        Sigma is free Bootstrap 4
-                        (alpha 2) theme designed
-                        for a metro-style image grid gallery.
-                        Download, modify and use this layout
-                        for your websites.
+        <div id="home" class="home">
+            <div class="home__conteiner">
+
+                <div class="home-content">
+                    <h1 class="home-content__maintext">Bootstrap 4.0 Theme</h1>
+                    <p class="home-content__discription">
+                        Sigma is free Bootstrap 4 (alpha 2) theme designed for a metro-style image grid gallery. Download, modify and use this layout for your websites.
                     </p>
-                    <div class="blockHome__HomeButton">
-                        <button class="blockHome__button  blockHome__button_backgroundRed">Our Gallery</button>
-                        <button class="blockHome__button  blockHome__button_backgroundGreen">Learn More</button>
+                    <div class="home-content__button-group">
+                        <button class="home-content__button  home-content__button_red">Our Gallery</button>
+                        <button class="home-content__button  home-content__button_green">Learn More</button>
                     </div>
                 </div>
+
             </div>
         </div>
 
 
-        <div class="Row">
-            <div class="Row__hole Row__hole_veryLightGray">
+        <div class="row">
+            <div class="row__continer row__continer_very-light-gray">
 
-                <div class="blockRow blockRow_ColorBlack">
-                    <div class="blockRow__boxSimbol">
-                        <span class="blockRow__powerOff"></span>
+                <div class="row-content row-content_black">
+                    <div class="row-content__simbol">
+                        <span class="row-content__powerOff"></span>
                     </div>
-                    <div class="blockRow__textHead">Design</div>
-                    <div class="blockRow__textUnderhead">
-                        Praesent lorem dui, suscipit eu
-                        volutpat id, sollicitudin ut mi.
-                        Praesent ornare massa vehicula.
+                    <div class="row-content__text-head">Design</div>
+                    <div class="row-content__text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
                     </div>
                 </div>
 
             </div>
 
-            <div class="Row__hole Row__hole_lightGray">
-                <div class="blockRow">
-                    <div class="blockRow__boxSimbol">
-                        <span class="blockRow__flash"></span>
+            <div class="row__continer row__continer_light-gray">
+
+                <div class="row-content">
+                    <div class="row-content__simbol">
+                        <span class="row-content__flash"></span>
                     </div>
-                    <div class="blockRow__textHead">Implement</div>
-                    <div class="blockRow__textUnderhead">
-                        Praesent lorem dui, suscipit eu
-                        volutpat id, sollicitudin ut mi.
-                        Praesent ornare massa vehicula.
+                    <div class="row-content__text-head">Implement</div>
+                    <div class="row-content__text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
                     </div>
                 </div>
+
             </div>
 
-            <div class="Row__hole Row__hole_Gray">
-                <div class="blockRow">
-                    <div class="blockRow__boxSimbol">
-                        <span class="blockRow__thumbs-up"></span>
+            <div class="row__continer row__continer_gray">
+
+                <div class="row-content">
+                    <div class="row-content__simbol">
+                        <span class="row-content__thumbs-up"></span>
                     </div>
-                    <div class="blockRow__textHead">Enhance</div>
-                    <div class="blockRow__textUnderhead">
-                        Praesent loremuiftudin ut mi.
-                        Praesent ornare massa vehicula.
-                    </div>
-                </div>
-            </div>
-            <div class="Row__hole Row__hole_darkGray">
-                <div class="blockRow">
-                    <div class="blockRow__boxSimbol">
-                        <span class="blockRow__chart"></span>
-                    </div>
-                    <div class="blockRow__textHead">Monitor</div>
-                    <div class="blockRow__textUnderhead">
-                        Praesent lorem dui, suscipit eu
-                        volutpat id, sollicitudin ut mi.
-                        Praesent ornare massa vehicula.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="GalleryRow1">
-            <div class="GalleryRow1__image1">
-            </div>
-            <div class="GalleryRow1__image2">
-            </div>
-            <div class="GalleryRow1__image3">
-            </div>
-        </div>
-
-        <div class="GalleryRow2">
-            <div class="GalleryRow2__imageMax"></div>
-            <div class="GalleryRow2__imageGroup">
-                <div class="GalleryRow2__imageTop"></div>
-                <div class="GalleryRow2__imageBottom"></div>
-            </div>
-        </div>
-
-        <div class="GalleryRow3">
-            <div class="GalleryRow3__image1"></div>
-            <div class="GalleryRow3__image2"></div>
-        </div>
-
-        <div class="GalleryRow4">
-            <div class="GalleryRow4__image1"></div>
-            <div class="GalleryRow4__image2"></div>
-            <div class="GalleryRow4__image3"></div>
-            <div class="GalleryRow4__image4"></div>
-        </div>
-
-
-        <div id="AboutUs" class="lineAboutUs">
-            <div class="lineAboutUs__hole">
-                <div class="blocklineAboutUs">
-                    <h1 class="blocklineAboutUs__maintext">About Us</h1>
-                    <p class="blocklineAboutUs__discription">
-                        Sed elit elit, dictum eu turpis non,
-                        fringilla efficitur ipsum.
-                        Phasellus ultrices, nunc et tempus porta,
-                        tellus purus elementum ex, volutpat lobortis
-                        orci dolor in tortor.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="RowsWhithBlocks">
-
-            <div class="Row1">
-
-                <div class="Row1__hole Row1__hole_bgColor_lightGray">
-                    <div class="block1Row1">
-                        <div class="block1Row1__textHead">01 Design</div>
-                        <div class="block1Row1__textUnderhead">
-                            Praesent lorem dui,
-                            suscipit eu volutpat id,
-                            sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
+                    <div class="row-content__text-head">Enhance</div>
+                    <div class="row-content__text-underhead">
+                        Praesent loremuiftudin ut mi. Praesent ornare massa vehicula.
                     </div>
                 </div>
 
-                <div class="Row1__hole Row1__hole_bgColor_Gray ">
-                    <div class="block2Row1">
-                        <div class="block2Row1__textHead">02 Coding</div>
-                        <div class="block2Row1__textUnderhead">
-                            Praesent lorem dui,
-                            suscipit eu volutpat id,
-                            sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="Row1__hole Row1__hole_bgColor_darkGray">
-                    <div class="block3Row1">
-                        <div class="block3Row1__textHead">03 Mobile Ready</div>
-                        <div class="block3Row1__textUnderhead">
-                            Praesent lorem dui,
-                            suscipit eu volutpat id,
-                            sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                       
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <div class="Row2">
-                <div class="Row2__holeLeft">
-                    <div class="LeftColumnRow2">
-                        <div class="LeftColumnRow2__textHead">Left Column</div>
-                        <div class="LeftColumnRow2__textUnderhead">
-                            Praesent lorem dui, suscipit eu
-                            volutpat id, sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
-                        <button class="LeftColumnRow2__colButton">Our Gallery</button>
-                    </div>
-                </div>
-                <div class="Row2__holeRight">
-                    <div class="RightColumnRow2">
-                        <div class="RightColumnRow2__textHead">Right Column</div>
-                        <div class="RightColumnRow2__textUnderhead">
-                            Praesent lorem dui, suscipit eu
-                            volutpat id, sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
-                        <button class="RightColumnRow2__colButton">Learn More</button>
-                    </div>
-                </div>
-            </div>
+            <div class="row__continer row__continer_dark-gray">
 
-            <div class="Row3">
-                <div class="Row3__hole1">
-                    <div class="block1Row3">
-                        <div class="block1Row3__textHead">Our Team</div>
-                        <div class="block1Row3__textUnderhead">
-                            Praesent lorem dui, suscipit eu
-                            volutpat id, sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
+                <div class="row-content">
+                    <div class="row-content__simbol">
+                        <span class="row-content__chart"></span>
                     </div>
-                </div>
-                <div class="Row3__hole2">
-                    <div class="block2Row3">
-                        <div class="block2Row3__textHead">History</div>
-                        <div class="block2Row3__textUnderhead">
-                            Praesent lorem dui, suscipit eu volutpat id,
-                            sollicitudin ut mi. Praesent ornare massa vehicula.
-                        </div>
-                    </div>
-                </div>
-                <div class="Row3__hole3">
-                    <div class="block3Row3">
-                        <div class="block3Row3__textHead">Management</div>
-                        <div class="block3Row3__textUnderhead">
-                            Praesent lorem dui, suscipit eu
-                            volutpat id, sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
-                    </div>
-                </div>
-                <div class="Row3__hole4">
-                    <div class="block4Row3">
-                        <div class="block4Row3__textHead">Career</div>
-                        <div class="block4Row3__textUnderhead">
-                            Praesent lorem dui, suscipit eu
-                            volutpat id, sollicitudin ut mi.
-                            Praesent ornare massa vehicula.
-                        </div>
+                    <div class="row-content__text-head">Monitor</div>
+                    <div class="row-content__text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
                     </div>
                 </div>
             </div>
 
         </div>
 
+        <div id="gallery" class="gallery">
+            <div class="gallery__conteiner">
 
-        <div id="Contact" class="lineContact">
-            <div class="lineContact__hole">
-                <div class="blockContact">
-                    <h1 class="blockContact__maintext">Contact</h1>
-                    <p class="blockContact__discription">
-                        You may <a class="blockContact__hrefContact" href="#">contact</a> contact templatemo if you have any question.
-                        Suspendisse dolor purus, malesuada ut luctus quis,
-                        consectetur vel ante. Integer a pulvinar orci.
+                <div class="gallery-row1">
+                    <div class="gallery-row1__image1">
+                    </div>
+                    <div class="gallery-row1__image2">
+                    </div>
+                    <div class="gallery-row1__image3">
+                    </div>
+                </div>
+
+            </div>
+            <div class="gallery__conteiner">
+
+                <div class="gallery-row2">
+                    <div class="gallery-row2__image-big"></div>
+                    <div class="gallery-row2__image-group">
+                        <div class="gallery-row2__image-top"></div>
+                        <div class="gallery-row2__image-bottom"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gallery__conteiner">
+
+                <div class="gallery-row3">
+                    <div class="gallery-row3__image1"></div>
+                    <div class="gallery-row3__image2"></div>
+                </div>
+
+            </div>
+            <div class="gallery__conteiner">
+
+                <div class="gallery-row4">
+                    <div class="gallery-row4__image1"></div>
+                    <div class="gallery-row4__image2"></div>
+                    <div class="gallery-row4__image3"></div>
+                    <div class="gallery-row4__image4"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="about" class="line-about-us">
+            <div class="line-about-us__conteiner">
+
+                <div class="line-about-us__content">
+                    <h1 class="line-about-us__maintext">About Us</h1>
+                    <p class="line-about-us__discription">
+                        Sed elit elit, dictum eu turpis non, fringilla efficitur ipsum. Phasellus ultrices, nunc et tempus porta, tellus purus elementum ex, volutpat lobortis orci dolor in tortor.
                     </p>
                 </div>
+
             </div>
         </div>
 
+        <div class="line1">
+            <div class="line1__conteiner line1__conteiner_light-gray">
+
+                <div class="line1__block1">
+                    <div class="line1__block1-text-head">01 Design</div>
+                    <div class="line1__block1-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+            <div class="line1__conteiner line1__conteiner_gray ">
+
+                <div class="line1__block2">
+                    <div class="line1__block2-text-head">02 Coding</div>
+                    <div class="line1__block2-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+            <div class="line1__conteiner line1__conteiner_dark-gray">
+
+                <div class="line1__block3">
+                    <div class="line1__block3-text-head">03 Mobile Ready</div>
+                    <div class="line1__block3-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="line2">
+            <div class="line2__conteiner-left">
+
+                <div class="line2__left-content">
+                    <div class="line2__left-text-head">Left Column</div>
+                    <div class="line2__left-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                    <button class="line2__button line2__button_blue">Our Gallery</button>
+                </div>
+
+            </div>
+            <div class="line2__conteiner-right">
+
+                <div class="line2-right-content">
+                    <div class="line2__right-text-head">Right Column</div>
+                    <div class="line2__right-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                    <button class="line2__button line2__button_red">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="line3">
+            <div class="line3__conteiner1">
+
+                <div class="line3__block1">
+                    <div class="line3__block1-text-head">Our Team</div>
+                    <div class="line3__block1-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="line3__conteiner2">
+
+                <div class="line3__block2">
+                    <div class="line3__block2-text-head">History</div>
+                    <div class="line3__block2-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+            <div class="line3__conteiner3">
+
+                <div class="line3__block3">
+                    <div class="line3__block3-text-head">Management</div>
+                    <div class="line3__block3-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+            <div class="line3__conteiner4">
+
+                <div class="line3__block4">
+                    <div class="line3__block4-text-head">Career</div>
+                    <div class="line3__block4-text-underhead">
+                        Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <div class="contact__conteiner">
+
+                <div class="contact__content">
+                    <h1 class="contact__maintext">Contact</h1>
+                    <p class="contact__discription">
+                        You may <a class="contact__href" href="#">contact</a> contact templatemo if you have any question. Suspendisse dolor purus, malesuada ut luctus quis, consectetur vel ante. Integer a pulvinar orci.
+                    </p>
+                </div>
+
+            </div>
+        </div>
 
         <form class="forma">
+            <div class="forma__conteiner-personal-info">
 
-            <div class="forma__holePersonalInfo">
-                <div class="PersonalInfo">
-                    <div class="PersonalInfo__lable">Your Name</div>
-                    <input class="PersonalInfo__TexBoxInput" type="text" name="name" placeholder=" Write a full name" value="" />
-                    <div class="PersonalInfo__lable">Your Email</div>
-                    <input class="PersonalInfo__TexBoxInput" type="text" name="name" placeholder=" Enter your email" value="" />
-                    <div class="PersonalInfo__lable">Your Budget</div>
-                    <select class="PersonalInfo__TexBoxInput">
+                <div class="personal-info">
+                    <div class="personal-info__lable">Your Name</div>
+                    <input class="personal-info__texbox" type="text" name="name" placeholder=" Write a full name" value="" />
+                    <div class="personal-info__lable">Your Email</div>
+                    <input class="personal-info__texbox" type="text" name="name" placeholder=" Enter your email" value="" />
+                    <div class="personal-info__lable">Your Budget</div>
+                    <select class="personal-info__texbox">
                         <option value="$500">$500</option>
                         <option value="value">$1000</option>
                         <option value="value">$1500</option>
                         <option value="value">$2000</option>
                     </select>
                 </div>
-            </div>
 
-            <div class="froma__holeSubject">
-                <div class="Subject">
-                    <div class="Subject__lable">Subject</div>
-                    <input class="Subject__TextBoxInput" type="text" name="name" placeholder=" Subject" value="" />
-                    <div class="Subject__lable">Your Messaget</div>
-                    <textarea class="Subject__TextArea" placeholder=" Write a message"></textarea>
-                    <div class="Subject__checkboxItems">
-                        <input class="Subject__checkbox" type="checkbox" name="name" value="" />
-                        <span class="Subject__checkboxTekst">I am not a robot.</span>
+            </div>
+            <div class="froma__conteiner-subject">
+
+                <div class="subject">
+                    <div class="subject__lable">Subject</div>
+                    <input class="subject__textbox" type="text" name="name" placeholder=" Subject" value="" />
+                    <div class="subject__lable">Your Messaget</div>
+                    <textarea class="subject__textarea" placeholder=" Write a message"></textarea>
+                    <div class="subject__checkbox-items">
+                        <input class="subject__checkbox" type="checkbox" name="name" value="" />
+                        <span class="subject__checkbox-text">I am not a robot.</span>
                     </div>
-                    <button class="Subject__buttonSubmit">Submit</button>
+                    <button class="subject__button">Submit</button>
                 </div>
-            </div>
 
-            <div class="froma__holeOurAddress">
-                <div class="OurAddress">
-                    <div class="OurAddress__textHead">Our Address</div>
-                    <div class="OurAddress__textUnderhead">
-                        Suspendisse dolor purus,
-                        malesuada ut luctus quis,
-                        consectetur vel ante.
-                        Integer a pulvinar orci,
-                        eget sagittis enim.
-                   
+            </div>
+            <div class="froma__conteiner-address">
+
+                <div class="address">
+                    <div class="address__text-head">Our Address</div>
+                    <div class="address__text-underhead">
+                        Suspendisse dolor purus, malesuada ut luctus quis, consectetur vel ante. Integer a pulvinar orci, eget sagittis enim.
                     </div>
-                    <div class="OurAddress__mail">
-                        <span class="OurAddress__boxSimbol OurAddress__boxSimbol_Mail"></span>
-                        Email: info@company.com
-                   
+                    <div class="address__mail">
+                        <span class="address__simbol address__simbol_mail"></span> Email: info@company.com
+
                     </div>
-                    <div class="OurAddress__phone">
-                        <span class="OurAddress__boxSimbol OurAddress__boxSimbol_Phone"></span>
-                        Phone: 070-070-0880
-                   
+                    <div class="address__phone">
+                        <span class="address__simbol address__simbol_phone"></span> Phone: 070-070-0880
                     </div>
                 </div>
+
             </div>
         </form>
-
 
         <div class="separator">
             <hr class="separator__line" />
         </div>
 
 
-        <div id="UnderLine" class="UnderLine">
-            <div class="UnderLine__textLicense">Copyright © 2016 Sigma HTML CSS Template</div>
-            <div class="UnderLine__conteinerGoToTop">
-                <a class="UnderLine__GoToTopHref" href="#Header">Go to top</a>
+        <div id="footer" class="footer">
+            <div class="footer__text">Copyright © 2016 Sigma HTML CSS Template</div>
+            <div class="footer__conteiner-href">
+                <a class="footer__href" href="#header">Go to top</a>
             </div>
         </div>
 
     </div>
 
-    <script>
-        $(document).ready(function () {
-            $("#menu, #UnderLine").on("click", "a", function (event) {
-                event.preventDefault();
-                var id = $(this).attr('href'),
-                    top = $(id).offset().top;
-                $('body,html').animate({ scrollTop: top }, 500);
-            });
-        });
-    </script>
-
+    <script src="/script.js"></script>
 </body>
-</html>
 
+</html>

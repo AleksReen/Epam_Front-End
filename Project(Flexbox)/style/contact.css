@@ -1,0 +1,65 @@
+﻿.contact {
+    min-height: 360px;
+}
+
+.contact__conteiner {
+    display: flex;
+    align-items: center;
+    min-height: 360px;
+    background-attachment: fixed;
+    background-image: url('../image/tm-sigma-00.jpg');
+    background-size: cover;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.contact__maintext {
+    width: 50%;
+    text-align: center;
+    color: #373a3c;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.contact__discription {
+    width: 50%;
+    text-align: center;
+    font-size: 21px;
+    color: #676767;
+    line-height: 1.5;
+}
+
+.contact__href {
+    color: #2288bb;
+    text-decoration: none;
+}
+
+.contact__href:hover {
+    color: #176992;
+    text-decoration: underline;
+}
+
+@media (max-width:1003px) {
+    .contact__maintext {
+        font-size: 30px;
+    }
+    .contact__discription {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px) {
+    .contact__maintext {
+        font-size: 26px;
+    }
+    .contact__discription {
+        font-size: 16px;
+    }
+}

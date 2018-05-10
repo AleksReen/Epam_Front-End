@@ -1,0 +1,32 @@
+﻿.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 83px;
+}
+
+.footer__text {
+    color: #373a3c;
+    font-size: 16px;
+    font-weight: 500;
+    width: 66%;
+}
+
+.footer__conteiner-href {
+    text-align: right;
+    width: 33%;
+}
+
+.footer__href {
+    color: #2288bb;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer__href:focus,
+.footer__href:hover {
+    color: #014c8c;
+    text-decoration: underline;
+}

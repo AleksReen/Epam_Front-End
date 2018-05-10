@@ -1,0 +1,58 @@
+﻿.line-about-us {
+    height: 330px;
+}
+
+.line-about-us__conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('../image/tm-sigma-00.jpg');
+    background-size: cover;
+    height: 330px;
+}
+
+.line-about-us__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.line-about-us__maintext {
+    width: 50%;
+    text-align: center;
+    color: #373a3c;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.line-about-us__discription {
+    width: 50%;
+    text-align: center;
+    font-size: 21px;
+    text-align: center;
+    color: #676767;
+    line-height: 1.5;
+}
+
+@media (max-width:1003px) {
+    .line-about-us__maintext {
+        font-size: 30px;
+    }
+    .line-about-us__discription {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px) {
+    .line-about-us__maintext {
+        font-size: 26px;
+    }
+    .line-about-us__discription {
+        font-size: 16px;
+    }
+}

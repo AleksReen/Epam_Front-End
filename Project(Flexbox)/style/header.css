@@ -1,0 +1,15 @@
+﻿.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.header__logo-conteiner {
+    display: block;
+}
+
+.header__menu-conteiner {
+    display: block;
+}
